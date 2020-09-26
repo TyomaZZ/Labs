@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -14,9 +16,13 @@ namespace Labs
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+            int prC = 0;
+            foreach (Process pr in Process.GetProcesses())
+                if (pr.ProcessName == "Labs") prC++;
+            if (prC > 1) Process.GetCurrentProcess().Kill();
+                Application.EnableVisualStyles();
+                Application.SetCompatibleTextRenderingDefault(false);
+                Application.Run(new MainForm());
         }
     }
 }
