@@ -16,6 +16,7 @@ namespace Labs
         [STAThread]
         static void Main()
         {
+            //tyomashi
             int prC = 0;
             foreach (Process pr in Process.GetProcesses())
                 if (pr.ProcessName == "Labs") prC++;
