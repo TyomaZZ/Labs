@@ -9,59 +9,34 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Labs
-{
+{//tyomashi
     public partial class MainForm : Form
     {
         public MainForm()
         {
             InitializeComponent();
         }
-        
-
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        private void main_button1_Click(object sender, EventArgs e)
         {
-
+            new lab1_Form().Show();
         }
-
-        private void MainForm_Load(object sender, EventArgs e)
+        private void main_button2_Click(object sender, EventArgs e)
         {
-
+            new lab2_Form().Show();
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void main_button3_Click(object sender, EventArgs e)
         {
-            FormLab1 form1 = new FormLab1();
-            
-            form1.Show();
+            new FormLab3().Show();
         }
-
-        private void button2_Click(object sender, EventArgs e)
+        private void main_button4_Click(object sender, EventArgs e)
         {
-            FormLab2 form2 = new FormLab2();
-            form2.Show();
         }
-
-        private void button3_Click(object sender, EventArgs e)
+        private void main_button5_Click(object sender, EventArgs e)
         {
-            FormLab3 form3 = new FormLab3();
-            form3.Show();
         }
-
-        private void button4_Click(object sender, EventArgs e)
+        private void about_pictureBox_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            About about = new About();
-            about.Show();
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            
-        }
+            new About().Show();
+        } 
     }
-    
 }

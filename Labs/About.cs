@@ -1,27 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Linq;
 using System.Reflection;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Labs
-{
+{//tyomashi
     partial class About : Form
     {
         public About()
         {
             InitializeComponent();
-            //this.Text = String.Format("О программе {0}", AssemblyTitle);
-            //this.labelProductName.Text = AssemblyProduct;
-            //this.labelVersion.Text = String.Format("Версия {0}", AssemblyVersion);
-            //this.labelCopyright.Text = AssemblyCopyright;
-            //this.labelCompanyName.Text = AssemblyCompany;
-            //this.textBoxDescription.Text = AssemblyDescription;
+            this.labelVersion.Text = String.Format("Версія {0}", AssemblyVersion);
         }
-
         #region Методы доступа к атрибутам сборки
 
         public string AssemblyTitle
@@ -101,15 +90,9 @@ namespace Labs
             }
         }
         #endregion
-
-        private void tableLayoutPanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void okButton_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Close();
         }
     }
 }

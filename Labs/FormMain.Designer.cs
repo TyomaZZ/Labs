@@ -51,7 +51,6 @@
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(285, 242);
             this.flowLayoutPanel1.TabIndex = 0;
-            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
             // flowLayoutPanel2
             // 
@@ -78,7 +77,7 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "Лабараторна 1";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.main_button1_Click);
             // 
             // button2
             // 
@@ -90,7 +89,7 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "Лабараторна 2";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.main_button2_Click);
             // 
             // button3
             // 
@@ -102,7 +101,7 @@
             this.button3.TabIndex = 3;
             this.button3.Text = "Лабараторна 3";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.Click += new System.EventHandler(this.main_button3_Click);
             // 
             // button4
             // 
@@ -114,7 +113,7 @@
             this.button4.TabIndex = 4;
             this.button4.Text = "Лабараторна 4";
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button4.Click += new System.EventHandler(this.main_button4_Click);
             // 
             // button5
             // 
@@ -126,7 +125,7 @@
             this.button5.TabIndex = 5;
             this.button5.Text = "Лабараторна 5";
             this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.button5.Click += new System.EventHandler(this.main_button5_Click);
             // 
             // pictureBox1
             // 
@@ -138,7 +137,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(32, 32);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox1.Click += new System.EventHandler(this.about_pictureBox_Click);
             // 
             // MainForm
             // 
@@ -159,7 +158,6 @@
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Лабараторні";
-            this.Load += new System.EventHandler(this.MainForm_Load);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
             this.flowLayoutPanel2.PerformLayout();

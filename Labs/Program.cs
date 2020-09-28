@@ -10,20 +10,22 @@ namespace Labs
 {
     static class Program
     {
-        /// <summary>
-        /// Главная точка входа для приложения.
-        /// </summary>
+        /// <summary>/// Главная точка входа для приложения./// </summary>
         [STAThread]
         static void Main()
         {
-            //tyomashi
-            int prC = 0;
+          //tyomashi
+            int dooble = 0;
             foreach (Process pr in Process.GetProcesses())
-                if (pr.ProcessName == "Labs") prC++;
-            if (prC > 1) Process.GetCurrentProcess().Kill();
+                if (pr.ProcessName == "Labs") dooble++;
+            if (dooble > 1) Process.GetCurrentProcess().Kill();
+          //tyomashi
+
+          //app
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
                 Application.Run(new MainForm());
+          //app
         }
     }
 }
