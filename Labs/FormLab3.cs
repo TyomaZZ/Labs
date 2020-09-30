@@ -1069,7 +1069,7 @@ namespace Labs
                 MessageBoxIcon.Exclamation);
             count--; lab3_Form.result_lab3++;
         }
-        public void InfoLab3()
+        virtual public void InfoLab3()
         {
             MessageBox.Show("Верхній одяг №" + (count + 1) + " створено",
                 "Інформація",
@@ -1112,6 +1112,14 @@ namespace Labs
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Information);
         }
+        public override void InfoLab3()
+        {
+            base.InfoLab3();
+            MessageBox.Show("Куртку створено",
+               "Інформація",
+               MessageBoxButtons.OK,
+               MessageBoxIcon.Information);
+        }
     }
     public partial class Jacket : Outerwear_Lab3
     {
@@ -1147,6 +1155,14 @@ namespace Labs
                 "Ось такa Куртка",
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Information);
+        }
+        public override void InfoLab3()
+        {
+            base.InfoLab3();
+            MessageBox.Show("Пальто створено",
+               "Інформація",
+               MessageBoxButtons.OK,
+               MessageBoxIcon.Information);
         }
 
     }
