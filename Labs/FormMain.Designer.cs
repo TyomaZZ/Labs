@@ -105,36 +105,40 @@
             // 
             // button4
             // 
-            this.button4.AutoSize = true;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button4.Location = new System.Drawing.Point(10, 104);
             this.button4.Margin = new System.Windows.Forms.Padding(10, 5, 10, 5);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(93, 23);
             this.button4.TabIndex = 4;
-            this.button4.Text = "Лабараторна 4";
+            this.button4.Text = "Змінити дизайн";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.main_button4_Click);
             // 
             // button5
             // 
             this.button5.AutoSize = true;
-            this.button5.Location = new System.Drawing.Point(10, 137);
-            this.button5.Margin = new System.Windows.Forms.Padding(10, 5, 10, 5);
+            this.button5.Location = new System.Drawing.Point(7, 137);
+            this.button5.Margin = new System.Windows.Forms.Padding(7, 5, 7, 7);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(93, 23);
+            this.button5.Size = new System.Drawing.Size(100, 25);
             this.button5.TabIndex = 5;
-            this.button5.Text = "Лабараторна 5";
+            this.button5.Text = "Вихід";
             this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.main_button5_Click);
+            this.button5.Click += new System.EventHandler(this.main_exitButton_Click);
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(250, 205);
+            this.pictureBox1.Location = new System.Drawing.Point(245, 200);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox1.Size = new System.Drawing.Size(36, 38);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.about_pictureBox_Click);
@@ -153,11 +157,11 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "MainForm";
-            this.Opacity = 0.9D;
+            this.Opacity = 0.85D;
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.RightToLeftLayout = true;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Лабараторні";
+            this.Text = "Лабараторій*";
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
             this.flowLayoutPanel2.PerformLayout();
