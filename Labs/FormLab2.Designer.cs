@@ -484,7 +484,6 @@
             // lab2_TabPage7
             // 
             this.lab2_TabPage7.BackColor = System.Drawing.Color.YellowGreen;
-            this.lab2_TabPage7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lab2_TabPage7.Controls.Add(this.lab2_panel7);
             this.lab2_TabPage7.Location = new System.Drawing.Point(4, 22);
             this.lab2_TabPage7.Name = "lab2_TabPage7";
@@ -494,18 +493,19 @@
             // 
             // lab2_panel7
             // 
+            this.lab2_panel7.BackColor = System.Drawing.SystemColors.Control;
             this.lab2_panel7.Controls.Add(this.lab2_exitButton7);
             this.lab2_panel7.Controls.Add(this.lab2_var7_button2);
             this.lab2_panel7.Controls.Add(this.lab2_var7_button1);
             this.lab2_panel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lab2_panel7.Location = new System.Drawing.Point(0, 0);
             this.lab2_panel7.Name = "lab2_panel7";
-            this.lab2_panel7.Size = new System.Drawing.Size(572, 231);
+            this.lab2_panel7.Size = new System.Drawing.Size(576, 235);
             this.lab2_panel7.TabIndex = 1;
             // 
             // lab2_exitButton7
             // 
-            this.lab2_exitButton7.BackColor = System.Drawing.Color.DodgerBlue;
+            this.lab2_exitButton7.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.lab2_exitButton7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lab2_exitButton7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.lab2_exitButton7.Location = new System.Drawing.Point(207, 177);
@@ -518,7 +518,7 @@
             // 
             // lab2_var7_button2
             // 
-            this.lab2_var7_button2.BackColor = System.Drawing.Color.DodgerBlue;
+            this.lab2_var7_button2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.lab2_var7_button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lab2_var7_button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.lab2_var7_button2.Location = new System.Drawing.Point(291, 22);
@@ -531,7 +531,7 @@
             // 
             // lab2_var7_button1
             // 
-            this.lab2_var7_button1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.lab2_var7_button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.lab2_var7_button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lab2_var7_button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.lab2_var7_button1.Location = new System.Drawing.Point(39, 22);

@@ -26,13 +26,17 @@ namespace Labs
         }
         private void main_button3_Click(object sender, EventArgs e)
         {
-            new FormLab3().Show();
+            new lab3_Form().Show();
         }
         private void main_button4_Click(object sender, EventArgs e)
         {
+            flowLayoutPanel1.BackColor =  Color.FromArgb(new Random().Next(0, 255), 
+                new Random().Next(0, 255), 
+                new Random().Next(0, 255));
         }
-        private void main_button5_Click(object sender, EventArgs e)
+        private void main_exitButton_Click(object sender, EventArgs e)
         {
+            Close();
         }
         private void about_pictureBox_Click(object sender, EventArgs e)
         {

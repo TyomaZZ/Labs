@@ -17,11 +17,14 @@ namespace Labs
         public lab2_Form()
         {
             InitializeComponent();
+            lab2_TabControl.SelectedTab = lab2_TabPage7;
         }
+                //Методи кнопок для лабараторної №2________
         private void lab2_exitButton_Click(object sender, EventArgs e) //Загальний метод для кнопок закриття лабараторної.
         {
             Close();
         }
+        //1
         private void lab2_var1_button1_Click(object sender, EventArgs e)
         {
             new Plane_Lab2().Info();
@@ -34,6 +37,7 @@ namespace Labs
             size_cons = Convert.ToInt32(Interaction.InputBox("Введіть розмір\n", name_cons + " " + color_cons + " Літак", "42"));
             new Plane_Lab2(name_cons, color_cons, size_cons).Info();
         }
+        //2
         private void lab2_var2_button1_Click(object sender, EventArgs e)
         {
             new Fish_Lab2().Info();
@@ -46,6 +50,7 @@ namespace Labs
             size_cons = Convert.ToInt32(Interaction.InputBox("Введіть розмір\n", name_cons + " Риба", "42"));
             new Fish_Lab2(name_cons, color_cons, size_cons).Info();
         }
+        //3
         private void lab2_var3_button1_Click(object sender, EventArgs e)
         {
             new BankCard_Lab2().Info();
@@ -58,6 +63,7 @@ namespace Labs
             size_cons = Convert.ToInt32(Interaction.InputBox("Введіть розмір\n", name_cons + " Карта", "8"));
             new BankCard_Lab2(name_cons, color_cons, size_cons).Info();
         }
+        //4
         private void lab2_var4_button1_Click(object sender, EventArgs e)
         {
             new Phone_Lab2().Info();
@@ -70,6 +76,7 @@ namespace Labs
             size_cons = Convert.ToInt32(Interaction.InputBox("Введіть розмір\n", name_cons + " Телефон", "6"));
             new Phone_Lab2(name_cons, color_cons, size_cons).Info();
         }
+        //5
         private void lab2_var5_button1_Click(object sender, EventArgs e)
         {
             new Letter_Lab2().Info();
@@ -82,6 +89,7 @@ namespace Labs
             size_cons = Convert.ToInt32(Interaction.InputBox("Введіть розмір\n", name_cons + " Лист", "4"));
             new Letter_Lab2(name_cons, color_cons, size_cons).Info();
         }
+        //6
         private void lab2_var6_button1_Click(object sender, EventArgs e)
         {
             new Car_Lab2().Info();
@@ -94,6 +102,7 @@ namespace Labs
             size_cons = Convert.ToInt32(Interaction.InputBox("Введіть розмір\n", name_cons + " Автомобіль", "2"));
             new Car_Lab2(name_cons, color_cons, size_cons).Info();
         }
+        //7
         //_мій_варіант_№7____________________________________________________________________________________________________________________
         private void lab2_var7_button1_Click(object sender, EventArgs e)
         {
@@ -106,6 +115,7 @@ namespace Labs
                  Convert.ToInt32(Interaction.InputBox("Введіть розмір\n", "Створюємо верхній одяг", "42"))).Info();
         }
         //___________________________________________________________ _______________________________________________________________________
+        //8
         private void lab2_var8_button1_Click(object sender, EventArgs e)
         {
             new Product_Lab2().Info();
@@ -118,6 +128,7 @@ namespace Labs
             size_cons = Convert.ToInt32(Interaction.InputBox("Введіть розмір\n", name_cons, "3"));
             new Product_Lab2(name_cons, color_cons, size_cons).Info();
         }
+        //9
         private void lab2_var9_button1_Click(object sender, EventArgs e)
         {
             new Shoes_Lab2().Info();
@@ -130,6 +141,7 @@ namespace Labs
             size_cons = Convert.ToInt32(Interaction.InputBox("Введіть розмір\n", name_cons, "33"));
             new Shoes_Lab2(name_cons, color_cons, size_cons).Info();
         }
+        //10
         private void lab2_var10_button1_Click(object sender, EventArgs e)
         {
             new Candy_Lab2().Info();
@@ -142,6 +154,7 @@ namespace Labs
             size_cons = Convert.ToInt32(Interaction.InputBox("Введіть розмір\n", name_cons, "2"));
             new Candy_Lab2(name_cons, color_cons, size_cons).Info();
         }
+        //11
         private void lab2_var11_button1_Click(object sender, EventArgs e)
         {
             new Animal_Lab2().Info();
@@ -154,6 +167,7 @@ namespace Labs
             size_cons = Convert.ToInt32(Interaction.InputBox("Введіть розмір\n", name_cons, "10"));
             new Animal_Lab2(name_cons, color_cons, size_cons).Info();
         }
+        //12
         private void lab2_var12_button1_Click(object sender, EventArgs e)
         {
             new Book_Lab2().Info();
@@ -166,6 +180,7 @@ namespace Labs
             size_cons = Convert.ToInt32(Interaction.InputBox("Введіть розмір\n", name_cons, "700"));
             new Book_Lab2(name_cons, color_cons, size_cons).Info();
         }
+        //13
         private void lab2_var13_button1_Click(object sender, EventArgs e)
         {
             new Periodical_Lab2().Info();
@@ -178,6 +193,7 @@ namespace Labs
             size_cons = Convert.ToInt32(Interaction.InputBox("Введіть розмір\n", name_cons, "8"));
             new Periodical_Lab2(name_cons, color_cons, size_cons).Info();
         }
+        //14
         private void lab2_var14_button1_Click(object sender, EventArgs e)
         {
             new Detergent_Lab2().Info();
@@ -190,6 +206,7 @@ namespace Labs
             size_cons = Convert.ToInt32(Interaction.InputBox("Введіть розмір\n", name_cons, "2"));
             new Detergent_Lab2(name_cons, color_cons, size_cons).Info();
         }
+        //15
         private void lab2_var15_button1_Click(object sender, EventArgs e)
         {
             new Clock_Lab2().Info();

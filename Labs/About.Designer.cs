@@ -89,7 +89,7 @@
             this.labelProductName.Name = "labelProductName";
             this.labelProductName.Size = new System.Drawing.Size(272, 17);
             this.labelProductName.TabIndex = 19;
-            this.labelProductName.Text = "Студента Кухарука Артема Ігоровича";
+            this.labelProductName.Text = "Студента Кухарука Артема";
             this.labelProductName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // labelVersion
