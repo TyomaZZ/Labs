@@ -102,7 +102,6 @@ namespace Labs
             size_cons = Convert.ToInt32(Interaction.InputBox("Введіть розмір\n", name_cons + " Автомобіль", "2"));
             new Car_Lab2(name_cons, color_cons, size_cons).Info();
         }
-        //7
         //_мій_варіант_№7____________________________________________________________________________________________________________________
         private void lab2_var7_button1_Click(object sender, EventArgs e)
         {
@@ -114,12 +113,11 @@ namespace Labs
                  Convert.ToString(Interaction.InputBox("Введіть колір", "Створюємо верхній одяг", "Синій")),
                  Convert.ToInt32(Interaction.InputBox("Введіть розмір\n", "Створюємо верхній одяг", "42"))).Info();
         }
-        //___________________________________________________________ _______________________________________________________________________
-        //8
+        //___________________________________________________________ 
         private void lab2_var8_button1_Click(object sender, EventArgs e)
         {
             new Product_Lab2().Info();
-        }
+        } //8
         private void lab2_var8_button2_Click(object sender, EventArgs e)
         {
             String name_cons, color_cons; int size_cons;
