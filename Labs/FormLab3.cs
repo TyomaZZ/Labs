@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Labs
+namespace Labs 
 {//tyomashi
     public partial class lab3_Form : Form
     {
@@ -1115,10 +1115,7 @@ namespace Labs
         public override void InfoLab3()
         {
             base.InfoLab3();
-            MessageBox.Show("Куртку створено",
-               "Інформація",
-               MessageBoxButtons.OK,
-               MessageBoxIcon.Information);
+            Info();
         }
     }
     public partial class Jacket : Outerwear_Lab3
@@ -1159,10 +1156,7 @@ namespace Labs
         public override void InfoLab3()
         {
             base.InfoLab3();
-            MessageBox.Show("Пальто створено",
-               "Інформація",
-               MessageBoxButtons.OK,
-               MessageBoxIcon.Information);
+            Info();
         }
 
     }
