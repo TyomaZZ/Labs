@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.lab3_panel7 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lab3_var7_button2 = new System.Windows.Forms.Button();
@@ -50,7 +51,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.button2 = new System.Windows.Forms.Button();
             this.lab3_panel7.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -73,6 +73,18 @@
             this.lab3_panel7.Name = "lab3_panel7";
             this.lab3_panel7.Size = new System.Drawing.Size(435, 329);
             this.lab3_panel7.TabIndex = 2;
+            // 
+            // button2
+            // 
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button2.Location = new System.Drawing.Point(208, 170);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(223, 23);
+            this.button2.TabIndex = 23;
+            this.button2.Text = "Збільшити нижню кнопку";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // groupBox3
             // 
@@ -325,17 +337,6 @@
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(164, 17);
             this.toolStripStatusLabel1.Text = "Поточна кількість об\'єктів: 0";
             this.toolStripStatusLabel1.Paint += new System.Windows.Forms.PaintEventHandler(this.toolStripStatusLabel1_Paint);
-            // 
-            // button2
-            // 
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(208, 170);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(223, 23);
-            this.button2.TabIndex = 23;
-            this.button2.Text = "Змінити розмір кнопки";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // FormLab4
             // 
