@@ -1049,7 +1049,7 @@ namespace Labs
     }
     //
     //_мій_варіант_№7_________________________________________________________________________________________________________________________________
-    public partial class Outerwear_Lab3
+    public class Outerwear_Lab3
     {
         public String name, color, status;
         public static int count;
@@ -1077,14 +1077,14 @@ namespace Labs
                 MessageBoxIcon.Information);
         }
     }      //Верхній одяг         /Варіант №7
-    public partial class Blouse2 : Outerwear_Lab3
+    public class Blouse_Lab3 : Outerwear_Lab3
     {
-        public Blouse2()
+        public Blouse_Lab3()
         {
             this.name = "Abibas"; this.color = "Зелена"; this.size = 36; this.status = "Новa";
             Random rnd = new Random(); int asd = rnd.Next(0, 2); if (asd == 0) isFreak = false; else isFreak = true;
         }
-        public Blouse2(String name, String color, int size)
+        public Blouse_Lab3(String name, String color, int size)
         {
             this.name = name; this.color = color; this.size = size; this.status = "Новa";
             Random rnd = new Random(); int asd = rnd.Next(0, 2); if (asd == 0) isFreak = false; else isFreak = true;
@@ -1118,14 +1118,14 @@ namespace Labs
             Info();
         }
     }
-    public partial class Jacket2 : Outerwear_Lab3
+    public partial class Jacket_Lab3 : Outerwear_Lab3
     {
-        public Jacket2()
+        public Jacket_Lab3()
         {
             this.name = "Пума"; this.color = "Зелена"; this.size = 36; this.status = "Новa";
             Random rnd = new Random(); int asd = rnd.Next(0, 2); if (asd == 0) isFreak = false; else isFreak = true;
         }
-        public Jacket2(String name, String color, int size)
+        public Jacket_Lab3(String name, String color, int size)
         {
             this.name = name; this.color = color; this.size = size; this.status = "Новa";
             Random rnd = new Random(); int asd = rnd.Next(0, 2); if (asd == 0) isFreak = false; else isFreak = true;

@@ -50,6 +50,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.button2 = new System.Windows.Forms.Button();
             this.lab3_panel7.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -62,6 +63,7 @@
             // 
             // lab3_panel7
             // 
+            this.lab3_panel7.Controls.Add(this.button2);
             this.lab3_panel7.Controls.Add(this.groupBox3);
             this.lab3_panel7.Controls.Add(this.panel3);
             this.lab3_panel7.Controls.Add(this.panel2);
@@ -78,9 +80,9 @@
             this.groupBox3.Controls.Add(this.groupBox2);
             this.groupBox3.Controls.Add(this.lab3_var7_button1);
             this.groupBox3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.groupBox3.Location = new System.Drawing.Point(75, 7);
+            this.groupBox3.Location = new System.Drawing.Point(75, 20);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(285, 160);
+            this.groupBox3.Size = new System.Drawing.Size(285, 135);
             this.groupBox3.TabIndex = 22;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Створити";
@@ -101,6 +103,7 @@
             // lab3_var7_button2
             // 
             this.lab3_var7_button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lab3_var7_button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lab3_var7_button2.Location = new System.Drawing.Point(5, 15);
             this.lab3_var7_button2.Name = "lab3_var7_button2";
             this.lab3_var7_button2.Size = new System.Drawing.Size(125, 25);
@@ -112,6 +115,7 @@
             // lab3_var7_button3
             // 
             this.lab3_var7_button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lab3_var7_button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lab3_var7_button3.Location = new System.Drawing.Point(5, 45);
             this.lab3_var7_button3.Name = "lab3_var7_button3";
             this.lab3_var7_button3.Size = new System.Drawing.Size(125, 25);
@@ -134,6 +138,7 @@
             // lab3_var7_button4
             // 
             this.lab3_var7_button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lab3_var7_button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lab3_var7_button4.Location = new System.Drawing.Point(5, 15);
             this.lab3_var7_button4.Name = "lab3_var7_button4";
             this.lab3_var7_button4.Size = new System.Drawing.Size(125, 25);
@@ -145,6 +150,7 @@
             // lab3_var7_button5
             // 
             this.lab3_var7_button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lab3_var7_button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lab3_var7_button5.Location = new System.Drawing.Point(5, 45);
             this.lab3_var7_button5.Name = "lab3_var7_button5";
             this.lab3_var7_button5.Size = new System.Drawing.Size(125, 25);
@@ -156,9 +162,10 @@
             // lab3_var7_button1
             // 
             this.lab3_var7_button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lab3_var7_button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lab3_var7_button1.Location = new System.Drawing.Point(5, 100);
             this.lab3_var7_button1.Name = "lab3_var7_button1";
-            this.lab3_var7_button1.Size = new System.Drawing.Size(274, 55);
+            this.lab3_var7_button1.Size = new System.Drawing.Size(275, 30);
             this.lab3_var7_button1.TabIndex = 7;
             this.lab3_var7_button1.Text = "Використання абстрактного класу верхього одягу";
             this.lab3_var7_button1.UseVisualStyleBackColor = true;
@@ -181,9 +188,10 @@
             // button17
             // 
             this.button17.AutoSize = true;
-            this.button17.BackColor = System.Drawing.Color.Salmon;
+            this.button17.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button17.Location = new System.Drawing.Point(55, 5);
+            this.button17.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button17.Location = new System.Drawing.Point(55, 3);
             this.button17.Margin = new System.Windows.Forms.Padding(0);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(95, 25);
@@ -195,9 +203,11 @@
             // button15
             // 
             this.button15.AutoSize = true;
-            this.button15.BackColor = System.Drawing.Color.Salmon;
+            this.button15.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button15.Location = new System.Drawing.Point(100, 30);
+            this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button15.Location = new System.Drawing.Point(102, 30);
+            this.button15.Margin = new System.Windows.Forms.Padding(0);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(95, 25);
             this.button15.TabIndex = 14;
@@ -208,9 +218,10 @@
             // button18
             // 
             this.button18.AutoSize = true;
-            this.button18.BackColor = System.Drawing.Color.Salmon;
+            this.button18.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button18.Location = new System.Drawing.Point(55, 55);
+            this.button18.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button18.Location = new System.Drawing.Point(55, 57);
             this.button18.Margin = new System.Windows.Forms.Padding(0);
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(95, 25);
@@ -222,9 +233,10 @@
             // button16
             // 
             this.button16.AutoSize = true;
-            this.button16.BackColor = System.Drawing.Color.Salmon;
+            this.button16.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button16.Location = new System.Drawing.Point(5, 30);
+            this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button16.Location = new System.Drawing.Point(4, 30);
             this.button16.Margin = new System.Windows.Forms.Padding(0);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(95, 25);
@@ -266,7 +278,8 @@
             // 
             this.button14.AutoSize = true;
             this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Location = new System.Drawing.Point(208, 227);
+            this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button14.Location = new System.Drawing.Point(208, 229);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(223, 30);
             this.button14.TabIndex = 13;
@@ -286,6 +299,7 @@
             // button1
             // 
             this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.Location = new System.Drawing.Point(0, 0);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(429, 24);
@@ -311,6 +325,17 @@
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(164, 17);
             this.toolStripStatusLabel1.Text = "Поточна кількість об\'єктів: 0";
             this.toolStripStatusLabel1.Paint += new System.Windows.Forms.PaintEventHandler(this.toolStripStatusLabel1_Paint);
+            // 
+            // button2
+            // 
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(208, 170);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(223, 23);
+            this.button2.TabIndex = 23;
+            this.button2.Text = "Змінити розмір кнопки";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // FormLab4
             // 
@@ -368,5 +393,6 @@
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button button2;
     }
 }
