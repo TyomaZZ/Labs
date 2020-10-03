@@ -40,6 +40,8 @@ namespace Labs
             a.Left = rnd.Next(0, 75);
             a.Top = rnd.Next(0, 40);
             a.Text = "Знищити кнопку";
+            a.Font = button1.Font;
+            a.FlatStyle = button1.FlatStyle;
             a.Parent = panel4;
             a.Click += new System.EventHandler(this.button_rnd);
         }
@@ -88,12 +90,10 @@ namespace Labs
         {
             toolStripStatusLabel1.Text = "Кількість об'єктів: " + Outerwear.count;
         }
-
         private void toolStripStatusLabel1_Paint(object sender, PaintEventArgs e)
         {
             toolStripStatusLabel1.Text = "Кількість об'єктів: " + Outerwear.count;
         }
-
         private void lab3_var7_button2_Click(object sender, EventArgs e)
         {
             Blouse p1 = new Blouse();
@@ -103,7 +103,6 @@ namespace Labs
             l.Text = "Створено Куртку: " + p1.name;
             toolStripStatusLabel1.Text = "Кількість об'єктів: " + Outerwear.count;
         }
-
         private void lab3_var7_button4_Click(object sender, EventArgs e)
         {
             Jacket p1 = new Jacket();
@@ -113,7 +112,6 @@ namespace Labs
             l.Text = "Створено Пальто: " + p1.name;
             toolStripStatusLabel1.Text = "Кількість об'єктів: " + Outerwear.count;
         }
-
         private void lab3_var7_button3_Click(object sender, EventArgs e)
         {
             String name_cons, color_cons; int size_cons;
@@ -127,7 +125,6 @@ namespace Labs
             l.Text = "Створено Пальто: " + blouse.name;
             toolStripStatusLabel1.Text = "Кількість об'єктів: " + Outerwear.count;
         }
-
         private void lab3_var7_button5_Click(object sender, EventArgs e)
         {
             String name_cons, color_cons; int size_cons;
@@ -141,8 +138,15 @@ namespace Labs
             l.Text = "Створено Пальто: " + jacket.name;
             toolStripStatusLabel1.Text = "Кількість об'єктів: " + Outerwear.count;
         }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (button14.Top > 199)
+            {
+                button14.Height += 5;
+                button14.Top -= 5;
+            }
+        }
     }
-
     public abstract class Outerwear
     {
         public String name, color, status;
@@ -257,6 +261,5 @@ namespace Labs
             base.InfoLab3();
             Info();
         }
-
     }
 }
