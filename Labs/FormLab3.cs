@@ -1077,14 +1077,14 @@ namespace Labs
                 MessageBoxIcon.Information);
         }
     }      //Верхній одяг         /Варіант №7
-    public partial class Blouse : Outerwear_Lab3
+    public partial class Blouse2 : Outerwear_Lab3
     {
-        public Blouse()
+        public Blouse2()
         {
             this.name = "Abibas"; this.color = "Зелена"; this.size = 36; this.status = "Новa";
             Random rnd = new Random(); int asd = rnd.Next(0, 2); if (asd == 0) isFreak = false; else isFreak = true;
         }
-        public Blouse(String name, String color, int size)
+        public Blouse2(String name, String color, int size)
         {
             this.name = name; this.color = color; this.size = size; this.status = "Новa";
             Random rnd = new Random(); int asd = rnd.Next(0, 2); if (asd == 0) isFreak = false; else isFreak = true;
@@ -1118,14 +1118,14 @@ namespace Labs
             Info();
         }
     }
-    public partial class Jacket : Outerwear_Lab3
+    public partial class Jacket2 : Outerwear_Lab3
     {
-        public Jacket()
+        public Jacket2()
         {
             this.name = "Пума"; this.color = "Зелена"; this.size = 36; this.status = "Новa";
             Random rnd = new Random(); int asd = rnd.Next(0, 2); if (asd == 0) isFreak = false; else isFreak = true;
         }
-        public Jacket(String name, String color, int size)
+        public Jacket2(String name, String color, int size)
         {
             this.name = name; this.color = color; this.size = size; this.status = "Новa";
             Random rnd = new Random(); int asd = rnd.Next(0, 2); if (asd == 0) isFreak = false; else isFreak = true;

@@ -30,7 +30,7 @@ namespace Labs
         }
         private void main_button4_Click(object sender, EventArgs e)
         {
-            flowLayoutPanel1.BackColor =  Color.FromArgb(new Random().Next(0, 255), 
+            panel1.BackColor =  Color.FromArgb(new Random().Next(0, 255), 
                 new Random().Next(0, 255), 
                 new Random().Next(0, 255));
         }
@@ -41,6 +41,11 @@ namespace Labs
         private void about_pictureBox_Click(object sender, EventArgs e)
         {
             new About().Show();
-        } 
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            new FormLab4().Show();
+        }
     }
 }
