@@ -162,6 +162,7 @@ namespace Labs
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Exclamation);
             count--; lab3_Form.result_lab3++;
+            if (FormLab4.asd != null)
            FormLab4.asd.Text = "Кількість об'єктів: " + count;
         }
         virtual public void InfoLab3()
@@ -192,51 +193,6 @@ namespace Labs
         {
             if (isFreak == true)
                 if (status.Equals("Потаскана"))
-                    return "Жахлива кофта";
-                else return "Досить мила кофта...";
-            else return "Класна кофта :р";
-        }
-        public string SizeString()
-        {
-            if (size > 25)
-                if (size < 55)
-                    return "Ця кофта навіть могла б підійти для тебе";
-                else return "Ця кофта завелика для тебе!";
-            else return "Ця кофта замала для тебе!";
-        }
-        public void Info()
-        {
-            MessageBox.Show("Кофта бренду: " + name + "\n" + color + " колiр\nРозмір: " + size + "\n" + isFreaks() + "\n\n" + SizeString() + "\n\n\n",
-                "Ось такa кофта",
-                MessageBoxButtons.OK,
-                MessageBoxIcon.Information);
-        }
-        public override void InfoLab3()
-        {
-            base.InfoLab3();
-            Info();
-        }
-    }
-    public class Jacket : Outerwear
-    {
-        public Jacket()
-        {
-            count++;
-            nomer = count;
-            this.name = "Пума"; this.color = "Зелена"; this.size = 36; this.status = "Новa";
-            Random rnd = new Random(); int asd = rnd.Next(0, 2); if (asd == 0) isFreak = false; else isFreak = true;
-        }
-        public Jacket(String name, String color, int size)
-        {
-            count++;
-            nomer = count;
-            this.name = name; this.color = color; this.size = size; this.status = "Новa";
-            Random rnd = new Random(); int asd = rnd.Next(0, 2); if (asd == 0) isFreak = false; else isFreak = true;
-        }
-        public string isFreaks()
-        {
-            if (isFreak == true)
-                if (status.Equals("Потаскана"))
                     return "Жахлива куртка";
                 else return "Досить мила куртка...";
             else return "Класна куртка :р";
@@ -252,6 +208,51 @@ namespace Labs
         public void Info()
         {
             MessageBox.Show("Куртка бренду: " + name + "\n" + color + " колiр\nРозмір: " + size + "\n" + isFreaks() + "\n\n" + SizeString() + "\n\n\n",
+                "Ось такa куртка",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
+        }
+        public override void InfoLab3()
+        {
+            base.InfoLab3();
+            Info();
+        }
+    }
+    public class Jacket : Outerwear
+    {
+        public Jacket()
+        {
+            count++;
+            nomer = count;
+            this.name = "Норт айленд"; this.color = "Зелена"; this.size = 36; this.status = "Новa";
+            Random rnd = new Random(); int asd = rnd.Next(0, 2); if (asd == 0) isFreak = false; else isFreak = true;
+        }
+        public Jacket(String name, String color, int size)
+        {
+            count++;
+            nomer = count;
+            this.name = name; this.color = color; this.size = size; this.status = "Новa";
+            Random rnd = new Random(); int asd = rnd.Next(0, 2); if (asd == 0) isFreak = false; else isFreak = true;
+        }
+        public string isFreaks()
+        {
+            if (isFreak == true)
+                if (status.Equals("Потаскане"))
+                    return "Жахливе пальто";
+                else return "Досить миле пальто...";
+            else return "Класне пальто :р";
+        }
+        public string SizeString()
+        {
+            if (size > 25)
+                if (size < 55)
+                    return "Це пальто навіть могло б підійти для тебе";
+                else return "Це пальто завелике для тебе!";
+            else return "Це пальто замале для тебе!";
+        }
+        public void Info()
+        {
+            MessageBox.Show("Пальто бренду: " + name + "\n" + color + " колiр\nРозмір: " + size + "\n" + isFreaks() + "\n\n" + SizeString() + "\n\n\n",
                 "Ось такa Куртка",
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Information);
