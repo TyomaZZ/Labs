@@ -42,10 +42,13 @@ namespace Labs
         {
             new About().Show();
         }
-
         private void button6_Click(object sender, EventArgs e)
         {
             new FormLab4().Show();
+        }
+        private void button7_Click(object sender, EventArgs e)
+        {
+            new FormLab5().ShowDialog();
         }
     }
 }
