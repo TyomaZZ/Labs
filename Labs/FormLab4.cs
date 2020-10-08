@@ -43,6 +43,7 @@ namespace Labs
             a.Font = button1.Font;
             a.FlatStyle = button1.FlatStyle;
             a.Parent = panel4;
+            a.BringToFront();
             a.Click += new System.EventHandler(this.button_rnd);
         }
         private void lab3_var7_button1_Click_1(object sender, EventArgs e)
