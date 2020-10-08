@@ -37,12 +37,12 @@ namespace Labs
             Random rnd = new Random();
             a.Width = 100;
             a.Height = 25;
-            a.Left = rnd.Next(0, 75);
-            a.Top = rnd.Next(0, 40);
+            a.Left = rnd.Next(10, 435-a.Width+10);
+            a.Top = rnd.Next(10, 329-a.Height+10);
             a.Text = "Знищити кнопку";
             a.Font = button1.Font;
             a.FlatStyle = button1.FlatStyle;
-            a.Parent = panel4;
+            a.Parent = lab3_panel7;
             a.BringToFront();
             a.Click += new System.EventHandler(this.button_rnd);
         }
