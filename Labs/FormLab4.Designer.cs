@@ -342,20 +342,12 @@
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.flowLayoutPanel1);
             this.panel2.Location = new System.Drawing.Point(0, 260);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(433, 70);
             this.panel2.TabIndex = 18;
-            // 
-            // panel4
-            // 
-            this.panel4.Location = new System.Drawing.Point(250, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(180, 70);
-            this.panel4.TabIndex = 1;
             // 
             // flowLayoutPanel1
             // 

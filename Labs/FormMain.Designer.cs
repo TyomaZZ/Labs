@@ -37,8 +37,8 @@
             this.button5 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -152,6 +152,19 @@
             this.panel1.Size = new System.Drawing.Size(125, 215);
             this.panel1.TabIndex = 2;
             // 
+            // button8
+            // 
+            this.button8.AutoSize = true;
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button8.Location = new System.Drawing.Point(5, 130);
+            this.button8.Margin = new System.Windows.Forms.Padding(5, 2, 5, 5);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(115, 23);
+            this.button8.TabIndex = 8;
+            this.button8.Text = "Лабараторна 5 new";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
             // button7
             // 
             this.button7.AutoSize = true;
@@ -164,18 +177,6 @@
             this.button7.Text = "Лабараторна 5 old";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // button8
-            // 
-            this.button8.AutoSize = true;
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button8.Location = new System.Drawing.Point(5, 130);
-            this.button8.Margin = new System.Windows.Forms.Padding(5, 2, 5, 5);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(115, 23);
-            this.button8.TabIndex = 8;
-            this.button8.Text = "Лабараторна 5 new";
-            this.button8.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
