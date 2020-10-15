@@ -265,6 +265,109 @@
             this.lab3_var7_button1.UseVisualStyleBackColor = true;
             this.lab3_var7_button1.Click += new System.EventHandler(this.lab3_var7_button1_Click_1);
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel3.Controls.Add(this.button17);
+            this.panel3.Controls.Add(this.button15);
+            this.panel3.Controls.Add(this.button18);
+            this.panel3.Controls.Add(this.button16);
+            this.panel3.Location = new System.Drawing.Point(0, 170);
+            this.panel3.Margin = new System.Windows.Forms.Padding(0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(205, 90);
+            this.panel3.TabIndex = 19;
+            // 
+            // button17
+            // 
+            this.button17.AutoSize = true;
+            this.button17.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button17.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button17.Location = new System.Drawing.Point(55, 3);
+            this.button17.Margin = new System.Windows.Forms.Padding(0);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(95, 25);
+            this.button17.TabIndex = 16;
+            this.button17.Text = "Кнопки вверх";
+            this.button17.UseVisualStyleBackColor = false;
+            this.button17.Click += new System.EventHandler(this.button17_Click_1);
+            // 
+            // button15
+            // 
+            this.button15.AutoSize = true;
+            this.button15.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button15.Location = new System.Drawing.Point(102, 30);
+            this.button15.Margin = new System.Windows.Forms.Padding(0);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(95, 25);
+            this.button15.TabIndex = 14;
+            this.button15.Text = "Кнопки вліво";
+            this.button15.UseVisualStyleBackColor = false;
+            this.button15.Click += new System.EventHandler(this.button15_Click_1);
+            // 
+            // button18
+            // 
+            this.button18.AutoSize = true;
+            this.button18.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button18.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button18.Location = new System.Drawing.Point(55, 57);
+            this.button18.Margin = new System.Windows.Forms.Padding(0);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(95, 25);
+            this.button18.TabIndex = 17;
+            this.button18.Text = "Кнопки вниз";
+            this.button18.UseVisualStyleBackColor = false;
+            this.button18.Click += new System.EventHandler(this.button18_Click_1);
+            // 
+            // button16
+            // 
+            this.button16.AutoSize = true;
+            this.button16.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button16.Location = new System.Drawing.Point(4, 30);
+            this.button16.Margin = new System.Windows.Forms.Padding(0);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(95, 25);
+            this.button16.TabIndex = 15;
+            this.button16.Text = "Кнопки вправо";
+            this.button16.UseVisualStyleBackColor = false;
+            this.button16.Click += new System.EventHandler(this.button16_Click_1);
+            // 
+            // panel2
+            // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Controls.Add(this.panel4);
+            this.panel2.Controls.Add(this.flowLayoutPanel1);
+            this.panel2.Location = new System.Drawing.Point(0, 260);
+            this.panel2.Margin = new System.Windows.Forms.Padding(0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(433, 70);
+            this.panel2.TabIndex = 18;
+            // 
+            // panel4
+            // 
+            this.panel4.Location = new System.Drawing.Point(250, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(180, 70);
+            this.panel4.TabIndex = 1;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(250, 66);
+            this.flowLayoutPanel1.TabIndex = 0;
+            this.flowLayoutPanel1.WrapContents = false;
+            // 
             // button14
             // 
             this.button14.AutoSize = true;
