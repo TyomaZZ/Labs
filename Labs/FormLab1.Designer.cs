@@ -43,7 +43,7 @@
             // 
             this.lab1_label.AutoSize = true;
             this.lab1_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lab1_label.Location = new System.Drawing.Point(99, 79);
+            this.lab1_label.Location = new System.Drawing.Point(101, 58);
             this.lab1_label.Name = "lab1_label";
             this.lab1_label.Size = new System.Drawing.Size(131, 24);
             this.lab1_label.TabIndex = 0;

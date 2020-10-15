@@ -6,12 +6,12 @@ using System.Runtime.InteropServices;
 // набора атрибутов. Измените значения этих атрибутов для изменения сведений,
 // связанных со сборкой.
 [assembly: AssemblyTitle("Labs")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyDescription("forEven")]
+[assembly: AssemblyConfiguration("1")]
+[assembly: AssemblyCompany("tyomashi")]
 [assembly: AssemblyProduct("Labs")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyTrademark("OurSource")]
 [assembly: AssemblyCulture("")]
 
 // Установка значения False для параметра ComVisible делает типы в этой сборке невидимыми
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // Можно задать все значения или принять номера сборки и редакции по умолчанию 
 // используя "*", как показано ниже:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("2.5.3.3")]
-[assembly: AssemblyFileVersion("2.5.3.3")]
+[assembly: AssemblyVersion("2.5.3.5")]
+[assembly: AssemblyFileVersion("2.5.3.5")]

@@ -271,7 +271,7 @@
             // 
             this.lab3_var1_button6.Location = new System.Drawing.Point(92, 143);
             this.lab3_var1_button6.Name = "lab3_var1_button6";
-            this.lab3_var1_button6.Size = new System.Drawing.Size(158, 46);
+            this.lab3_var1_button6.Size = new System.Drawing.Size(158, 50);
             this.lab3_var1_button6.TabIndex = 12;
             this.lab3_var1_button6.Text = "Поточна кількість об\'єктів";
             this.lab3_var1_button6.UseVisualStyleBackColor = true;

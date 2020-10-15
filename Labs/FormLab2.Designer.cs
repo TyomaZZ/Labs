@@ -521,7 +521,7 @@
             this.lab2_var7_button2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.lab2_var7_button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lab2_var7_button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.lab2_var7_button2.Location = new System.Drawing.Point(291, 22);
+            this.lab2_var7_button2.Location = new System.Drawing.Point(290, 22);
             this.lab2_var7_button2.Name = "lab2_var7_button2";
             this.lab2_var7_button2.Size = new System.Drawing.Size(246, 51);
             this.lab2_var7_button2.TabIndex = 1;
@@ -534,7 +534,7 @@
             this.lab2_var7_button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.lab2_var7_button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lab2_var7_button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.lab2_var7_button1.Location = new System.Drawing.Point(39, 22);
+            this.lab2_var7_button1.Location = new System.Drawing.Point(40, 22);
             this.lab2_var7_button1.Name = "lab2_var7_button1";
             this.lab2_var7_button1.Size = new System.Drawing.Size(246, 51);
             this.lab2_var7_button1.TabIndex = 0;

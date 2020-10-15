@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Labs
 {
-    public partial class FormLab5 : Form
+    public partial class FormLab5old : Form
     {
-        public FormLab5()
+        public FormLab5old()
         {
             InitializeComponent();
         }
@@ -79,9 +79,11 @@ namespace Labs
             var sjsh = new StyleJacket_lab5("Carlic", "Жовтий", 50);
             int i = 1;
             int maxSize = 10;
-            maxSize = Convert.ToInt32(Interaction.InputBox("Введіть обмеження розміру для куртки\n(Меньше стандартного розміру \"36\")", "Карликове стильне пальто", "15"));
+            maxSize = Convert.ToInt32(Interaction.InputBox("Введіть обмеження розміру для куртки\n(Меньше стандартного розміру \"36\")", 
+                "Карликове стильне пальто", "15"));
             while (sjsh[i].Size > maxSize) i++;
-            MessageBox.Show("Стильне карликове пальто № " + i + " має розмір: " + sjsh[i].Size, "Стильне карликове пальто", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Стильне карликове пальто № " + i + " має розмір: " + sjsh[i].Size, 
+                "Стильне карликове пальто", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void button7_Click(object sender, EventArgs e)

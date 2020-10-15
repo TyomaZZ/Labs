@@ -48,7 +48,7 @@ namespace Labs
         }
         private void button7_Click(object sender, EventArgs e)
         {
-            new FormLab5().ShowDialog();
+            new FormLab5old().ShowDialog();
         }
     }
 }
