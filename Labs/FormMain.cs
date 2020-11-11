@@ -37,6 +37,7 @@ namespace Labs
         private void main_exitButton_Click(object sender, EventArgs e)
         {
             Close();
+            //tyomashi
         }
         private void about_pictureBox_Click(object sender, EventArgs e)
         {
