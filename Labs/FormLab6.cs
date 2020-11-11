@@ -60,6 +60,7 @@ namespace Labs
         private void closeButton_Click(object sender, EventArgs e)
         {
             Close();
+            //tyomashi
         }
 
         private void button9_Click(object sender, EventArgs e)
