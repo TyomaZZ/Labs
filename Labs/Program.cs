@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Labs
-{//tyomashi
+{//tyomashiOurSource
     static class Program
     {
         /// <summary>/// Главная точка входа для приложения./// </summary>
