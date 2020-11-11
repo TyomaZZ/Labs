@@ -27,6 +27,7 @@ namespace Labs
             MessageBox.Show("Всього знищенно об'єктів лабараторної роботи №3 за весь час\nроботи додатку \"Labs\" : " + result_lab3,
                 "Ваш результат: " + result_lab3);
             Close();
+            //tyomashi
         }
         //1
         private void lab3_var1_button1_Click(object sender, EventArgs e)
