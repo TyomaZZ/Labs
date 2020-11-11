@@ -21,6 +21,7 @@ namespace Labs
         private void button3_Click(object sender, EventArgs e)
         {
             Close();
+            //tyomashi
         }
 
         static bool InputDouble(ref double x, string mess)
