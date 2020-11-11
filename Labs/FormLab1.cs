@@ -66,6 +66,7 @@ namespace Labs
         private void lab1_exitButton_Click(object sender, EventArgs e)
         {
             Close();
+            //tyomashi
         }
     }
 }
