@@ -23,6 +23,7 @@ namespace Labs
         private void lab2_exitButton_Click(object sender, EventArgs e) //Загальний метод для кнопок закриття лабараторної.
         {
             Close();
+            //tyomashi
         }
         //1
         private void lab2_var1_button1_Click(object sender, EventArgs e)
