@@ -17,7 +17,10 @@ namespace Labs
         public FormLab5new()
         { InitializeComponent();}
         private void button7_Click(object sender, EventArgs e)
-        { Close();}
+        {
+            Close();
+            //tyomashi
+        }
         private void button2_Click(object sender, EventArgs e)
         {
             if (k2 == null)
