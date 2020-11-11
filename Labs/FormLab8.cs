@@ -43,7 +43,6 @@ namespace Labs
             string result = "";
             string cell = "?";
             string s = Interaction.InputBox("Введіть слово, словосполучення або речення для взаємодії", "Введення", "Приклад?");
-            //result = s.Replace("к", ""); result = result.Replace("К", "");
             for (int i = 0; i < s.Length; i++)
             {
                 result += s[i];
