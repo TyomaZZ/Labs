@@ -89,6 +89,7 @@ namespace Labs
         private void button7_Click(object sender, EventArgs e)
         {
             Close();
+            //tyomashi
         }
     }
     public abstract class Outerwear_lab5
