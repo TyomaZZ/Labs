@@ -9,7 +9,7 @@ namespace Labs
         public About()
         {
             InitializeComponent();
-            this.labelVersion.Text = String.Format("Версія {0}", AssemblyVersion);
+            this.labelVersion.Text = String.Format("Версія  {0}", AssemblyVersion);
         }
         #region Методы доступа к атрибутам сборки
 
