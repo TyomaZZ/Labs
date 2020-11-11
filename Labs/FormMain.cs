@@ -60,5 +60,10 @@ namespace Labs
         {
             new FormLab6().ShowDialog();
         }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            new FormLab7().ShowDialog();
+        }
     }
 }
