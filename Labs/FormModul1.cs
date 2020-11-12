@@ -74,7 +74,7 @@ namespace Labs
                 if (i == 1 || i == 2 || i == 4)
                   results += i + " секунда: X= " + x + ", Y= " + y + "\n" ;
             }
-            MessageBox.Show(results, "Результати табулювання", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Вхідні дані:\nШвидкість - " + v + "км/год\n" + "Альфа - " + a + " градусів\n" + "Вільне падіння - " + g + "км/год\n" + results, "Результати табулювання", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
