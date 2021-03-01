@@ -37,6 +37,8 @@ namespace Labs
             this.groupBoxRadioSwitch = new System.Windows.Forms.GroupBox();
             this.radioButtonAction2 = new System.Windows.Forms.RadioButton();
             this.radioButtonAction1 = new System.Windows.Forms.RadioButton();
+            this.textBoxCell1 = new System.Windows.Forms.TextBox();
+            this.textBoxCell2 = new System.Windows.Forms.TextBox();
             this.groupBoxRadioSwitch.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -86,6 +88,8 @@ namespace Labs
             // 
             // groupBoxRadioSwitch
             // 
+            this.groupBoxRadioSwitch.Controls.Add(this.textBoxCell2);
+            this.groupBoxRadioSwitch.Controls.Add(this.textBoxCell1);
             this.groupBoxRadioSwitch.Controls.Add(this.radioButtonAction2);
             this.groupBoxRadioSwitch.Controls.Add(this.radioButtonAction1);
             this.groupBoxRadioSwitch.Location = new System.Drawing.Point(15, 32);
@@ -100,10 +104,10 @@ namespace Labs
             this.radioButtonAction2.AutoSize = true;
             this.radioButtonAction2.Location = new System.Drawing.Point(6, 42);
             this.radioButtonAction2.Name = "radioButtonAction2";
-            this.radioButtonAction2.Size = new System.Drawing.Size(242, 17);
+            this.radioButtonAction2.Size = new System.Drawing.Size(226, 17);
             this.radioButtonAction2.TabIndex = 9;
             this.radioButtonAction2.TabStop = true;
-            this.radioButtonAction2.Text = "Повторити кожен символ відмінний від \"?\"";
+            this.radioButtonAction2.Text = "Повторити кожен символ відмінний від:";
             this.radioButtonAction2.UseVisualStyleBackColor = true;
             this.radioButtonAction2.CheckedChanged += new System.EventHandler(this.radioButtonAction2_CheckedChanged);
             // 
@@ -112,12 +116,32 @@ namespace Labs
             this.radioButtonAction1.AutoSize = true;
             this.radioButtonAction1.Location = new System.Drawing.Point(6, 19);
             this.radioButtonAction1.Name = "radioButtonAction1";
-            this.radioButtonAction1.Size = new System.Drawing.Size(227, 17);
+            this.radioButtonAction1.Size = new System.Drawing.Size(219, 17);
             this.radioButtonAction1.TabIndex = 8;
             this.radioButtonAction1.TabStop = true;
-            this.radioButtonAction1.Text = "Видалити з текстового рядка літеру \"к\"";
+            this.radioButtonAction1.Text = "Видалити з текстового рядка символ:";
             this.radioButtonAction1.UseVisualStyleBackColor = true;
             this.radioButtonAction1.CheckedChanged += new System.EventHandler(this.radioButtonAction1_CheckedChanged);
+            // 
+            // textBoxCell1
+            // 
+            this.textBoxCell1.Location = new System.Drawing.Point(231, 18);
+            this.textBoxCell1.Name = "textBoxCell1";
+            this.textBoxCell1.Size = new System.Drawing.Size(33, 20);
+            this.textBoxCell1.TabIndex = 10;
+            this.textBoxCell1.Text = "к";
+            this.textBoxCell1.Click += new System.EventHandler(this.textBoxCell1_Click);
+            this.textBoxCell1.TextChanged += new System.EventHandler(this.textBoxCell1_TextChanged);
+            // 
+            // textBoxCell2
+            // 
+            this.textBoxCell2.Location = new System.Drawing.Point(238, 41);
+            this.textBoxCell2.Name = "textBoxCell2";
+            this.textBoxCell2.Size = new System.Drawing.Size(26, 20);
+            this.textBoxCell2.TabIndex = 11;
+            this.textBoxCell2.Text = "?";
+            this.textBoxCell2.Click += new System.EventHandler(this.textBoxCell2_Click);
+            this.textBoxCell2.TextChanged += new System.EventHandler(this.textBoxCell2_TextChanged);
             // 
             // FormLab9
             // 
@@ -153,5 +177,7 @@ namespace Labs
         private System.Windows.Forms.GroupBox groupBoxRadioSwitch;
         private System.Windows.Forms.RadioButton radioButtonAction2;
         private System.Windows.Forms.RadioButton radioButtonAction1;
+        private System.Windows.Forms.TextBox textBoxCell2;
+        private System.Windows.Forms.TextBox textBoxCell1;
     }
 }
