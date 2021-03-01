@@ -29,120 +29,107 @@ namespace Labs
         /// </summary>
         private void InitializeComponent()
         {
-            this.button2 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.groupBox1.SuspendLayout();
+            this.buttonCloseAction = new System.Windows.Forms.Button();
+            this.labelInput = new System.Windows.Forms.Label();
+            this.labelResult = new System.Windows.Forms.Label();
+            this.textBoxInput = new System.Windows.Forms.TextBox();
+            this.textBoxResult = new System.Windows.Forms.TextBox();
+            this.groupBoxRadioSwitch = new System.Windows.Forms.GroupBox();
+            this.radioButtonAction2 = new System.Windows.Forms.RadioButton();
+            this.radioButtonAction1 = new System.Windows.Forms.RadioButton();
+            this.groupBoxRadioSwitch.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button2
+            // buttonCloseAction
             // 
-            this.button2.Location = new System.Drawing.Point(12, 131);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(267, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Завершення роботи";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.buttonCloseAction.Location = new System.Drawing.Point(12, 131);
+            this.buttonCloseAction.Name = "buttonCloseAction";
+            this.buttonCloseAction.Size = new System.Drawing.Size(267, 23);
+            this.buttonCloseAction.TabIndex = 1;
+            this.buttonCloseAction.Text = "Завершення роботи";
+            this.buttonCloseAction.UseVisualStyleBackColor = true;
+            this.buttonCloseAction.Click += new System.EventHandler(this.buttonCloseAction_Click);
             // 
-            // label1
+            // labelInput
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Рядок для вводу:";
+            this.labelInput.AutoSize = true;
+            this.labelInput.Location = new System.Drawing.Point(12, 9);
+            this.labelInput.Name = "labelInput";
+            this.labelInput.Size = new System.Drawing.Size(94, 13);
+            this.labelInput.TabIndex = 2;
+            this.labelInput.Text = "Рядок для вводу:";
             // 
-            // label2
+            // labelResult
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 108);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Результат:";
+            this.labelResult.AutoSize = true;
+            this.labelResult.Location = new System.Drawing.Point(12, 108);
+            this.labelResult.Name = "labelResult";
+            this.labelResult.Size = new System.Drawing.Size(62, 13);
+            this.labelResult.TabIndex = 3;
+            this.labelResult.Text = "Результат:";
             // 
-            // textBox1
+            // textBoxInput
             // 
-            this.textBox1.Location = new System.Drawing.Point(112, 6);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(167, 20);
-            this.textBox1.TabIndex = 4;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBoxInput.Location = new System.Drawing.Point(112, 6);
+            this.textBoxInput.Name = "textBoxInput";
+            this.textBoxInput.Size = new System.Drawing.Size(167, 20);
+            this.textBoxInput.TabIndex = 4;
+            this.textBoxInput.TextChanged += new System.EventHandler(this.textBoxInput_TextChanged);
             // 
-            // textBox2
+            // textBoxResult
             // 
-            this.textBox2.Location = new System.Drawing.Point(80, 105);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(199, 20);
-            this.textBox2.TabIndex = 5;
+            this.textBoxResult.Location = new System.Drawing.Point(80, 105);
+            this.textBoxResult.Name = "textBoxResult";
+            this.textBoxResult.ReadOnly = true;
+            this.textBoxResult.Size = new System.Drawing.Size(199, 20);
+            this.textBoxResult.TabIndex = 5;
             // 
-            // groupBox1
+            // groupBoxRadioSwitch
             // 
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Location = new System.Drawing.Point(15, 32);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(264, 67);
-            this.groupBox1.TabIndex = 7;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Виберіть дію:";
+            this.groupBoxRadioSwitch.Controls.Add(this.radioButtonAction2);
+            this.groupBoxRadioSwitch.Controls.Add(this.radioButtonAction1);
+            this.groupBoxRadioSwitch.Location = new System.Drawing.Point(15, 32);
+            this.groupBoxRadioSwitch.Name = "groupBoxRadioSwitch";
+            this.groupBoxRadioSwitch.Size = new System.Drawing.Size(264, 67);
+            this.groupBoxRadioSwitch.TabIndex = 7;
+            this.groupBoxRadioSwitch.TabStop = false;
+            this.groupBoxRadioSwitch.Text = "Виберіть дію:";
             // 
-            // radioButton2
+            // radioButtonAction2
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(6, 42);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(242, 17);
-            this.radioButton2.TabIndex = 9;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Повторити кожен символ відмінний від \"?\"";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            this.radioButtonAction2.AutoSize = true;
+            this.radioButtonAction2.Location = new System.Drawing.Point(6, 42);
+            this.radioButtonAction2.Name = "radioButtonAction2";
+            this.radioButtonAction2.Size = new System.Drawing.Size(242, 17);
+            this.radioButtonAction2.TabIndex = 9;
+            this.radioButtonAction2.TabStop = true;
+            this.radioButtonAction2.Text = "Повторити кожен символ відмінний від \"?\"";
+            this.radioButtonAction2.UseVisualStyleBackColor = true;
+            this.radioButtonAction2.CheckedChanged += new System.EventHandler(this.radioButtonAction2_CheckedChanged);
             // 
-            // radioButton1
+            // radioButtonAction1
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(6, 19);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(227, 17);
-            this.radioButton1.TabIndex = 8;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Видалити з текстового рядка літеру \"к\"";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(6, 42);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(242, 17);
-            this.radioButton2.TabIndex = 9;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Повторити кожен символ відмінний від \"?\"";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            this.radioButtonAction1.AutoSize = true;
+            this.radioButtonAction1.Location = new System.Drawing.Point(6, 19);
+            this.radioButtonAction1.Name = "radioButtonAction1";
+            this.radioButtonAction1.Size = new System.Drawing.Size(227, 17);
+            this.radioButtonAction1.TabIndex = 8;
+            this.radioButtonAction1.TabStop = true;
+            this.radioButtonAction1.Text = "Видалити з текстового рядка літеру \"к\"";
+            this.radioButtonAction1.UseVisualStyleBackColor = true;
+            this.radioButtonAction1.CheckedChanged += new System.EventHandler(this.radioButtonAction1_CheckedChanged);
             // 
             // FormLab9
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(286, 160);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.groupBoxRadioSwitch);
+            this.Controls.Add(this.textBoxResult);
+            this.Controls.Add(this.textBoxInput);
+            this.Controls.Add(this.labelResult);
+            this.Controls.Add(this.labelInput);
+            this.Controls.Add(this.buttonCloseAction);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormLab9";
@@ -150,21 +137,21 @@ namespace Labs
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Лабораторна робота 9";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.groupBoxRadioSwitch.ResumeLayout(false);
+            this.groupBoxRadioSwitch.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.Button buttonCloseAction;
+        private System.Windows.Forms.Label labelInput;
+        private System.Windows.Forms.Label labelResult;
+        private System.Windows.Forms.TextBox textBoxInput;
+        private System.Windows.Forms.TextBox textBoxResult;
+        private System.Windows.Forms.GroupBox groupBoxRadioSwitch;
+        private System.Windows.Forms.RadioButton radioButtonAction2;
+        private System.Windows.Forms.RadioButton radioButtonAction1;
     }
 }

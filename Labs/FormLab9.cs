@@ -9,76 +9,64 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Labs
-{
+{//tyomashi
     public partial class FormLab9 : Form
     {
         public FormLab9()
         {
             InitializeComponent();
         }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void textBoxInput_TextChanged(object sender, EventArgs e)
         {
-            if (radioButton1.Checked || radioButton2.Checked)
+            if (radioButtonAction1.Checked || radioButtonAction2.Checked)
             {
-                if (radioButton1.Checked)
+                if (radioButtonAction1.Checked)
                 {
-                    String result = "";
-                    result = textBox1.Text.Replace("к", ""); result = result.Replace("К", "");
-                    textBox2.Text = result;
+                    textBoxResult.Text = ReplaceK(textBoxInput.Text);
                 }
-                if (radioButton2.Checked)
+                if (radioButtonAction2.Checked)
                 {
-                    String s = textBox1.Text;
-                    String cell = "?";
-                    String result = "";
-                    for (int i = 0; i < s.Length; i++)
-                    {
-                        result += s[i];
-                        if (!String.Equals(s[i].ToString(), cell))
-                        {
-                     
-                                result += s[i];
-                           
-                            
-                        }
-                    }
-                    textBox2.Text = result;
+                    textBoxResult.Text = Doubler(textBoxInput.Text);
                 }
-                
-                
+            }
+            else
+            {
+                textBoxResult.Text = textBoxInput.Text;
             }
         }
-
-        private void button2_Click(object sender, EventArgs e)
+        private void buttonCloseAction_Click(object sender, EventArgs e) 
         {
             Close();
         }
 
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        private void radioButtonAction1_CheckedChanged(object sender, EventArgs e) 
         {
-            String result = "";
-            result = textBox1.Text.Replace("к", ""); result = result.Replace("К", "");
-            textBox2.Text = result;
+            textBoxResult.Text = ReplaceK(textBoxInput.Text);
         }
-
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        private void radioButtonAction2_CheckedChanged(object sender, EventArgs e) 
         {
-            String s = textBox1.Text;
-            String cell = "?";
-            String result = "";
+            textBoxResult.Text = Doubler(textBoxInput.Text);
+        }
+        String result = "";
+        private String ReplaceK(String s)
+        {
+            result = "";
+            result = s.Replace("к", ""); 
+            result = result.Replace("К", "");
+            return result;
+        }
+        private String Doubler(String s)
+        {
+            result = "";
             for (int i = 0; i < s.Length; i++)
             {
                 result += s[i];
-                if (!String.Equals(s[i].ToString(), cell))
+                if (!String.Equals(s[i].ToString(), "?"))
                 {
-
                     result += s[i];
-
-
                 }
             }
-            textBox2.Text = result;
+            return result;
         }
     }
 }
