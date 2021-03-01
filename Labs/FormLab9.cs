@@ -19,7 +19,7 @@ namespace Labs
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            if (radioButton1.Checked | radioButton2.Checked)
+            if (radioButton1.Checked || radioButton2.Checked)
             {
                 if (radioButton1.Checked)
                 {
