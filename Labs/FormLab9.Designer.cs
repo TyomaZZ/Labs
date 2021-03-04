@@ -35,16 +35,17 @@ namespace Labs
             this.textBoxInput = new System.Windows.Forms.TextBox();
             this.textBoxResult = new System.Windows.Forms.TextBox();
             this.groupBoxRadioSwitch = new System.Windows.Forms.GroupBox();
+            this.textBoxCell2 = new System.Windows.Forms.TextBox();
+            this.textBoxCell1 = new System.Windows.Forms.TextBox();
             this.radioButtonAction2 = new System.Windows.Forms.RadioButton();
             this.radioButtonAction1 = new System.Windows.Forms.RadioButton();
-            this.textBoxCell1 = new System.Windows.Forms.TextBox();
-            this.textBoxCell2 = new System.Windows.Forms.TextBox();
+            this.radioButtonAction3 = new System.Windows.Forms.RadioButton();
             this.groupBoxRadioSwitch.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonCloseAction
             // 
-            this.buttonCloseAction.Location = new System.Drawing.Point(12, 131);
+            this.buttonCloseAction.Location = new System.Drawing.Point(12, 153);
             this.buttonCloseAction.Name = "buttonCloseAction";
             this.buttonCloseAction.Size = new System.Drawing.Size(267, 23);
             this.buttonCloseAction.TabIndex = 1;
@@ -64,7 +65,7 @@ namespace Labs
             // labelResult
             // 
             this.labelResult.AutoSize = true;
-            this.labelResult.Location = new System.Drawing.Point(12, 108);
+            this.labelResult.Location = new System.Drawing.Point(12, 130);
             this.labelResult.Name = "labelResult";
             this.labelResult.Size = new System.Drawing.Size(62, 13);
             this.labelResult.TabIndex = 3;
@@ -80,7 +81,7 @@ namespace Labs
             // 
             // textBoxResult
             // 
-            this.textBoxResult.Location = new System.Drawing.Point(80, 105);
+            this.textBoxResult.Location = new System.Drawing.Point(80, 127);
             this.textBoxResult.Name = "textBoxResult";
             this.textBoxResult.ReadOnly = true;
             this.textBoxResult.Size = new System.Drawing.Size(199, 20);
@@ -88,16 +89,37 @@ namespace Labs
             // 
             // groupBoxRadioSwitch
             // 
+            this.groupBoxRadioSwitch.Controls.Add(this.radioButtonAction3);
             this.groupBoxRadioSwitch.Controls.Add(this.textBoxCell2);
             this.groupBoxRadioSwitch.Controls.Add(this.textBoxCell1);
             this.groupBoxRadioSwitch.Controls.Add(this.radioButtonAction2);
             this.groupBoxRadioSwitch.Controls.Add(this.radioButtonAction1);
             this.groupBoxRadioSwitch.Location = new System.Drawing.Point(15, 32);
             this.groupBoxRadioSwitch.Name = "groupBoxRadioSwitch";
-            this.groupBoxRadioSwitch.Size = new System.Drawing.Size(264, 67);
+            this.groupBoxRadioSwitch.Size = new System.Drawing.Size(264, 89);
             this.groupBoxRadioSwitch.TabIndex = 7;
             this.groupBoxRadioSwitch.TabStop = false;
             this.groupBoxRadioSwitch.Text = "Виберіть дію:";
+            // 
+            // textBoxCell2
+            // 
+            this.textBoxCell2.Location = new System.Drawing.Point(238, 41);
+            this.textBoxCell2.Name = "textBoxCell2";
+            this.textBoxCell2.Size = new System.Drawing.Size(26, 20);
+            this.textBoxCell2.TabIndex = 11;
+            this.textBoxCell2.Text = "?";
+            this.textBoxCell2.Click += new System.EventHandler(this.textBoxCell2_Click);
+            this.textBoxCell2.TextChanged += new System.EventHandler(this.textBoxCell2_TextChanged);
+            // 
+            // textBoxCell1
+            // 
+            this.textBoxCell1.Location = new System.Drawing.Point(231, 18);
+            this.textBoxCell1.Name = "textBoxCell1";
+            this.textBoxCell1.Size = new System.Drawing.Size(33, 20);
+            this.textBoxCell1.TabIndex = 10;
+            this.textBoxCell1.Text = "к";
+            this.textBoxCell1.Click += new System.EventHandler(this.textBoxCell1_Click);
+            this.textBoxCell1.TextChanged += new System.EventHandler(this.textBoxCell1_TextChanged);
             // 
             // radioButtonAction2
             // 
@@ -123,31 +145,23 @@ namespace Labs
             this.radioButtonAction1.UseVisualStyleBackColor = true;
             this.radioButtonAction1.CheckedChanged += new System.EventHandler(this.radioButtonAction1_CheckedChanged);
             // 
-            // textBoxCell1
+            // radioButtonAction3
             // 
-            this.textBoxCell1.Location = new System.Drawing.Point(231, 18);
-            this.textBoxCell1.Name = "textBoxCell1";
-            this.textBoxCell1.Size = new System.Drawing.Size(33, 20);
-            this.textBoxCell1.TabIndex = 10;
-            this.textBoxCell1.Text = "к";
-            this.textBoxCell1.Click += new System.EventHandler(this.textBoxCell1_Click);
-            this.textBoxCell1.TextChanged += new System.EventHandler(this.textBoxCell1_TextChanged);
-            // 
-            // textBoxCell2
-            // 
-            this.textBoxCell2.Location = new System.Drawing.Point(238, 41);
-            this.textBoxCell2.Name = "textBoxCell2";
-            this.textBoxCell2.Size = new System.Drawing.Size(26, 20);
-            this.textBoxCell2.TabIndex = 11;
-            this.textBoxCell2.Text = "?";
-            this.textBoxCell2.Click += new System.EventHandler(this.textBoxCell2_Click);
-            this.textBoxCell2.TextChanged += new System.EventHandler(this.textBoxCell2_TextChanged);
+            this.radioButtonAction3.AutoSize = true;
+            this.radioButtonAction3.Location = new System.Drawing.Point(6, 66);
+            this.radioButtonAction3.Name = "radioButtonAction3";
+            this.radioButtonAction3.Size = new System.Drawing.Size(240, 17);
+            this.radioButtonAction3.TabIndex = 12;
+            this.radioButtonAction3.TabStop = true;
+            this.radioButtonAction3.Text = "Слово з максимальною часткою голосних";
+            this.radioButtonAction3.UseVisualStyleBackColor = true;
+            this.radioButtonAction3.CheckedChanged += new System.EventHandler(this.radioButtonAction3_CheckedChanged);
             // 
             // FormLab9
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(286, 160);
+            this.ClientSize = new System.Drawing.Size(286, 181);
             this.Controls.Add(this.groupBoxRadioSwitch);
             this.Controls.Add(this.textBoxResult);
             this.Controls.Add(this.textBoxInput);
@@ -179,5 +193,6 @@ namespace Labs
         private System.Windows.Forms.RadioButton radioButtonAction1;
         private System.Windows.Forms.TextBox textBoxCell2;
         private System.Windows.Forms.TextBox textBoxCell1;
+        private System.Windows.Forms.RadioButton radioButtonAction3;
     }
 }

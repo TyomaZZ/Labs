@@ -18,7 +18,7 @@ namespace Labs
         }
         private void textBoxInput_TextChanged(object sender, EventArgs e)
         {
-            if (radioButtonAction1.Checked || radioButtonAction2.Checked)
+            if (radioButtonAction1.Checked || radioButtonAction2.Checked || radioButtonAction3.Checked)
             {
                 if (radioButtonAction1.Checked)
                 {
@@ -27,6 +27,10 @@ namespace Labs
                 if (radioButtonAction2.Checked)
                 {
                     textBoxResult.Text = Doubler(textBoxInput.Text, textBoxCell2.Text);
+                }
+                if (radioButtonAction3.Checked)
+                {
+                    textBoxResult.Text = Word(textBoxInput.Text);
                 }
             }
             else
@@ -109,6 +113,42 @@ namespace Labs
         private void textBoxCell1_Click(object sender, EventArgs e)
         {
             radioButtonAction1.Checked = true;
+        }
+        private String Word(String s)
+        {
+            result = "";
+            string[] words = s.Split(new char[] { ' ', ',', '.', ';', ':', '?', '!' }, StringSplitOptions.RemoveEmptyEntries);
+            int count = 0;
+            foreach (String wor in words)
+            {
+                int counter =0;
+                for (int i=0; i<wor.Length;i++)
+                {
+                    if (wor[i].Equals('а') || wor[i].Equals('о') || wor[i].Equals('е') || wor[i].Equals('и') || wor[i].Equals('і') || wor[i].Equals('у'))
+                    {
+                        counter++;
+                    }
+                }
+                if (counter >= count)
+                {
+                    if (counter == count)
+                    {
+                        result += wor + " ";
+                    }
+                    else
+                    {
+                        count = counter;
+                        result = wor + " ";
+                    }
+                    
+                }
+            }
+            return result;
+        }
+
+        private void radioButtonAction3_CheckedChanged(object sender, EventArgs e)
+        {
+            textBoxResult.Text = Word(textBoxInput.Text);
         }
     }
 }

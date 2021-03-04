@@ -44,6 +44,7 @@
             this.button9 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -104,10 +105,10 @@
             // 
             this.button4.Enabled = false;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button4.Location = new System.Drawing.Point(4, 168);
+            this.button4.Location = new System.Drawing.Point(5, 207);
             this.button4.Margin = new System.Windows.Forms.Padding(5);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(480, 23);
+            this.button4.Size = new System.Drawing.Size(481, 23);
             this.button4.TabIndex = 4;
             this.button4.Text = "Змінити дизайн";
             this.button4.UseVisualStyleBackColor = true;
@@ -117,10 +118,10 @@
             // 
             this.button5.AutoSize = true;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button5.Location = new System.Drawing.Point(4, 195);
+            this.button5.Location = new System.Drawing.Point(5, 234);
             this.button5.Margin = new System.Windows.Forms.Padding(5, 2, 5, 10);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(480, 25);
+            this.button5.Size = new System.Drawing.Size(481, 25);
             this.button5.TabIndex = 5;
             this.button5.Text = "Вихід";
             this.button5.UseVisualStyleBackColor = true;
@@ -145,6 +146,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Controls.Add(this.button14);
             this.panel1.Controls.Add(this.button13);
             this.panel1.Controls.Add(this.button12);
             this.panel1.Controls.Add(this.button11);
@@ -161,7 +163,7 @@
             this.panel1.Location = new System.Drawing.Point(50, 50);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(490, 223);
+            this.panel1.Size = new System.Drawing.Size(490, 266);
             this.panel1.TabIndex = 2;
             // 
             // button13
@@ -181,7 +183,7 @@
             // 
             this.button12.AutoSize = true;
             this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button12.Location = new System.Drawing.Point(5, 135);
+            this.button12.Location = new System.Drawing.Point(5, 174);
             this.button12.Margin = new System.Windows.Forms.Padding(5, 2, 5, 5);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(481, 23);
@@ -207,7 +209,7 @@
             // 
             this.button10.AutoSize = true;
             this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button10.Location = new System.Drawing.Point(245, 80);
+            this.button10.Location = new System.Drawing.Point(246, 80);
             this.button10.Margin = new System.Windows.Forms.Padding(5, 2, 5, 5);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(240, 23);
@@ -220,7 +222,7 @@
             // 
             this.button9.AutoSize = true;
             this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button9.Location = new System.Drawing.Point(4, 80);
+            this.button9.Location = new System.Drawing.Point(5, 80);
             this.button9.Margin = new System.Windows.Forms.Padding(5, 2, 5, 5);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(240, 23);
@@ -254,6 +256,19 @@
             this.button7.Text = "Лабараторна 5 old";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button14
+            // 
+            this.button14.AutoSize = true;
+            this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button14.Location = new System.Drawing.Point(5, 130);
+            this.button14.Margin = new System.Windows.Forms.Padding(5, 2, 5, 5);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(480, 23);
+            this.button14.TabIndex = 14;
+            this.button14.Text = "Лабараторна 10";
+            this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // MainForm
             // 
@@ -297,6 +312,7 @@
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button button14;
     }
 }
 

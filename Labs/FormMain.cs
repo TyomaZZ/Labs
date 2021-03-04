@@ -81,5 +81,10 @@ namespace Labs
         {
             new FormLab9().ShowDialog();
         }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            new FormLab10().ShowDialog();
+        }
     }
 }
