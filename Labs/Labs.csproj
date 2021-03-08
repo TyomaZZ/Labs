@@ -72,6 +72,12 @@
     <Compile Include="About.Designer.cs">
       <DependentUpon>About.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormLab11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLab11.Designer.cs">
+      <DependentUpon>FormLab11.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLab10.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -157,6 +163,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormLab10.resx">
       <DependentUpon>FormLab10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLab11.resx">
+      <DependentUpon>FormLab11.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLab2.resx">
       <DependentUpon>FormLab2.cs</DependentUpon>

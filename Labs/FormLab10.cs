@@ -24,105 +24,157 @@ namespace Labs
 
         private void textBox_TextChanged(object sender, EventArgs e)
         {
-            if (((TextBox)sender).Text.Length == 0)
+            if (Release(sender).Text.Length == 0)
             {
-                ((TextBox)sender).Text = "0";
-                ((TextBox)sender).SelectAll();
+                Release(sender).Text = "0";
+                Release(sender).SelectAll();
             }
-            if (IsDouble(textBoxX) & IsDouble(textBoxY) & IsDouble(textBoxZ))
+            if (IsAllDouble())
             {
-                if (radioButtonAction1.Checked)
+                if (radioMathWithoutF.Checked)
                 {
-                    textBoxResult.Text = Convert.ToString(Result());
+                   textBoxResult.Text = Result();
                 }
-                if (radioButtonAction2.Checked)
+                if (radioMath.Checked)
                 {
-                    textBoxResult.Text = Convert.ToString(ResultF());
+                   textBoxResult.Text = ResultF();
                 }
             }
-            
-
         }
         private bool IsDouble(TextBox element)
         {
             try
             {
                 Convert.ToDouble(element.Text);
-                switch (element.Name)
-                {
-                    case "textBoxX":
-                        labelErrorX.Visible = false;
-                        break;
-                    case "textBoxY":
-                        labelErrorY.Visible = false;
-                        break;
-                    case "textBoxZ":
-                        labelErrorZ.Visible = false;
-                        break;
-                    default:
-                        break;
-                }
                 element.ForeColor = Color.Black;
-                return true;
+                return Swithcer(false, element);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                switch (element.Name)
-                {
-                    case "textBoxX":
-                        labelErrorX.Visible = true;
-                        break;
-                    case "textBoxY":
-                        labelErrorY.Visible = true;
-                        break;
-                    case "textBoxZ":
-                        labelErrorZ.Visible = true;
-                        break;
-                    default:
-                        break;
-                }
                 element.ForeColor = Color.Red;
-                return false;
+                return Swithcer(true, element);
             }
+        }
+        private bool Swithcer(bool result, TextBox element)
+        {
+            switch (element.Name)
+            {
+                case "textBoxX":
+                    labelErrorX.Visible = result;
+                    break;
+                case "textBoxY":
+                    labelErrorY.Visible = result;
+                    break;
+                case "textBoxZ":
+                    labelErrorZ.Visible = result;
+                    break;
+                default:
+                    break;
+            }
+            return !result;
         }
         private void Checker_KeyPress(object sender, KeyPressEventArgs e)
         {
-           if (e.KeyChar == '.')
+            if (radioFormatStrong.Checked)
             {
-                e.KeyChar = ',';
-                e.Handled = false;
-            }
-           if (e.KeyChar == '+')
-            {
+                if ((e.KeyChar >= 48 && e.KeyChar <= 57) || e.KeyChar == 8)
+                {
+                    e.Handled = false;
+                    return;
+                }
+                if (e.KeyChar == '-')
+                {
+                    if (Release(sender).SelectionStart > 0)
+                    {
+                        e.Handled = true;
+                        return;
+                    }
+                    else
+                    {
+                        e.Handled = false;
+                        return;
+                    }
+                }
+                if (e.KeyChar == '.' || e.KeyChar == ',')
+                {
+                      if ((Release(sender).Text.IndexOf(',') == -1 || Release(sender).SelectionLength == Release(sender).Text.Length) && Release(sender).SelectionStart > 0)
+                      {
+                          e.KeyChar = ',';
+                          e.Handled = false;
+                          return;
+                      }
+                }
                 e.Handled = true;
+                return;
             }
+            else
+            {
+                e.Handled = false;
+                return;
+            }
+            
+        }
+        private void radioMathWithoutF_CheckedChanged(object sender, EventArgs e)
+        {
+            if (IsAllDouble())
+            {
+                textBoxResult.Text = Result();
+            }
+            else
+            {
+                //
+            }
+            
+        }
+        private string Result()
+        {
+            double res = 0;
+            res = (Math.Log10(Math.Abs(Math.Sin(Doubler(textBoxX.Text)) + Doubler(textBoxY.Text))) / 87)
+                        + (234 / Math.Log10(Math.Abs(Math.Sin(Doubler(textBoxX.Text) * Doubler(textBoxY.Text)) + 3))
+                        + Math.Log10(Math.Abs(Math.Sin(3.1) + Math.Pow(Doubler(textBoxX.Text), 2) * Doubler(textBoxY.Text))) / Doubler(textBoxZ.Text));
+            return Convert.ToString(res);
+        }
+        private double Func(double first, double second) //lg + abs
+        {
+            double res = 0;
+            res = Math.Log10(Math.Abs(Math.Sin(first) + second));
+            return res;
+        }
+        private string ResultF()
+        {
+            double res = 0;
+            res = (Func(Doubler(textBoxX.Text), Doubler(textBoxY.Text)) / 87) 
+                + (234 / Func(Doubler(textBoxX.Text) * Doubler(textBoxY.Text), 3)) 
+                + (Func(3.1, Math.Pow(Doubler(textBoxX.Text),2) * Doubler(textBoxY.Text)) / Doubler(textBoxZ.Text));
+            return Convert.ToString(res);
+        }
+        private TextBox Release(object element)
+        {
+            return (TextBox)element;
+        }
+        private double Doubler(string converter)
+        {
+            return Convert.ToDouble(converter);
+        }
+        private bool IsAllDouble()
+        {
+            if (IsDouble(textBoxX) & IsDouble(textBoxY) & IsDouble(textBoxZ))
+            {
+                return true;
+            }
+            return false;
         }
 
-        private void radioButtonAction1_CheckedChanged(object sender, EventArgs e)
+        private void radioMath_CheckedChanged(object sender, EventArgs e)
         {
-            textBoxResult.Text = Convert.ToString(Result());
-        }
-        private double Result()
-        {
-            double res = 0;
-            res = ((Math.Log10(Math.Abs(Math.Sin(Convert.ToDouble(textBoxX.Text))) + Convert.ToDouble(textBoxY.Text))) / 87)
-                        + (234 / (Math.Log10(Math.Abs(Math.Sin(Convert.ToDouble(textBoxX.Text) * Convert.ToDouble(textBoxY.Text) + 3))))
-                        + (Math.Log10(Math.Abs(Math.Sin(3.1) + Math.Pow(Convert.ToDouble(textBoxX.Text), 2) * Convert.ToDouble(textBoxY.Text)))) / Convert.ToDouble(textBoxZ.Text));
-            return res;
-        }
-        private double Func(double sin, double first, double second) //lg + abs
-        {
-            double res = 0;
-            res = (Math.Log10(Math.Abs(Math.Sin(sin * first)) + second));
-            return res;
-        }
-        private double ResultF()
-        {
-            double res = 0;
-            res = (Func(Convert.ToDouble(textBoxX.Text), 1, Convert.ToDouble(textBoxY.Text)) / 87) 
-                + (234 / Func(Convert.ToDouble(textBoxX.Text), Convert.ToDouble(textBoxY.Text), 3)) 
-                + (Func(3.1, 1,Math.Pow(Convert.ToDouble(textBoxX.Text),2) * Convert.ToDouble(textBoxY.Text)) / Convert.ToDouble(textBoxZ.Text));
-            return res;
+            if (IsAllDouble())
+            {
+                textBoxResult.Text = ResultF();
+            }
+            else
+            {
+                //
+            }
         }
     }
 }

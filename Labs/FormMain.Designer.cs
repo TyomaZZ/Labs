@@ -37,6 +37,7 @@
             this.button5 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button14 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
@@ -44,7 +45,7 @@
             this.button9 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -136,7 +137,7 @@
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(547, 278);
+            this.pictureBox1.Location = new System.Drawing.Point(547, 265);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(36, 38);
             this.pictureBox1.TabIndex = 1;
@@ -146,6 +147,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Controls.Add(this.button15);
             this.panel1.Controls.Add(this.button14);
             this.panel1.Controls.Add(this.button13);
             this.panel1.Controls.Add(this.button12);
@@ -160,11 +162,24 @@
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button6);
-            this.panel1.Location = new System.Drawing.Point(50, 50);
+            this.panel1.Location = new System.Drawing.Point(37, 37);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(490, 266);
             this.panel1.TabIndex = 2;
+            // 
+            // button14
+            // 
+            this.button14.AutoSize = true;
+            this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button14.Location = new System.Drawing.Point(5, 130);
+            this.button14.Margin = new System.Windows.Forms.Padding(5, 2, 5, 5);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(240, 23);
+            this.button14.TabIndex = 14;
+            this.button14.Text = "Лабараторна 10";
+            this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // button13
             // 
@@ -257,18 +272,18 @@
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
-            // button14
+            // button15
             // 
-            this.button14.AutoSize = true;
-            this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button14.Location = new System.Drawing.Point(5, 130);
-            this.button14.Margin = new System.Windows.Forms.Padding(5, 2, 5, 5);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(480, 23);
-            this.button14.TabIndex = 14;
-            this.button14.Text = "Лабараторна 10";
-            this.button14.UseVisualStyleBackColor = true;
-            this.button14.Click += new System.EventHandler(this.button14_Click);
+            this.button15.AutoSize = true;
+            this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button15.Location = new System.Drawing.Point(245, 130);
+            this.button15.Margin = new System.Windows.Forms.Padding(5, 2, 5, 5);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(240, 23);
+            this.button15.TabIndex = 15;
+            this.button15.Text = "Лабораторна 11 Калькулятор";
+            this.button15.UseVisualStyleBackColor = true;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // MainForm
             // 
@@ -313,6 +328,7 @@
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button button15;
     }
 }
 
