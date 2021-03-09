@@ -148,11 +148,11 @@ namespace Labs
                 + (Func(3.1, Math.Pow(Doubler(textBoxX.Text),2) * Doubler(textBoxY.Text)) / Doubler(textBoxZ.Text));
             return Convert.ToString(res);
         }
-        private TextBox Release(object element)
+        public TextBox Release(object element)
         {
             return (TextBox)element;
         }
-        private double Doubler(string converter)
+        public double Doubler(string converter)
         {
             return Convert.ToDouble(converter);
         }
