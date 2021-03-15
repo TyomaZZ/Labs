@@ -41,29 +41,32 @@ namespace Labs
             this.button10 = new System.Windows.Forms.Button();
             this.textBoxNumbers = new System.Windows.Forms.TextBox();
             this.buttonPlus = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
+            this.buttonMinus = new System.Windows.Forms.Button();
+            this.buttonMnozh = new System.Windows.Forms.Button();
+            this.buttonDil = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.buttonClean = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
+            this.buttonPow2 = new System.Windows.Forms.Button();
+            this.button1dil = new System.Windows.Forms.Button();
+            this.buttonKorin = new System.Windows.Forms.Button();
             this.groupBoxNumbers = new System.Windows.Forms.GroupBox();
             this.buttonChar = new System.Windows.Forms.Button();
             this.buttonDot = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.buttonEq = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.buttonMT = new System.Windows.Forms.Button();
             this.buttonMRe = new System.Windows.Forms.Button();
             this.buttonMA = new System.Windows.Forms.Button();
             this.buttonMC = new System.Windows.Forms.Button();
             this.buttonMR = new System.Windows.Forms.Button();
             this.textBoxMemory = new System.Windows.Forms.TextBox();
             this.buttonCleanAll = new System.Windows.Forms.Button();
+            this.labelError = new System.Windows.Forms.Label();
+            this.textBoxResult = new System.Windows.Forms.TextBox();
+            this.buttonClearE = new System.Windows.Forms.Button();
             this.groupBoxNumbers.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -71,6 +74,7 @@ namespace Labs
             // 
             // button1
             // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Location = new System.Drawing.Point(43, 103);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(32, 23);
@@ -81,6 +85,7 @@ namespace Labs
             // 
             // button2
             // 
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Location = new System.Drawing.Point(6, 74);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(32, 23);
@@ -91,6 +96,7 @@ namespace Labs
             // 
             // button3
             // 
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Location = new System.Drawing.Point(43, 74);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(32, 23);
@@ -101,6 +107,7 @@ namespace Labs
             // 
             // button4
             // 
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Location = new System.Drawing.Point(81, 74);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(32, 23);
@@ -111,6 +118,7 @@ namespace Labs
             // 
             // button5
             // 
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Location = new System.Drawing.Point(43, 45);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(32, 23);
@@ -121,6 +129,7 @@ namespace Labs
             // 
             // button6
             // 
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Location = new System.Drawing.Point(6, 45);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(32, 23);
@@ -131,6 +140,7 @@ namespace Labs
             // 
             // button7
             // 
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Location = new System.Drawing.Point(81, 45);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(32, 23);
@@ -141,6 +151,7 @@ namespace Labs
             // 
             // button8
             // 
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Location = new System.Drawing.Point(81, 16);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(32, 23);
@@ -151,6 +162,7 @@ namespace Labs
             // 
             // button9
             // 
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.Location = new System.Drawing.Point(44, 16);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(31, 23);
@@ -161,6 +173,7 @@ namespace Labs
             // 
             // button10
             // 
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button10.Location = new System.Drawing.Point(6, 16);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(32, 23);
@@ -171,56 +184,67 @@ namespace Labs
             // 
             // textBoxNumbers
             // 
-            this.textBoxNumbers.Location = new System.Drawing.Point(6, 83);
+            this.textBoxNumbers.Location = new System.Drawing.Point(87, 83);
             this.textBoxNumbers.Name = "textBoxNumbers";
             this.textBoxNumbers.ReadOnly = true;
-            this.textBoxNumbers.Size = new System.Drawing.Size(264, 20);
+            this.textBoxNumbers.Size = new System.Drawing.Size(200, 20);
             this.textBoxNumbers.TabIndex = 10;
             this.textBoxNumbers.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.textBoxNumbers.TextChanged += new System.EventHandler(this.textBoxNumbers_TextChanged);
             // 
             // buttonPlus
             // 
-            this.buttonPlus.Location = new System.Drawing.Point(6, 18);
+            this.buttonPlus.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.buttonPlus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonPlus.Location = new System.Drawing.Point(6, 20);
             this.buttonPlus.Name = "buttonPlus";
             this.buttonPlus.Size = new System.Drawing.Size(26, 23);
             this.buttonPlus.TabIndex = 12;
             this.buttonPlus.Text = "+";
-            this.buttonPlus.UseVisualStyleBackColor = true;
+            this.buttonPlus.UseVisualStyleBackColor = false;
             this.buttonPlus.Click += new System.EventHandler(this.buttonPlus_Click);
             // 
-            // button12
+            // buttonMinus
             // 
-            this.button12.Location = new System.Drawing.Point(38, 18);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(26, 23);
-            this.button12.TabIndex = 13;
-            this.button12.Text = "-";
-            this.button12.UseVisualStyleBackColor = true;
+            this.buttonMinus.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.buttonMinus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonMinus.Location = new System.Drawing.Point(38, 20);
+            this.buttonMinus.Name = "buttonMinus";
+            this.buttonMinus.Size = new System.Drawing.Size(26, 23);
+            this.buttonMinus.TabIndex = 13;
+            this.buttonMinus.Text = "-";
+            this.buttonMinus.UseVisualStyleBackColor = false;
+            this.buttonMinus.Click += new System.EventHandler(this.buttonMinus_Click);
             // 
-            // button13
+            // buttonMnozh
             // 
-            this.button13.Location = new System.Drawing.Point(70, 18);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(26, 23);
-            this.button13.TabIndex = 14;
-            this.button13.Text = "*";
-            this.button13.UseVisualStyleBackColor = true;
+            this.buttonMnozh.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.buttonMnozh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonMnozh.Location = new System.Drawing.Point(70, 20);
+            this.buttonMnozh.Name = "buttonMnozh";
+            this.buttonMnozh.Size = new System.Drawing.Size(26, 23);
+            this.buttonMnozh.TabIndex = 14;
+            this.buttonMnozh.Text = "*";
+            this.buttonMnozh.UseVisualStyleBackColor = false;
+            this.buttonMnozh.Click += new System.EventHandler(this.buttonMnozh_Click);
             // 
-            // button14
+            // buttonDil
             // 
-            this.button14.Location = new System.Drawing.Point(102, 18);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(26, 23);
-            this.button14.TabIndex = 15;
-            this.button14.Text = "/";
-            this.button14.UseVisualStyleBackColor = true;
+            this.buttonDil.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.buttonDil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDil.Location = new System.Drawing.Point(102, 20);
+            this.buttonDil.Name = "buttonDil";
+            this.buttonDil.Size = new System.Drawing.Size(26, 23);
+            this.buttonDil.TabIndex = 15;
+            this.buttonDil.Text = "/";
+            this.buttonDil.UseVisualStyleBackColor = false;
+            this.buttonDil.Click += new System.EventHandler(this.buttonDil_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(53, 9);
+            this.label1.Location = new System.Drawing.Point(61, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(179, 31);
             this.label1.TabIndex = 16;
@@ -228,9 +252,10 @@ namespace Labs
             // 
             // buttonClean
             // 
-            this.buttonClean.Location = new System.Drawing.Point(70, 75);
+            this.buttonClean.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonClean.Location = new System.Drawing.Point(6, 130);
             this.buttonClean.Name = "buttonClean";
-            this.buttonClean.Size = new System.Drawing.Size(58, 23);
+            this.buttonClean.Size = new System.Drawing.Size(107, 23);
             this.buttonClean.TabIndex = 17;
             this.buttonClean.Text = "Стерти";
             this.buttonClean.UseVisualStyleBackColor = true;
@@ -238,10 +263,11 @@ namespace Labs
             // 
             // button16
             // 
+            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button16.Location = new System.Drawing.Point(12, 270);
+            this.button16.Location = new System.Drawing.Point(7, 276);
             this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(107, 20);
+            this.button16.Size = new System.Drawing.Size(280, 24);
             this.button16.TabIndex = 18;
             this.button16.Text = "Вихід з програми";
             this.button16.UseVisualStyleBackColor = true;
@@ -250,48 +276,45 @@ namespace Labs
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(127, 115);
+            this.label2.Location = new System.Drawing.Point(128, 115);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(51, 13);
             this.label2.TabIndex = 19;
             this.label2.Text = "Пам\'ять:";
             // 
-            // button17
+            // buttonPow2
             // 
-            this.button17.Location = new System.Drawing.Point(6, 47);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(26, 23);
-            this.button17.TabIndex = 23;
-            this.button17.Text = "x²";
-            this.button17.UseVisualStyleBackColor = true;
+            this.buttonPow2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonPow2.Location = new System.Drawing.Point(6, 49);
+            this.buttonPow2.Name = "buttonPow2";
+            this.buttonPow2.Size = new System.Drawing.Size(26, 23);
+            this.buttonPow2.TabIndex = 23;
+            this.buttonPow2.Text = "x²";
+            this.buttonPow2.UseVisualStyleBackColor = true;
+            this.buttonPow2.Click += new System.EventHandler(this.buttonPow2_Click);
             // 
-            // button18
+            // button1dil
             // 
-            this.button18.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button18.Location = new System.Drawing.Point(70, 47);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(26, 23);
-            this.button18.TabIndex = 22;
-            this.button18.Text = "1/x";
-            this.button18.UseVisualStyleBackColor = true;
+            this.button1dil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1dil.Font = new System.Drawing.Font("Microsoft Sans Serif", 5.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1dil.Location = new System.Drawing.Point(70, 49);
+            this.button1dil.Name = "button1dil";
+            this.button1dil.Size = new System.Drawing.Size(26, 23);
+            this.button1dil.TabIndex = 22;
+            this.button1dil.Text = "1/x";
+            this.button1dil.UseVisualStyleBackColor = true;
+            this.button1dil.Click += new System.EventHandler(this.button1dil_Click);
             // 
-            // button19
+            // buttonKorin
             // 
-            this.button19.Location = new System.Drawing.Point(102, 47);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(26, 23);
-            this.button19.TabIndex = 21;
-            this.button19.Text = "%";
-            this.button19.UseVisualStyleBackColor = true;
-            // 
-            // button20
-            // 
-            this.button20.Location = new System.Drawing.Point(38, 47);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(26, 23);
-            this.button20.TabIndex = 20;
-            this.button20.Text = "√x";
-            this.button20.UseVisualStyleBackColor = true;
+            this.buttonKorin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonKorin.Location = new System.Drawing.Point(38, 49);
+            this.buttonKorin.Name = "buttonKorin";
+            this.buttonKorin.Size = new System.Drawing.Size(26, 23);
+            this.buttonKorin.TabIndex = 20;
+            this.buttonKorin.Text = "√x";
+            this.buttonKorin.UseVisualStyleBackColor = true;
+            this.buttonKorin.Click += new System.EventHandler(this.buttonKorin_Click);
             // 
             // groupBoxNumbers
             // 
@@ -300,6 +323,7 @@ namespace Labs
             this.groupBoxNumbers.Controls.Add(this.button8);
             this.groupBoxNumbers.Controls.Add(this.button1);
             this.groupBoxNumbers.Controls.Add(this.button2);
+            this.groupBoxNumbers.Controls.Add(this.buttonClean);
             this.groupBoxNumbers.Controls.Add(this.button3);
             this.groupBoxNumbers.Controls.Add(this.button6);
             this.groupBoxNumbers.Controls.Add(this.button5);
@@ -308,15 +332,16 @@ namespace Labs
             this.groupBoxNumbers.Controls.Add(this.button10);
             this.groupBoxNumbers.Controls.Add(this.button9);
             this.groupBoxNumbers.ForeColor = System.Drawing.Color.DarkGreen;
-            this.groupBoxNumbers.Location = new System.Drawing.Point(6, 138);
+            this.groupBoxNumbers.Location = new System.Drawing.Point(7, 111);
             this.groupBoxNumbers.Name = "groupBoxNumbers";
-            this.groupBoxNumbers.Size = new System.Drawing.Size(118, 130);
+            this.groupBoxNumbers.Size = new System.Drawing.Size(115, 157);
             this.groupBoxNumbers.TabIndex = 24;
             this.groupBoxNumbers.TabStop = false;
             this.groupBoxNumbers.Text = "Цифри:";
             // 
             // buttonChar
             // 
+            this.buttonChar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonChar.Location = new System.Drawing.Point(6, 103);
             this.buttonChar.Name = "buttonChar";
             this.buttonChar.Size = new System.Drawing.Size(32, 23);
@@ -327,6 +352,7 @@ namespace Labs
             // 
             // buttonDot
             // 
+            this.buttonDot.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonDot.Location = new System.Drawing.Point(81, 103);
             this.buttonDot.Name = "buttonDot";
             this.buttonDot.Size = new System.Drawing.Size(32, 23);
@@ -338,27 +364,26 @@ namespace Labs
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.buttonEq);
-            this.groupBox2.Controls.Add(this.button19);
             this.groupBox2.Controls.Add(this.buttonPlus);
-            this.groupBox2.Controls.Add(this.button17);
-            this.groupBox2.Controls.Add(this.button12);
-            this.groupBox2.Controls.Add(this.buttonClean);
-            this.groupBox2.Controls.Add(this.button18);
-            this.groupBox2.Controls.Add(this.button13);
-            this.groupBox2.Controls.Add(this.button14);
-            this.groupBox2.Controls.Add(this.button20);
-            this.groupBox2.Location = new System.Drawing.Point(130, 192);
+            this.groupBox2.Controls.Add(this.buttonPow2);
+            this.groupBox2.Controls.Add(this.buttonMinus);
+            this.groupBox2.Controls.Add(this.button1dil);
+            this.groupBox2.Controls.Add(this.buttonMnozh);
+            this.groupBox2.Controls.Add(this.buttonDil);
+            this.groupBox2.Controls.Add(this.buttonKorin);
+            this.groupBox2.Location = new System.Drawing.Point(140, 198);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(136, 106);
+            this.groupBox2.Size = new System.Drawing.Size(138, 76);
             this.groupBox2.TabIndex = 25;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Операції:";
             // 
             // buttonEq
             // 
-            this.buttonEq.Location = new System.Drawing.Point(6, 75);
+            this.buttonEq.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonEq.Location = new System.Drawing.Point(102, 49);
             this.buttonEq.Name = "buttonEq";
-            this.buttonEq.Size = new System.Drawing.Size(58, 23);
+            this.buttonEq.Size = new System.Drawing.Size(26, 23);
             this.buttonEq.TabIndex = 24;
             this.buttonEq.Text = "=";
             this.buttonEq.UseVisualStyleBackColor = true;
@@ -366,22 +391,36 @@ namespace Labs
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.buttonMT);
             this.groupBox3.Controls.Add(this.buttonMRe);
             this.groupBox3.Controls.Add(this.buttonMA);
             this.groupBox3.Controls.Add(this.buttonMC);
             this.groupBox3.Controls.Add(this.buttonMR);
             this.groupBox3.ForeColor = System.Drawing.Color.Blue;
-            this.groupBox3.Location = new System.Drawing.Point(130, 138);
+            this.groupBox3.Location = new System.Drawing.Point(125, 138);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(137, 54);
+            this.groupBox3.Size = new System.Drawing.Size(162, 54);
             this.groupBox3.TabIndex = 26;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Дії з пам\'ятю:";
             // 
+            // buttonMT
+            // 
+            this.buttonMT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonMT.Font = new System.Drawing.Font("Microsoft Sans Serif", 5.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonMT.Location = new System.Drawing.Point(38, 16);
+            this.buttonMT.Name = "buttonMT";
+            this.buttonMT.Size = new System.Drawing.Size(26, 23);
+            this.buttonMT.TabIndex = 25;
+            this.buttonMT.Text = "MT";
+            this.buttonMT.UseVisualStyleBackColor = true;
+            this.buttonMT.Click += new System.EventHandler(this.buttonMT_Click);
+            // 
             // buttonMRe
             // 
+            this.buttonMRe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonMRe.Font = new System.Drawing.Font("Microsoft Sans Serif", 5.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonMRe.Location = new System.Drawing.Point(102, 18);
+            this.buttonMRe.Location = new System.Drawing.Point(134, 16);
             this.buttonMRe.Name = "buttonMRe";
             this.buttonMRe.Size = new System.Drawing.Size(26, 23);
             this.buttonMRe.TabIndex = 24;
@@ -391,8 +430,9 @@ namespace Labs
             // 
             // buttonMA
             // 
+            this.buttonMA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonMA.Font = new System.Drawing.Font("Microsoft Sans Serif", 5.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonMA.Location = new System.Drawing.Point(70, 18);
+            this.buttonMA.Location = new System.Drawing.Point(102, 16);
             this.buttonMA.Name = "buttonMA";
             this.buttonMA.Size = new System.Drawing.Size(26, 23);
             this.buttonMA.TabIndex = 23;
@@ -402,8 +442,9 @@ namespace Labs
             // 
             // buttonMC
             // 
+            this.buttonMC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonMC.Font = new System.Drawing.Font("Microsoft Sans Serif", 5.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonMC.Location = new System.Drawing.Point(38, 18);
+            this.buttonMC.Location = new System.Drawing.Point(70, 16);
             this.buttonMC.Name = "buttonMC";
             this.buttonMC.Size = new System.Drawing.Size(26, 23);
             this.buttonMC.TabIndex = 22;
@@ -413,8 +454,9 @@ namespace Labs
             // 
             // buttonMR
             // 
+            this.buttonMR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonMR.Font = new System.Drawing.Font("Microsoft Sans Serif", 5.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonMR.Location = new System.Drawing.Point(6, 18);
+            this.buttonMR.Location = new System.Drawing.Point(6, 16);
             this.buttonMR.Name = "buttonMR";
             this.buttonMR.Size = new System.Drawing.Size(26, 23);
             this.buttonMR.TabIndex = 21;
@@ -424,28 +466,68 @@ namespace Labs
             // 
             // textBoxMemory
             // 
-            this.textBoxMemory.Location = new System.Drawing.Point(184, 112);
+            this.textBoxMemory.Location = new System.Drawing.Point(185, 112);
             this.textBoxMemory.Name = "textBoxMemory";
             this.textBoxMemory.ReadOnly = true;
-            this.textBoxMemory.Size = new System.Drawing.Size(86, 20);
+            this.textBoxMemory.Size = new System.Drawing.Size(102, 20);
             this.textBoxMemory.TabIndex = 27;
             this.textBoxMemory.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // buttonCleanAll
             // 
-            this.buttonCleanAll.Location = new System.Drawing.Point(6, 110);
+            this.buttonCleanAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonCleanAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 5.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonCleanAll.Location = new System.Drawing.Point(12, 57);
             this.buttonCleanAll.Name = "buttonCleanAll";
-            this.buttonCleanAll.Size = new System.Drawing.Size(118, 23);
+            this.buttonCleanAll.Size = new System.Drawing.Size(69, 20);
             this.buttonCleanAll.TabIndex = 28;
-            this.buttonCleanAll.Text = "Очистити все";
+            this.buttonCleanAll.Text = "С";
             this.buttonCleanAll.UseVisualStyleBackColor = true;
             this.buttonCleanAll.Click += new System.EventHandler(this.buttonCleanAll_Click);
+            // 
+            // labelError
+            // 
+            this.labelError.AutoSize = true;
+            this.labelError.ForeColor = System.Drawing.Color.Red;
+            this.labelError.Location = new System.Drawing.Point(108, 41);
+            this.labelError.Name = "labelError";
+            this.labelError.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.labelError.Size = new System.Drawing.Size(84, 13);
+            this.labelError.TabIndex = 29;
+            this.labelError.Text = "Текст помилки";
+            this.labelError.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelError.Visible = false;
+            // 
+            // textBoxResult
+            // 
+            this.textBoxResult.Enabled = false;
+            this.textBoxResult.Location = new System.Drawing.Point(87, 57);
+            this.textBoxResult.Name = "textBoxResult";
+            this.textBoxResult.ReadOnly = true;
+            this.textBoxResult.Size = new System.Drawing.Size(200, 20);
+            this.textBoxResult.TabIndex = 30;
+            this.textBoxResult.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // buttonClearE
+            // 
+            this.buttonClearE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonClearE.Font = new System.Drawing.Font("Microsoft Sans Serif", 5.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonClearE.Location = new System.Drawing.Point(12, 84);
+            this.buttonClearE.Name = "buttonClearE";
+            this.buttonClearE.Size = new System.Drawing.Size(69, 19);
+            this.buttonClearE.TabIndex = 31;
+            this.buttonClearE.Text = "СЕ";
+            this.buttonClearE.UseVisualStyleBackColor = true;
+            this.buttonClearE.Click += new System.EventHandler(this.buttonClearE_Click);
             // 
             // FormLab11
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(278, 302);
+            this.ClientSize = new System.Drawing.Size(300, 307);
+            this.Controls.Add(this.buttonClearE);
+            this.Controls.Add(this.textBoxResult);
+            this.Controls.Add(this.labelError);
             this.Controls.Add(this.buttonCleanAll);
             this.Controls.Add(this.textBoxMemory);
             this.Controls.Add(this.groupBox3);
@@ -483,17 +565,16 @@ namespace Labs
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.TextBox textBoxNumbers;
         private System.Windows.Forms.Button buttonPlus;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button buttonMinus;
+        private System.Windows.Forms.Button buttonMnozh;
+        private System.Windows.Forms.Button buttonDil;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button buttonClean;
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.Button button19;
-        private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.Button buttonPow2;
+        private System.Windows.Forms.Button button1dil;
+        private System.Windows.Forms.Button buttonKorin;
         private System.Windows.Forms.GroupBox groupBoxNumbers;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button buttonEq;
@@ -506,5 +587,9 @@ namespace Labs
         private System.Windows.Forms.Button buttonDot;
         private System.Windows.Forms.TextBox textBoxMemory;
         private System.Windows.Forms.Button buttonCleanAll;
+        private System.Windows.Forms.Label labelError;
+        private System.Windows.Forms.Button buttonMT;
+        private System.Windows.Forms.TextBox textBoxResult;
+        private System.Windows.Forms.Button buttonClearE;
     }
 }

@@ -111,7 +111,7 @@ namespace Labs
             // 
             // textBoxResult
             // 
-            this.textBoxResult.Location = new System.Drawing.Point(72, 269);
+            this.textBoxResult.Location = new System.Drawing.Point(72, 255);
             this.textBoxResult.Name = "textBoxResult";
             this.textBoxResult.ReadOnly = true;
             this.textBoxResult.Size = new System.Drawing.Size(106, 20);
@@ -121,7 +121,7 @@ namespace Labs
             // labelResult
             // 
             this.labelResult.AutoSize = true;
-            this.labelResult.Location = new System.Drawing.Point(4, 272);
+            this.labelResult.Location = new System.Drawing.Point(4, 258);
             this.labelResult.Name = "labelResult";
             this.labelResult.Size = new System.Drawing.Size(62, 13);
             this.labelResult.TabIndex = 9;
@@ -174,7 +174,7 @@ namespace Labs
             // 
             this.groupBoxMath.Controls.Add(this.radioMath);
             this.groupBoxMath.Controls.Add(this.radioMathWithoutF);
-            this.groupBoxMath.Location = new System.Drawing.Point(7, 177);
+            this.groupBoxMath.Location = new System.Drawing.Point(7, 176);
             this.groupBoxMath.Name = "groupBoxMath";
             this.groupBoxMath.Size = new System.Drawing.Size(171, 73);
             this.groupBoxMath.TabIndex = 14;
@@ -195,10 +195,12 @@ namespace Labs
             // radioMathWithoutF
             // 
             this.radioMathWithoutF.AutoSize = true;
+            this.radioMathWithoutF.Checked = true;
             this.radioMathWithoutF.Location = new System.Drawing.Point(44, 19);
             this.radioMathWithoutF.Name = "radioMathWithoutF";
             this.radioMathWithoutF.Size = new System.Drawing.Size(86, 17);
             this.radioMathWithoutF.TabIndex = 0;
+            this.radioMathWithoutF.TabStop = true;
             this.radioMathWithoutF.Text = "Без функцій";
             this.radioMathWithoutF.UseVisualStyleBackColor = true;
             this.radioMathWithoutF.CheckedChanged += new System.EventHandler(this.radioMathWithoutF_CheckedChanged);
@@ -261,6 +263,7 @@ namespace Labs
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Лабораторна Робота №10";
+            this.Load += new System.EventHandler(this.FormLab10_Load);
             this.groupBoxMath.ResumeLayout(false);
             this.groupBoxMath.PerformLayout();
             this.groupBoxFormat.ResumeLayout(false);

@@ -29,6 +29,13 @@ namespace Labs
                 Release(sender).Text = "0";
                 Release(sender).SelectAll();
             }
+            if (Release(sender).Text.IndexOf('-') != -1)
+            {
+                if (Release(sender).Text.IndexOf('-') > 0)
+                {
+                    Release(sender).Text = "-" + Release(sender).Text.Replace("-", "");
+                }
+            }
             if (IsAllDouble())
             {
                 if (radioMathWithoutF.Checked)
@@ -175,6 +182,10 @@ namespace Labs
             {
                 //
             }
+        }
+        private void FormLab10_Load(object sender, EventArgs e)
+        {
+            textBoxResult.Text = Result();
         }
     }
 }
