@@ -121,7 +121,10 @@ namespace Labs
         private void buttonMT_Click(object sender, EventArgs e)
         {
             if (textBoxMemory.Text != "")
+            {
+                textBoxNumbers.Text = "";
                 textBoxNumbers.Text += "" + Convert.ToString(memory1);
+            }  
         }
         private void Operation(object element)
         {
