@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MyLib;
 
 namespace Labs
 {
@@ -24,16 +25,16 @@ namespace Labs
 
         private void textBox_TextChanged(object sender, EventArgs e)
         {
-            if (Release(sender).Text.Length == 0)
+            if (Lib.ReleaseTextBox(sender).Text.Length == 0)
             {
-                Release(sender).Text = "0";
-                Release(sender).SelectAll();
+                Lib.ReleaseTextBox(sender).Text = "0";
+                Lib.ReleaseTextBox(sender).SelectAll();
             }
-            if (Release(sender).Text.IndexOf('-') != -1)
+            if (Lib.ReleaseTextBox(sender).Text.IndexOf('-') != -1)
             {
-                if (Release(sender).Text.IndexOf('-') > 0)
+                if (Lib.ReleaseTextBox(sender).Text.IndexOf('-') > 0)
                 {
-                    Release(sender).Text = "-" + Release(sender).Text.Replace("-", "");
+                    Lib.ReleaseTextBox(sender).Text = "-" + Lib.ReleaseTextBox(sender).Text.Replace("-", "");
                 }
             }
             if (IsAllDouble())
@@ -91,7 +92,7 @@ namespace Labs
                 }
                 if (e.KeyChar == '-')
                 {
-                    if (Release(sender).SelectionStart > 0)
+                    if (Lib.ReleaseTextBox(sender).SelectionStart > 0)
                     {
                         e.Handled = true;
                         return;
@@ -104,7 +105,7 @@ namespace Labs
                 }
                 if (e.KeyChar == '.' || e.KeyChar == ',')
                 {
-                      if ((Release(sender).Text.IndexOf(',') == -1 || Release(sender).SelectionLength == Release(sender).Text.Length) && Release(sender).SelectionStart > 0)
+                      if ((Lib.ReleaseTextBox(sender).Text.IndexOf(',') == -1 || Lib.ReleaseTextBox(sender).SelectionLength == Lib.ReleaseTextBox(sender).Text.Length) && Lib.ReleaseTextBox(sender).SelectionStart > 0)
                       {
                           e.KeyChar = ',';
                           e.Handled = false;
@@ -154,10 +155,6 @@ namespace Labs
                 + (234 / Func(Doubler(textBoxX.Text) * Doubler(textBoxY.Text), 3)) 
                 + (Func(3.1, Math.Pow(Doubler(textBoxX.Text),2) * Doubler(textBoxY.Text)) / Doubler(textBoxZ.Text));
             return Convert.ToString(res);
-        }
-        public TextBox Release(object element)
-        {
-            return (TextBox)element;
         }
         public double Doubler(string converter)
         {

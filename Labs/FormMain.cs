@@ -91,5 +91,15 @@ namespace Labs
         {
             new FormLab11().ShowDialog();
         }
+
+        private void buttonLab12_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Лабораторна 10 та Лабораторна 11 використовують методи з бібліотеки.", "Info");
+        }
+
+        private void buttonLab13_Click(object sender, EventArgs e)
+        {
+            new FormForLab13().ShowDialog();
+        }
     }
 }

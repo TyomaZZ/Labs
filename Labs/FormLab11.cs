@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MyLib;
 
 namespace Labs
 {//tyomashi
@@ -25,7 +26,7 @@ namespace Labs
             }
             if (clean)
             {textBoxNumbers.Text = "";}
-            textBoxNumbers.Text += ReleaseButton(sender).Text;
+            textBoxNumbers.Text += Lib.ReleaseButton(sender).Text;
             clean = false;
         }
         private void buttonChar_Click(object sender, EventArgs e)
@@ -58,32 +59,32 @@ namespace Labs
         private void buttonDot_Click(object sender, EventArgs e)
         {
             if (textBoxNumbers.Text.IndexOf(',') == -1)
-                textBoxNumbers.Text += ReleaseButton(sender).Text;
+                textBoxNumbers.Text += Lib.ReleaseButton(sender).Text;
             if (clean)
                 textBoxNumbers.Text = "";
         }
         private void textBoxNumbers_TextChanged(object sender, EventArgs e)
         {
-            if (ReleaseTextBox(sender).Text == "00")
-                ReleaseTextBox(sender).Text = "0";
-            if (ReleaseTextBox(sender).Text == "-")
+            if (Lib.ReleaseTextBox(sender).Text == "00")
+                Lib.ReleaseTextBox(sender).Text = "0";
+            if (Lib.ReleaseTextBox(sender).Text == "-")
             {
                 labelError.Text = "Мінус не може бути числом";
                 labelError.Visible = true;
                 return;
             }
             else
-                labelError.Visible = false;
-            if (ReleaseTextBox(sender).Text == ",")
+             labelError.Visible = false;
+            if (Lib.ReleaseTextBox(sender).Text == ",")
             {
                 labelError.Text = "Кома не може бути числом";
                 labelError.Visible = true;
                 return;
             }
             else
-                labelError.Visible = false;
-            
-            if (ReleaseTextBox(sender).Text == "-,")
+             labelError.Visible = false;
+
+            if (Lib.ReleaseTextBox(sender).Text == "-,")
             {
                 labelError.Text = "Символи не можуть бути числом";
                 labelError.Visible = true;
@@ -128,96 +129,217 @@ namespace Labs
         }
         private void Operation(object element)
         {
+            string[] chrs = new string[4] { " + ", " - ", " * ", " / " };
             if (textBoxNumbers.Text == "" || textBoxNumbers.Text == "-" || textBoxNumbers.Text == "," || textBoxNumbers.Text == "-,")
                 return;
-            string[] chrs = new string[4] { "+", "-", "*", "/" };
-            for (int i = 0; i < chrs.Length; i++)
+            if (textBoxResult.Text.EndsWith(" + ") || textBoxResult.Text.EndsWith(" - ") || textBoxResult.Text.EndsWith(" * ") || textBoxResult.Text.EndsWith(" / "))
             {
-                if (textBoxResult.Text.EndsWith(chrs[i]) && !textBoxResult.Text.EndsWith(ReleaseButton(element).Text))
+                if (textBoxResult.Text.EndsWith(" " + Lib.ReleaseButton(element).Text + " "))
                 {
-                    if (clean)
+                    if (textBoxNumbers.Text != "" && textBoxNumbers.Text != "-" && textBoxNumbers.Text != "," && textBoxNumbers.Text != "-,")
                     {
-                        textBoxResult.Text = textBoxResult.Text.Remove(textBoxResult.Text.Length - 1, 1) + ReleaseButton(element).Text;
-                        return;
-                    }
-                    else
-                    {
-                        SubMath(element);
+                        textBoxResult.Text += textBoxNumbers.Text + " " + Lib.ReleaseButton(element).Text + " ";
+                        clean = true;
                     }
                 }
-            }
-            if (textBoxResult.Text == "")
-            {
-                if (textBoxNumbers.Text != "")
-                    textBoxResult.Text = textBoxNumbers.Text + " " + ReleaseButton(element).Text;
-                textBoxNumbers.Text = "";
+                else
+                {
+                    for (int i = 0; i < chrs.Length; i++)
+                    {
+                        if (textBoxResult.Text.EndsWith(chrs[i]))
+                        {
+                            if (clean)
+                            {
+                                textBoxResult.Text = textBoxResult.Text.Remove(textBoxResult.Text.Length - 3, 3) + " " + Lib.ReleaseButton(element).Text + " ";
+                                return;
+                            }
+                            else
+                            {
+                                if (textBoxNumbers.Text != "" && textBoxNumbers.Text != "-" && textBoxNumbers.Text != "," && textBoxNumbers.Text != "-,")
+                                {
+                                    textBoxResult.Text += textBoxNumbers.Text + " " + Lib.ReleaseButton(element).Text + " ";
+                                    clean = true;
+                                }
+                            }
+                        }
+                    }
+                }
             }
             else
             {
-                if (!clean)
+                if (textBoxNumbers.Text != "" && textBoxNumbers.Text != "-" && textBoxNumbers.Text != "," && textBoxNumbers.Text != "-,")
                 {
-                    SubMath(element);
+                    textBoxResult.Text += textBoxNumbers.Text + " " + Lib.ReleaseButton(element).Text + " ";
+                    clean = true;
                 }
             }
         }
-        private void SubMath(object element)
+        private double SubMath()
         {
-            if (textBoxResult.Text != "")
-                x = Convert.ToDouble(textBoxResult.Text.Split(' ')[0]);
-            if (textBoxNumbers.Text != "")
-                y = Convert.ToDouble(textBoxNumbers.Text);
-            if (Matches(x, y))
-                return;
-            textBoxResult.Text = textBoxNumbers.Text + " " + ReleaseButton(element).Text;
-            clean = true; x = 0; y = 0;
-        }
-        private bool Matches(double x, double y)
-        {
-            if (textBoxResult.Text.EndsWith("+") && textBoxNumbers.Text != "")
-                textBoxNumbers.Text = Convert.ToString(x + y);
-            if (textBoxResult.Text.EndsWith("-") && textBoxNumbers.Text != "")
-                textBoxNumbers.Text = Convert.ToString(x - y);
-            if (textBoxResult.Text.EndsWith("*") && textBoxNumbers.Text != "")
-                textBoxNumbers.Text = Convert.ToString(x * y);
-            if (textBoxResult.Text.EndsWith("/") && textBoxNumbers.Text != "")
+            y = 0;
+            x = 0;
+            string[] masiv = textBoxResult.Text.Split(' ');
+            bool first = false;
+            double z, c;
+            string res = "";
+            z = 0;
+            c = 0;
+            if (radioButton1.Checked)
             {
-                if (y == 0)
+                for (int i = 0; i < masiv.Length; i++)
                 {
-                    labelError.Visible = true;
-                    labelError.Text = "Помилка при діленні на 0";
-                    return true;
+
+
+                    if (masiv[i] == "*" || masiv[i] == "/")
+                    {
+                        if (masiv[i] == "*")
+                        {
+                            z = Convert.ToDouble(masiv[i - 1]) * Convert.ToDouble(masiv[i + 1]);
+                            masiv[i - 1] = "";
+                            masiv[i + 1] = Convert.ToString(z);
+                            masiv[i] = "";
+                        }
+                        if (masiv[i] == "/")
+                        {
+                            if (Convert.ToDouble(masiv[i + 1]) == 0)
+                            {
+                                labelError.Text = "На 0 ділити не можливо";
+                                labelError.Visible = true;
+                                return 0;
+                            }
+                            z = Convert.ToDouble(masiv[i - 1]) / Convert.ToDouble(masiv[i + 1]);
+                            masiv[i - 1] = "";
+                            masiv[i + 1] = Convert.ToString(z);
+                            masiv[i] = "";
+                        }
+                    }
                 }
-                else
-                    textBoxNumbers.Text = Convert.ToString(x / y);
+                string promezhUtok = "";
+                for (int i = 0; i < masiv.Length; i++)
+                {
+                    if (masiv[i] != "")
+                        promezhUtok += masiv[i] + " ";
+                }
+                masiv = promezhUtok.Split(' ');
             }
-            return false;
+            
+
+            for (int i = 0; i < masiv.Length; i++)
+            { 
+                if (masiv[i] != "+" && masiv[i] != "-" && masiv[i] != "*" && masiv[i] != "/")
+                {}
+                else
+                {
+                    if (masiv[i] == "+")
+                    {
+                        if (!first)
+                        {
+                            x = Convert.ToDouble(masiv[i - 1]) + Convert.ToDouble(masiv[i + 1]);
+                            y = x;
+                            first = true;
+                        }
+                        else
+                        {
+                            try
+                            {
+                                x = y + Convert.ToDouble(masiv[i + 1]);
+                            }
+                            catch
+                            {
+                                x = y + Convert.ToDouble(textBoxNumbers.Text);
+                            }
+                            y = x;
+                        }
+                    }
+                    if (masiv[i] == "-")
+                    {
+                        if (!first)
+                        {
+                            x = Convert.ToDouble(masiv[i - 1]) - Convert.ToDouble(masiv[i + 1]);
+                            y = x;
+                            first = true;
+                        }
+                        else
+                        {
+                            try
+                            {
+                                x = y - Convert.ToDouble(masiv[i + 1]);
+                            }
+                            catch
+                            {
+                                x = y - Convert.ToDouble(textBoxNumbers.Text);
+                            }
+                            y = x;
+                        }
+                    }
+                    if (masiv[i] == "*")
+                    {
+                        if (!first)
+                        {
+                            x = Convert.ToDouble(masiv[i - 1]) * Convert.ToDouble(masiv[i + 1]);
+                            y = x;
+                            first = true;
+                        }
+                        else
+                        {
+                            try
+                            {
+                                x = y * Convert.ToDouble(masiv[i + 1]);
+                            }
+                            catch
+                            {
+                                x = y * Convert.ToDouble(textBoxNumbers.Text);
+                            }
+                            y = x;
+                        }
+                    }
+                    if (masiv[i] == "/")
+                    {
+                        if (!first)
+                        {
+                            x = Convert.ToDouble(masiv[i - 1]) / Convert.ToDouble(masiv[i + 1]);
+                            y = x;
+                            first = true;
+                        }
+                        else
+                        {
+                            try
+                            {
+                                x = y / Convert.ToDouble(masiv[i + 1]);
+                            }
+                            catch
+                            {
+                                x = y / Convert.ToDouble(textBoxNumbers.Text);
+                            }
+                            y = x;
+                        }
+                    }
+                }
+            }
+            return y;
+        }
+        private void Matches()
+        {
+            if (textBoxResult.Text.EndsWith("+") || textBoxResult.Text.EndsWith("-") || textBoxResult.Text.EndsWith("*") || textBoxResult.Text.EndsWith("/"))
+            {
+                textBoxResult.Text = textBoxResult.Text.Remove(textBoxResult.Text.Length - 3) + " =";
+                textBoxNumbers.Text = Convert.ToString(SubMath());
+            }
+            else
+            {
+               
+                    textBoxNumbers.Text = Convert.ToString(SubMath());
+              
+            }
         }
         private void buttonEq_Click(object sender, EventArgs e)
         {
-            if (textBoxResult.Text == "" && textBoxNumbers.Text != "" && textBoxNumbers.Text != "-" && textBoxNumbers.Text != "," && textBoxNumbers.Text != "-," )
-                textBoxResult.Text = textBoxNumbers.Text + " =";
-            else
+            if (!clean)
             {
-                if (textBoxNumbers.Text == "" || textBoxNumbers.Text == "-" || textBoxNumbers.Text == "," || textBoxNumbers.Text == "-,")
-                    return;
-                if (!clean)
-                {
-                    if (textBoxResult.Text != "")
-                        x = Convert.ToDouble(textBoxResult.Text.Split(' ')[0]);
-                    if (textBoxNumbers.Text != "")
-                        y = Convert.ToDouble(textBoxNumbers.Text);
-                    if (Matches(x, y))
-                        return;
-                    if (textBoxResult.Text.EndsWith("+") && textBoxNumbers.Text != "")
-                        textBoxResult.Text = Convert.ToString(x) + " + " + Convert.ToString(y) + " =";
-                    if (textBoxResult.Text.EndsWith("-") && textBoxNumbers.Text != "")
-                        textBoxResult.Text = Convert.ToString(x) + " - " + Convert.ToString(y) + " =";
-                    if (textBoxResult.Text.EndsWith("*") && textBoxNumbers.Text != "")
-                        textBoxResult.Text = Convert.ToString(x) + " * " + Convert.ToString(y) + " =";
-                    if (textBoxResult.Text.EndsWith("/") && textBoxNumbers.Text != "")
-                        textBoxResult.Text = Convert.ToString(x) + " / " + Convert.ToString(y) + " =";
-                    clean = true; x = 0; y = 0;
-                }
+                textBoxResult.Text += textBoxNumbers.Text;
+                Matches();
+                textBoxResult.Text += " =";
+                clean = true;
             }
         }
         private void buttonPlus_Click(object sender, EventArgs e)
@@ -249,9 +371,5 @@ namespace Labs
             if (textBoxResult.Text.EndsWith("="))
                 textBoxResult.Text = "";
         }
-        private Button ReleaseButton(object element)
-        { return (Button)element; }
-        private TextBox ReleaseTextBox(object element)
-        { return (TextBox)element; }
     }
 }

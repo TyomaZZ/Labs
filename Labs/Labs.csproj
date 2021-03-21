@@ -72,6 +72,12 @@
     <Compile Include="About.Designer.cs">
       <DependentUpon>About.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormForLab13.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormForLab13.Designer.cs">
+      <DependentUpon>FormForLab13.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLab11.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +89,12 @@
     </Compile>
     <Compile Include="FormLab10.Designer.cs">
       <DependentUpon>FormLab10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLab13.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLab13.Designer.cs">
+      <DependentUpon>FormLab13.cs</DependentUpon>
     </Compile>
     <Compile Include="FormLab9.cs">
       <SubType>Form</SubType>
@@ -161,11 +173,17 @@
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormForLab13.resx">
+      <DependentUpon>FormForLab13.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormLab10.resx">
       <DependentUpon>FormLab10.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLab11.resx">
       <DependentUpon>FormLab11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLab13.resx">
+      <DependentUpon>FormLab13.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLab2.resx">
       <DependentUpon>FormLab2.cs</DependentUpon>
@@ -237,6 +255,12 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyLib\MyLib.csproj">
+      <Project>{d37ec49b-0225-4623-a8ee-67a0cec800cb}</Project>
+      <Name>MyLib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
