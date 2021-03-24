@@ -22,7 +22,7 @@ namespace Labs
         {
             Result();
         }
-        protected void Result()
+        protected virtual void Result()
         {
             PIB.Text = PIBs();
             LastNameAndI.Text = LastNameAndIs();
