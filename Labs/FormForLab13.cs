@@ -17,7 +17,7 @@ namespace Labs
             InitializeComponent();
         }
 
-        protected void Result()
+        protected override void Result()
         {
             base.Result();
             Years.Text = Yearss().ToString();
