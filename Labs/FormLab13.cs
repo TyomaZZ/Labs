@@ -40,7 +40,7 @@ namespace Labs
         {
             return CorrectS(FirstName.Text).Substring(0, 1) + " " + CorrectS(FatherName.Text).Substring(0, 1) + " " + CorrectS(LastName.Text).ToUpper();
         }
-        private string CorrectS(string text)
+        public string CorrectS(string text)
         { 
            if (text != "") {
                return text.Trim().Substring(0, 1).ToUpper() + text.Trim().Substring(1, text.Trim().Length - 1).ToLower();
