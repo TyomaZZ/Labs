@@ -40,18 +40,13 @@ namespace Labs
         {
             return CorrectS(FirstName.Text).Substring(0, 1) + " " + CorrectS(FatherName.Text).Substring(0, 1) + " " + CorrectS(LastName.Text).ToUpper();
         }
-        public string CorrectS(string text)
-        {
-            if (text != "")
-            {
-                return text.Trim().Substring(0, 1).ToUpper() + text.Trim().Substring(1, text.Trim().Length - 1).ToLower();
-            }
-            else
-            {
-                return " ";
-            }
-            
-        }
+        private string CorrectS(string text)
+        { 
+           if (text != "") {
+               return text.Trim().Substring(0, 1).ToUpper() + text.Trim().Substring(1, text.Trim().Length - 1).ToLower();
+}
+           else return "";
+                   }
         private void TextBox_TextChanged(object sender, EventArgs e)
         {
             ((TextBox)sender).Text = ((TextBox)sender).Text.Trim();
