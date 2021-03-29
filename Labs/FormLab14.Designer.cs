@@ -113,7 +113,9 @@ namespace Labs
             this.Controls.Add(this.buttonSaveDefault);
             this.Controls.Add(this.buttonSave);
             this.Name = "FormLab14";
-            this.Text = "Form1";
+            this.Text = "Лабораторна робота 14";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormLab14_FormClosed);
+            this.Load += new System.EventHandler(this.FormLab14_Load);
             this.Controls.SetChildIndex(this.PIB, 0);
             this.Controls.SetChildIndex(this.FatherName, 0);
             this.Controls.SetChildIndex(this.LastName, 0);

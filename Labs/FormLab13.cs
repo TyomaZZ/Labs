@@ -45,7 +45,7 @@ namespace Labs
            if (text != "") {
                return text.Trim().Substring(0, 1).ToUpper() + text.Trim().Substring(1, text.Trim().Length - 1).ToLower();
 }
-           else return "";
+           else return " ";
                    }
         private void TextBox_TextChanged(object sender, EventArgs e)
         {
@@ -61,7 +61,7 @@ namespace Labs
             Result();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        protected virtual void buttonClose_Click(object sender, EventArgs e)
         {
             Close();
         }

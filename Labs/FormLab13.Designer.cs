@@ -41,7 +41,7 @@ namespace Labs
             this.EName = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonClose = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // FirstName
@@ -155,23 +155,23 @@ namespace Labs
             this.label6.TabIndex = 11;
             this.label6.Text = "Підпис:";
             // 
-            // button1
+            // buttonClose
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(9, 363);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(405, 23);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Завершити роботу";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonClose.Location = new System.Drawing.Point(9, 363);
+            this.buttonClose.Name = "buttonClose";
+            this.buttonClose.Size = new System.Drawing.Size(405, 23);
+            this.buttonClose.TabIndex = 12;
+            this.buttonClose.Text = "Завершити роботу";
+            this.buttonClose.UseVisualStyleBackColor = true;
+            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // FormLab13
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1043, 766);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.FirstName);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.LastName);
@@ -206,7 +206,7 @@ namespace Labs
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox EName;
         private System.Windows.Forms.TextBox LastNameAndI;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonClose;
         public System.Windows.Forms.TextBox PIB;
         public System.Windows.Forms.TextBox FirstName;
         public System.Windows.Forms.TextBox LastName;
