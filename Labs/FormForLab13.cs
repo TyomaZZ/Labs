@@ -17,7 +17,7 @@ namespace Labs
             InitializeComponent();
         }
 
-        protected void Result()
+        protected override void Result()
         {
             base.Result();
             Years.Text = Yearss().ToString();
@@ -31,7 +31,7 @@ namespace Labs
         {
             Result();
         }
-        private int Yearss()
+        public int Yearss()
         {
             return ((int)((DateTime.Now-BirthdayDay.Value).Days/365.25));
         }

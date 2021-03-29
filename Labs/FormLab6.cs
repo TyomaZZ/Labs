@@ -19,12 +19,10 @@ namespace Labs
             InitializeComponent();
             toolStripStatusLabel3.Visible = false;
         }
-
         private void button10_Click(object sender, EventArgs e)
         {
             k2.Info();
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             k1 = new KurtkaLab6("Типова", "Чорний", 36, "Нова");
@@ -40,7 +38,6 @@ namespace Labs
                 check();
             }
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
             k2 = new KurtkaLab6("Типова", "Чорний", 36, "Нова");
@@ -56,18 +53,14 @@ namespace Labs
                 check();
             }
         }
-
         private void closeButton_Click(object sender, EventArgs e)
         {
             Close();
-            //tyomashi
         }
-
         private void button9_Click(object sender, EventArgs e)
         {
             k1.Info();
         }
-
         private void button7_Click(object sender, EventArgs e)
         {
             if (k1 == k2)
@@ -76,19 +69,16 @@ namespace Labs
             }
             else MessageBox.Show("Куртки різні!", "Інформація з порівняння");
         }
-
         private void button5_Click(object sender, EventArgs e)
         {
             k1++;
             check();
         }
-
         private void button6_Click(object sender, EventArgs e)
         {
             k2++;
             check();
         }
-
         private void button3_Click(object sender, EventArgs e)
         {
             if (radioButton1.Checked == true)
@@ -119,7 +109,6 @@ namespace Labs
             }
             check();
         }
-
         private void button4_Click(object sender, EventArgs e)
         {
             if (radioButton8.Checked == true)
@@ -150,7 +139,6 @@ namespace Labs
             }
             check();
         }
-
         private void check()
         {
             if ((Object)k1 != null && (Object)k2 != null)
@@ -191,7 +179,6 @@ namespace Labs
                  MessageBoxIcon.Information); */
         }
     }
-
     public class KurtkaLab6 : OdyagLab6
     {
         private String name;
@@ -215,10 +202,7 @@ namespace Labs
             return (kurtka1.Name == kurtka2.Name &&
                       kurtka1.color == kurtka2.color &&
                       kurtka1.Size == kurtka2.Size &&
-                      kurtka1.status == kurtka2.status); 
-
-            
-
+                      kurtka1.status == kurtka2.status);
         }
          public static bool operator !=(KurtkaLab6 kurtka1, KurtkaLab6 kurtka2)
         {
@@ -228,7 +212,6 @@ namespace Labs
         {
             return new KurtkaLab6(kurtka.Name, kurtka.color, kurtka.Size + 1);
         }
-
         public string isFreaks()
         {
             if (isFreak == true)
@@ -251,6 +234,14 @@ namespace Labs
                 "Ось такa куртка",
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Information);
+        }
+        public override bool Equals(object obj)
+        {
+            return obj is KurtkaLab6 lab;
+        }
+        public override int GetHashCode()
+        {
+            return 0;
         }
     }
 }

@@ -101,5 +101,10 @@ namespace Labs
         {
             new FormForLab13().ShowDialog();
         }
+
+        private void buttonLab14_Click(object sender, EventArgs e)
+        {
+            new FormLab14().ShowDialog();
+        }
     }
 }

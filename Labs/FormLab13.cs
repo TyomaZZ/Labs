@@ -22,11 +22,11 @@ namespace Labs
         {
             Result();
         }
-        protected void Result()
+        protected virtual void Result()
         {
-            PIB.Text = PIBs();
-            LastNameAndI.Text = LastNameAndIs();
-            EName.Text = ENames();
+            PIB.Text = PIBs().Trim();
+            LastNameAndI.Text = LastNameAndIs().Trim();
+            EName.Text = ENames().Trim();
         }
         private string PIBs()
         {
@@ -34,15 +34,23 @@ namespace Labs
         }
         private string LastNameAndIs()
         {
-            return CorrectS(LastName.Text) + " " + FirstName.Text.Substring(0, 1).ToUpper() + "." + FatherName.Text.Substring(0, 1).ToUpper() + ".";
+            return CorrectS(LastName.Text) + " " + CorrectS(FirstName.Text).Substring(0, 1) + "." + CorrectS(FatherName.Text).Substring(0, 1) + ".";
         }
         private string ENames()
         {
-            return FirstName.Text.Substring(0, 1).ToUpper() + " " + FatherName.Text.Substring(0, 1).ToUpper() + " " + LastName.Text.ToUpper();
+            return CorrectS(FirstName.Text).Substring(0, 1) + " " + CorrectS(FatherName.Text).Substring(0, 1) + " " + CorrectS(LastName.Text).ToUpper();
         }
-        private string CorrectS(string text)
+        public string CorrectS(string text)
         {
-            return text.Trim().Substring(0, 1).ToUpper() + text.Trim().Substring(1, text.Trim().Length - 1).ToLower();
+            if (text != "")
+            {
+                return text.Trim().Substring(0, 1).ToUpper() + text.Trim().Substring(1, text.Trim().Length - 1).ToLower();
+            }
+            else
+            {
+                return " ";
+            }
+            
         }
         private void TextBox_TextChanged(object sender, EventArgs e)
         {
@@ -50,12 +58,12 @@ namespace Labs
             if (((TextBox)sender).Text != "")
             {
                 ((TextBox)sender).BackColor = Color.White;
-                Result();
             }
             else
             {
                 ((TextBox)sender).BackColor = Color.Red;
             }
+            Result();
         }
 
         private void button1_Click(object sender, EventArgs e)

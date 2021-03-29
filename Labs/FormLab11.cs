@@ -180,10 +180,7 @@ namespace Labs
             x = 0;
             string[] masiv = textBoxResult.Text.Split(' ');
             bool first = false;
-            double z, c;
-            string res = "";
-            z = 0;
-            c = 0;
+            double z;
             if (radioButton1.Checked)
             {
                 for (int i = 0; i < masiv.Length; i++)

@@ -46,9 +46,9 @@ namespace Labs
             // 
             // FirstName
             // 
-            this.FirstName.Location = new System.Drawing.Point(180, 12);
+            this.FirstName.Location = new System.Drawing.Point(127, 5);
             this.FirstName.Name = "FirstName";
-            this.FirstName.Size = new System.Drawing.Size(191, 20);
+            this.FirstName.Size = new System.Drawing.Size(287, 20);
             this.FirstName.TabIndex = 0;
             this.FirstName.Text = "Артем";
             this.FirstName.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -56,9 +56,9 @@ namespace Labs
             // 
             // LastName
             // 
-            this.LastName.Location = new System.Drawing.Point(180, 39);
+            this.LastName.Location = new System.Drawing.Point(127, 32);
             this.LastName.Name = "LastName";
-            this.LastName.Size = new System.Drawing.Size(191, 20);
+            this.LastName.Size = new System.Drawing.Size(287, 20);
             this.LastName.TabIndex = 1;
             this.LastName.Text = "Кухарук";
             this.LastName.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -66,9 +66,9 @@ namespace Labs
             // 
             // FatherName
             // 
-            this.FatherName.Location = new System.Drawing.Point(180, 66);
+            this.FatherName.Location = new System.Drawing.Point(127, 59);
             this.FatherName.Name = "FatherName";
-            this.FatherName.Size = new System.Drawing.Size(191, 20);
+            this.FatherName.Size = new System.Drawing.Size(287, 20);
             this.FatherName.TabIndex = 2;
             this.FatherName.Text = "Ігорович";
             this.FatherName.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -77,7 +77,7 @@ namespace Labs
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(59, 15);
+            this.label1.Location = new System.Drawing.Point(6, 8);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(29, 13);
             this.label1.TabIndex = 3;
@@ -86,7 +86,7 @@ namespace Labs
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(59, 42);
+            this.label2.Location = new System.Drawing.Point(6, 35);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(59, 13);
             this.label2.TabIndex = 4;
@@ -95,7 +95,7 @@ namespace Labs
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(59, 69);
+            this.label3.Location = new System.Drawing.Point(6, 62);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(70, 13);
             this.label3.TabIndex = 5;
@@ -104,7 +104,7 @@ namespace Labs
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(59, 197);
+            this.label4.Location = new System.Drawing.Point(6, 161);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(28, 13);
             this.label4.TabIndex = 6;
@@ -112,35 +112,35 @@ namespace Labs
             // 
             // PIB
             // 
-            this.PIB.Location = new System.Drawing.Point(180, 194);
+            this.PIB.Location = new System.Drawing.Point(127, 158);
             this.PIB.Name = "PIB";
             this.PIB.ReadOnly = true;
-            this.PIB.Size = new System.Drawing.Size(191, 20);
+            this.PIB.Size = new System.Drawing.Size(287, 20);
             this.PIB.TabIndex = 7;
             this.PIB.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // LastNameAndI
             // 
-            this.LastNameAndI.Location = new System.Drawing.Point(180, 220);
+            this.LastNameAndI.Location = new System.Drawing.Point(127, 184);
             this.LastNameAndI.Name = "LastNameAndI";
             this.LastNameAndI.ReadOnly = true;
-            this.LastNameAndI.Size = new System.Drawing.Size(191, 20);
+            this.LastNameAndI.Size = new System.Drawing.Size(287, 20);
             this.LastNameAndI.TabIndex = 8;
             this.LastNameAndI.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // EName
             // 
-            this.EName.Location = new System.Drawing.Point(180, 246);
+            this.EName.Location = new System.Drawing.Point(127, 210);
             this.EName.Name = "EName";
             this.EName.ReadOnly = true;
-            this.EName.Size = new System.Drawing.Size(191, 20);
+            this.EName.Size = new System.Drawing.Size(287, 20);
             this.EName.TabIndex = 9;
             this.EName.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(59, 223);
+            this.label5.Location = new System.Drawing.Point(6, 187);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(112, 13);
             this.label5.TabIndex = 10;
@@ -149,7 +149,7 @@ namespace Labs
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(59, 249);
+            this.label6.Location = new System.Drawing.Point(6, 213);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(44, 13);
             this.label6.TabIndex = 11;
@@ -158,9 +158,9 @@ namespace Labs
             // button1
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(62, 272);
+            this.button1.Location = new System.Drawing.Point(9, 363);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(309, 23);
+            this.button1.Size = new System.Drawing.Size(405, 23);
             this.button1.TabIndex = 12;
             this.button1.Text = "Завершити роботу";
             this.button1.UseVisualStyleBackColor = true;
@@ -170,7 +170,7 @@ namespace Labs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(470, 307);
+            this.ClientSize = new System.Drawing.Size(1043, 766);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.FirstName);
             this.Controls.Add(this.label6);
@@ -198,10 +198,6 @@ namespace Labs
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox FirstName;
-        private System.Windows.Forms.TextBox LastName;
-        private System.Windows.Forms.TextBox FatherName;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -210,7 +206,10 @@ namespace Labs
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox EName;
         private System.Windows.Forms.TextBox LastNameAndI;
-        private System.Windows.Forms.TextBox PIB;
         private System.Windows.Forms.Button button1;
+        public System.Windows.Forms.TextBox PIB;
+        public System.Windows.Forms.TextBox FirstName;
+        public System.Windows.Forms.TextBox LastName;
+        public System.Windows.Forms.TextBox FatherName;
     }
 }
