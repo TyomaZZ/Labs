@@ -36,6 +36,9 @@ namespace Labs
             this.buttonSaveInBase = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
+            // FirstName
+            // 
+            // 
             // buttonSave
             // 
             this.buttonSave.BackColor = System.Drawing.Color.SeaGreen;

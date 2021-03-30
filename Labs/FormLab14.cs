@@ -137,5 +137,23 @@ namespace Labs
         {
             openFile("load.txt");
         }
+        protected override void TextBox_TextChanged(object sender, EventArgs e)
+        {
+            base.TextBox_TextChanged(sender, e);
+            if (((TextBox)sender).BackColor == Color.Red)
+            {
+                buttonSave.Enabled = false;
+                buttonSaveDefault.Enabled = false;
+                buttonSaveInBase.Enabled = false;
+            }
+            else
+            {
+                buttonRead.Enabled = true;
+                buttonSave.Enabled = true;
+                buttonSaveDefault.Enabled = true;
+                buttonReadDefault.Enabled = true;
+                buttonSaveInBase.Enabled = true;
+            }
+        }
     }
 }
