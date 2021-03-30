@@ -47,7 +47,7 @@ namespace Labs
 }
            else return " ";
                    }
-        private void TextBox_TextChanged(object sender, EventArgs e)
+        protected virtual void TextBox_TextChanged(object sender, EventArgs e)
         {
             ((TextBox)sender).Text = ((TextBox)sender).Text.Trim();
             if (((TextBox)sender).Text != "")
