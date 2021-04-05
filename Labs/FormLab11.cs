@@ -16,52 +16,52 @@ namespace Labs
         bool clean = false;
         double x, y, memory1;
         public FormLab11()
-        {InitializeComponent();}
+        { InitializeComponent(); }
         private void buttonNumber_Click(object sender, EventArgs e)
         {
-            if (textBoxResult.Text.EndsWith("="))
+            if (textBoxNumber.Text.EndsWith("="))
             {
-                textBoxNumbers.Text = "";
-                textBoxResult.Text = "";
+                textBoxNowAndResult.Text = "";
+                textBoxNumber.Text = "";
             }
             if (clean)
-            {textBoxNumbers.Text = "";}
-            textBoxNumbers.Text += Lib.ReleaseButton(sender).Text;
+            {textBoxNowAndResult.Text = "";}
+            textBoxNowAndResult.Text += Lib.ReleaseButton(sender).Text;
             clean = false;
         }
         private void buttonChar_Click(object sender, EventArgs e)
         {
-            if (textBoxNumbers.Text.IndexOf('-') == -1)
-                textBoxNumbers.Text = textBoxNumbers.Text.Insert(0, "-");
+            if (textBoxNowAndResult.Text.IndexOf('-') == -1)
+                textBoxNowAndResult.Text = textBoxNowAndResult.Text.Insert(0, "-");
             else
-                textBoxNumbers.Text = textBoxNumbers.Text.Remove(0, 1);
+                textBoxNowAndResult.Text = textBoxNowAndResult.Text.Remove(0, 1);
             if (clean)
-                textBoxNumbers.Text = "";
+                textBoxNowAndResult.Text = "";
         }
         private void buttonClean_Click(object sender, EventArgs e)
         {
-            if (textBoxNumbers.Text.Length > 0)
+            if (textBoxNowAndResult.Text.Length > 0)
             {
-                textBoxNumbers.Text = textBoxNumbers.Text.Remove(textBoxNumbers.Text.Length - 1);
+                textBoxNowAndResult.Text = textBoxNowAndResult.Text.Remove(textBoxNowAndResult.Text.Length - 1);
                 labelError.Visible = false;
             }
         }
         private void buttonClearE_Click(object sender, EventArgs e)
-        { textBoxNumbers.Text = ""; }
+        { textBoxNowAndResult.Text = ""; }
         private void buttonCleanAll_Click(object sender, EventArgs e)
         {
-            textBoxNumbers.Text = "";
-            textBoxResult.Text = "";
+            textBoxNowAndResult.Text = "";
+            textBoxNumber.Text = "";
             labelError.Visible = false;
         }
         private void buttonClose_Click(object sender, EventArgs e)
         { Close(); }
         private void buttonDot_Click(object sender, EventArgs e)
         {
-            if (textBoxNumbers.Text.IndexOf(',') == -1)
-                textBoxNumbers.Text += Lib.ReleaseButton(sender).Text;
+            if (textBoxNowAndResult.Text.IndexOf(',') == -1)
+                textBoxNowAndResult.Text += Lib.ReleaseButton(sender).Text;
             if (clean)
-                textBoxNumbers.Text = "";
+                textBoxNowAndResult.Text = "";
         }
         private void textBoxNumbers_TextChanged(object sender, EventArgs e)
         {
@@ -101,21 +101,21 @@ namespace Labs
         private void buttonMR_Click(object sender, EventArgs e)
         {
             if (textBoxMemory.Text != "")
-                textBoxNumbers.Text = textBoxMemory.Text;
+                textBoxNowAndResult.Text = textBoxMemory.Text;
         }
         private void buttonMA_Click(object sender, EventArgs e)
         {
-            if (textBoxNumbers.Text != "")
+            if (textBoxNowAndResult.Text != "")
             {
-                memory1 += Convert.ToDouble(textBoxNumbers.Text);
+                memory1 += Convert.ToDouble(textBoxNowAndResult.Text);
                 textBoxMemory.Text = Convert.ToString(memory1);
             }
         }
         private void buttonMRe_Click(object sender, EventArgs e)
         {
-            if (textBoxNumbers.Text != "")
+            if (textBoxNowAndResult.Text != "")
             {
-                memory1 -= Convert.ToDouble(textBoxNumbers.Text);
+                memory1 -= Convert.ToDouble(textBoxNowAndResult.Text);
                 textBoxMemory.Text = Convert.ToString(memory1);
             }  
         }
@@ -123,22 +123,22 @@ namespace Labs
         {
             if (textBoxMemory.Text != "")
             {
-                textBoxNumbers.Text = "";
-                textBoxNumbers.Text += "" + Convert.ToString(memory1);
+                textBoxNowAndResult.Text = "";
+                textBoxNowAndResult.Text += "" + Convert.ToString(memory1);
             }  
         }
         private void Operation(object element)
         {
             string[] chrs = new string[4] { " + ", " - ", " * ", " / " };
-            if (textBoxNumbers.Text == "" || textBoxNumbers.Text == "-" || textBoxNumbers.Text == "," || textBoxNumbers.Text == "-,")
+            if (textBoxNowAndResult.Text == "" || textBoxNowAndResult.Text == "-" || textBoxNowAndResult.Text == "," || textBoxNowAndResult.Text == "-,")
                 return;
-            if (textBoxResult.Text.EndsWith(" + ") || textBoxResult.Text.EndsWith(" - ") || textBoxResult.Text.EndsWith(" * ") || textBoxResult.Text.EndsWith(" / "))
+            if (textBoxNumber.Text.EndsWith(" + ") || textBoxNumber.Text.EndsWith(" - ") || textBoxNumber.Text.EndsWith(" * ") || textBoxNumber.Text.EndsWith(" / "))
             {
-                if (textBoxResult.Text.EndsWith(" " + Lib.ReleaseButton(element).Text + " "))
+                if (textBoxNumber.Text.EndsWith(" " + Lib.ReleaseButton(element).Text + " "))
                 {
-                    if (textBoxNumbers.Text != "" && textBoxNumbers.Text != "-" && textBoxNumbers.Text != "," && textBoxNumbers.Text != "-,")
+                    if (textBoxNowAndResult.Text != "" && textBoxNowAndResult.Text != "-" && textBoxNowAndResult.Text != "," && textBoxNowAndResult.Text != "-,")
                     {
-                        textBoxResult.Text += textBoxNumbers.Text + " " + Lib.ReleaseButton(element).Text + " ";
+                        textBoxNumber.Text += textBoxNowAndResult.Text + " " + Lib.ReleaseButton(element).Text + " ";
                         clean = true;
                     }
                 }
@@ -146,18 +146,18 @@ namespace Labs
                 {
                     for (int i = 0; i < chrs.Length; i++)
                     {
-                        if (textBoxResult.Text.EndsWith(chrs[i]))
+                        if (textBoxNumber.Text.EndsWith(chrs[i]))
                         {
                             if (clean)
                             {
-                                textBoxResult.Text = textBoxResult.Text.Remove(textBoxResult.Text.Length - 3, 3) + " " + Lib.ReleaseButton(element).Text + " ";
+                                textBoxNumber.Text = textBoxNumber.Text.Remove(textBoxNumber.Text.Length - 3, 3) + " " + Lib.ReleaseButton(element).Text + " ";
                                 return;
                             }
                             else
                             {
-                                if (textBoxNumbers.Text != "" && textBoxNumbers.Text != "-" && textBoxNumbers.Text != "," && textBoxNumbers.Text != "-,")
+                                if (textBoxNowAndResult.Text != "" && textBoxNowAndResult.Text != "-" && textBoxNowAndResult.Text != "," && textBoxNowAndResult.Text != "-,")
                                 {
-                                    textBoxResult.Text += textBoxNumbers.Text + " " + Lib.ReleaseButton(element).Text + " ";
+                                    textBoxNumber.Text += textBoxNowAndResult.Text + " " + Lib.ReleaseButton(element).Text + " ";
                                     clean = true;
                                 }
                             }
@@ -167,9 +167,9 @@ namespace Labs
             }
             else
             {
-                if (textBoxNumbers.Text != "" && textBoxNumbers.Text != "-" && textBoxNumbers.Text != "," && textBoxNumbers.Text != "-,")
+                if (textBoxNowAndResult.Text != "" && textBoxNowAndResult.Text != "-" && textBoxNowAndResult.Text != "," && textBoxNowAndResult.Text != "-,")
                 {
-                    textBoxResult.Text += textBoxNumbers.Text + " " + Lib.ReleaseButton(element).Text + " ";
+                    textBoxNumber.Text += textBoxNowAndResult.Text + " " + Lib.ReleaseButton(element).Text + " ";
                     clean = true;
                 }
             }
@@ -178,7 +178,7 @@ namespace Labs
         {
             y = 0;
             x = 0;
-            string[] masiv = textBoxResult.Text.Split(' ');
+            string[] masiv = textBoxNumber.Text.Split(' ');
             bool first = false;
             double z;
             if (radioButton1.Checked)
@@ -243,7 +243,7 @@ namespace Labs
                             }
                             catch
                             {
-                                x = y + Convert.ToDouble(textBoxNumbers.Text);
+                                x = y + Convert.ToDouble(textBoxNowAndResult.Text);
                             }
                             y = x;
                         }
@@ -264,7 +264,7 @@ namespace Labs
                             }
                             catch
                             {
-                                x = y - Convert.ToDouble(textBoxNumbers.Text);
+                                x = y - Convert.ToDouble(textBoxNowAndResult.Text);
                             }
                             y = x;
                         }
@@ -285,7 +285,7 @@ namespace Labs
                             }
                             catch
                             {
-                                x = y * Convert.ToDouble(textBoxNumbers.Text);
+                                x = y * Convert.ToDouble(textBoxNowAndResult.Text);
                             }
                             y = x;
                         }
@@ -306,7 +306,7 @@ namespace Labs
                             }
                             catch
                             {
-                                x = y / Convert.ToDouble(textBoxNumbers.Text);
+                                x = y / Convert.ToDouble(textBoxNowAndResult.Text);
                             }
                             y = x;
                         }
@@ -317,15 +317,15 @@ namespace Labs
         }
         private void Matches()
         {
-            if (textBoxResult.Text.EndsWith("+") || textBoxResult.Text.EndsWith("-") || textBoxResult.Text.EndsWith("*") || textBoxResult.Text.EndsWith("/"))
+            if (textBoxNumber.Text.EndsWith("+") || textBoxNumber.Text.EndsWith("-") || textBoxNumber.Text.EndsWith("*") || textBoxNumber.Text.EndsWith("/"))
             {
-                textBoxResult.Text = textBoxResult.Text.Remove(textBoxResult.Text.Length - 3) + " =";
-                textBoxNumbers.Text = Convert.ToString(SubMath());
+                textBoxNumber.Text = textBoxNumber.Text.Remove(textBoxNumber.Text.Length - 3) + " =";
+                textBoxNowAndResult.Text = Convert.ToString(SubMath());
             }
             else
             {
                
-                    textBoxNumbers.Text = Convert.ToString(SubMath());
+                    textBoxNowAndResult.Text = Convert.ToString(SubMath());
               
             }
         }
@@ -333,9 +333,9 @@ namespace Labs
         {
             if (!clean)
             {
-                textBoxResult.Text += textBoxNumbers.Text;
+                textBoxNumber.Text += textBoxNowAndResult.Text;
                 Matches();
-                textBoxResult.Text += " =";
+                textBoxNumber.Text += " =";
                 clean = true;
             }
         }
@@ -349,24 +349,24 @@ namespace Labs
         {Operation(sender);}
         private void buttonPow2_Click(object sender, EventArgs e)
         {
-            if (textBoxNumbers.Text != "")
-                textBoxNumbers.Text = Convert.ToString(Math.Pow(Convert.ToDouble(textBoxNumbers.Text), 2));
-            if (textBoxResult.Text.EndsWith("="))
-                textBoxResult.Text = "";
+            if (textBoxNowAndResult.Text != "")
+                textBoxNowAndResult.Text = Convert.ToString(Math.Pow(Convert.ToDouble(textBoxNowAndResult.Text), 2));
+            if (textBoxNumber.Text.EndsWith("="))
+                textBoxNumber.Text = "";
         }
         private void buttonKorin_Click(object sender, EventArgs e)
         {
-            if (textBoxNumbers.Text != "")
-                textBoxNumbers.Text = Convert.ToString(Math.Sqrt(Convert.ToDouble(textBoxNumbers.Text)));
-            if (textBoxResult.Text.EndsWith("="))
-                textBoxResult.Text = "";
+            if (textBoxNowAndResult.Text != "")
+                textBoxNowAndResult.Text = Convert.ToString(Math.Sqrt(Convert.ToDouble(textBoxNowAndResult.Text)));
+            if (textBoxNumber.Text.EndsWith("="))
+                textBoxNumber.Text = "";
         }
         private void button1dil_Click(object sender, EventArgs e)
         {
-            if (textBoxNumbers.Text != "")
-                textBoxNumbers.Text = Convert.ToString(1 / Convert.ToDouble(textBoxNumbers.Text));
-            if (textBoxResult.Text.EndsWith("="))
-                textBoxResult.Text = "";
+            if (textBoxNowAndResult.Text != "")
+                textBoxNowAndResult.Text = Convert.ToString(1 / Convert.ToDouble(textBoxNowAndResult.Text));
+            if (textBoxNumber.Text.EndsWith("="))
+                textBoxNumber.Text = "";
         }
     }
 }

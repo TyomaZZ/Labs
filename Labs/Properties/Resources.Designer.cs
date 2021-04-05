@@ -59,5 +59,15 @@ namespace Labs.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconfinder_Pinterest_UI_18_2540590 {
+            get {
+                object obj = ResourceManager.GetObject("iconfinder_Pinterest_UI-18_2540590", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

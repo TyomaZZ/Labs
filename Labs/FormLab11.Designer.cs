@@ -39,7 +39,7 @@ namespace Labs
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
-            this.textBoxNumbers = new System.Windows.Forms.TextBox();
+            this.textBoxNowAndResult = new System.Windows.Forms.TextBox();
             this.buttonPlus = new System.Windows.Forms.Button();
             this.buttonMinus = new System.Windows.Forms.Button();
             this.buttonMnozh = new System.Windows.Forms.Button();
@@ -65,11 +65,13 @@ namespace Labs
             this.textBoxMemory = new System.Windows.Forms.TextBox();
             this.buttonCleanAll = new System.Windows.Forms.Button();
             this.labelError = new System.Windows.Forms.Label();
-            this.textBoxResult = new System.Windows.Forms.TextBox();
+            this.textBoxNumber = new System.Windows.Forms.TextBox();
             this.buttonClearE = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.спочаткуМноженняТаДіленняToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.поПорядкуToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBoxNumbers.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -186,15 +188,15 @@ namespace Labs
             this.button10.UseVisualStyleBackColor = true;
             this.button10.Click += new System.EventHandler(this.buttonNumber_Click);
             // 
-            // textBoxNumbers
+            // textBoxNowAndResult
             // 
-            this.textBoxNumbers.Location = new System.Drawing.Point(56, 85);
-            this.textBoxNumbers.Name = "textBoxNumbers";
-            this.textBoxNumbers.ReadOnly = true;
-            this.textBoxNumbers.Size = new System.Drawing.Size(151, 20);
-            this.textBoxNumbers.TabIndex = 10;
-            this.textBoxNumbers.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.textBoxNumbers.TextChanged += new System.EventHandler(this.textBoxNumbers_TextChanged);
+            this.textBoxNowAndResult.Location = new System.Drawing.Point(56, 85);
+            this.textBoxNowAndResult.Name = "textBoxNowAndResult";
+            this.textBoxNowAndResult.ReadOnly = true;
+            this.textBoxNowAndResult.Size = new System.Drawing.Size(151, 20);
+            this.textBoxNowAndResult.TabIndex = 10;
+            this.textBoxNowAndResult.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBoxNowAndResult.TextChanged += new System.EventHandler(this.textBoxNumbers_TextChanged);
             // 
             // buttonPlus
             // 
@@ -248,7 +250,7 @@ namespace Labs
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(18, 9);
+            this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(179, 31);
             this.label1.TabIndex = 16;
@@ -503,15 +505,15 @@ namespace Labs
             this.labelError.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.labelError.Visible = false;
             // 
-            // textBoxResult
+            // textBoxNumber
             // 
-            this.textBoxResult.Enabled = false;
-            this.textBoxResult.Location = new System.Drawing.Point(56, 56);
-            this.textBoxResult.Name = "textBoxResult";
-            this.textBoxResult.ReadOnly = true;
-            this.textBoxResult.Size = new System.Drawing.Size(151, 20);
-            this.textBoxResult.TabIndex = 30;
-            this.textBoxResult.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBoxNumber.Enabled = false;
+            this.textBoxNumber.Location = new System.Drawing.Point(56, 56);
+            this.textBoxNumber.Name = "textBoxNumber";
+            this.textBoxNumber.ReadOnly = true;
+            this.textBoxNumber.Size = new System.Drawing.Size(151, 20);
+            this.textBoxNumber.TabIndex = 30;
+            this.textBoxNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // buttonClearE
             // 
@@ -537,6 +539,16 @@ namespace Labs
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Послідовність обчисленнь:";
             // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(6, 42);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(83, 17);
+            this.radioButton2.TabIndex = 1;
+            this.radioButton2.Text = "По порядку";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
@@ -549,24 +561,24 @@ namespace Labs
             this.radioButton1.Text = "Спочатку множення і ділення";
             this.radioButton1.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // спочаткуМноженняТаДіленняToolStripMenuItem
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(6, 42);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(83, 17);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.Text = "По порядку";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.спочаткуМноженняТаДіленняToolStripMenuItem.Name = "спочаткуМноженняТаДіленняToolStripMenuItem";
+            this.спочаткуМноженняТаДіленняToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
+            // 
+            // поПорядкуToolStripMenuItem
+            // 
+            this.поПорядкуToolStripMenuItem.Name = "поПорядкуToolStripMenuItem";
+            this.поПорядкуToolStripMenuItem.Size = new System.Drawing.Size(32, 19);
             // 
             // FormLab11
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(226, 441);
+            this.ClientSize = new System.Drawing.Size(226, 445);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.buttonClearE);
-            this.Controls.Add(this.textBoxResult);
+            this.Controls.Add(this.textBoxNumber);
             this.Controls.Add(this.labelError);
             this.Controls.Add(this.buttonCleanAll);
             this.Controls.Add(this.textBoxMemory);
@@ -576,7 +588,7 @@ namespace Labs
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button16);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBoxNumbers);
+            this.Controls.Add(this.textBoxNowAndResult);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormLab11";
@@ -605,7 +617,7 @@ namespace Labs
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.TextBox textBoxNumbers;
+        private System.Windows.Forms.TextBox textBoxNowAndResult;
         private System.Windows.Forms.Button buttonPlus;
         private System.Windows.Forms.Button buttonMinus;
         private System.Windows.Forms.Button buttonMnozh;
@@ -631,10 +643,12 @@ namespace Labs
         private System.Windows.Forms.Button buttonCleanAll;
         private System.Windows.Forms.Label labelError;
         private System.Windows.Forms.Button buttonMT;
-        private System.Windows.Forms.TextBox textBoxResult;
+        private System.Windows.Forms.TextBox textBoxNumber;
         private System.Windows.Forms.Button buttonClearE;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.ToolStripMenuItem спочаткуМноженняТаДіленняToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem поПорядкуToolStripMenuItem;
     }
 }

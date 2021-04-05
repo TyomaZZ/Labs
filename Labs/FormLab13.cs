@@ -20,13 +20,16 @@ namespace Labs
 
         private void FormLab13_Load(object sender, EventArgs e)
         {
+            labelName.Text = CorrectS(FirstName.Text);
+            labelLastName.Text = CorrectS(LastName.Text);
+            labelFatherName.Text = CorrectS(FatherName.Text);
             Result();
         }
         protected virtual void Result()
         {
-            PIB.Text = PIBs().Trim();
-            LastNameAndI.Text = LastNameAndIs().Trim();
-            EName.Text = ENames().Trim();
+            CardPIB.Text = PIBs().Trim();
+            Inits.Text = LastNameAndIs().Trim();
+            ENamer.Text = ENames().Trim();
         }
         private string PIBs()
         {
@@ -58,6 +61,9 @@ namespace Labs
             {
                 ((TextBox)sender).BackColor = Color.Red;
             }
+            labelName.Text = CorrectS(FirstName.Text);
+            labelLastName.Text = CorrectS(LastName.Text);
+            labelFatherName.Text = CorrectS(FatherName.Text);
             Result();
         }
 

@@ -15,12 +15,13 @@ namespace Labs
         public FormForLab13() : base()
         {
             InitializeComponent();
+            BirthdayDay.Format = DateTimePickerFormat.Custom;
+            BirthdayDay.CustomFormat = "         ddMMMMyyyy";
         }
-
         protected override void Result()
         {
             base.Result();
-            Years.Text = Yearss().ToString();
+            YearCount.Text = Yearss().ToString();
         }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
