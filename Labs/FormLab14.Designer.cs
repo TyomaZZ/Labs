@@ -37,6 +37,8 @@ namespace Labs
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.SuspendLayout();
@@ -45,6 +47,11 @@ namespace Labs
             // 
             this.YearCount.Size = new System.Drawing.Size(19, 13);
             this.YearCount.Text = "22";
+            // 
+            // CardPIB
+            // 
+            this.CardPIB.Size = new System.Drawing.Size(152, 13);
+            this.CardPIB.Text = "ПІБ: Кухарук Артем Ігорович";
             // 
             // buttonSave
             // 
@@ -118,7 +125,7 @@ namespace Labs
             this.groupBox4.Controls.Add(this.buttonSave);
             this.groupBox4.Location = new System.Drawing.Point(12, 234);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(284, 118);
+            this.groupBox4.Size = new System.Drawing.Size(285, 118);
             this.groupBox4.TabIndex = 21;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Збереження";
@@ -127,9 +134,9 @@ namespace Labs
             // 
             this.groupBox5.Controls.Add(this.buttonReadDefault);
             this.groupBox5.Controls.Add(this.buttonRead);
-            this.groupBox5.Location = new System.Drawing.Point(302, 238);
+            this.groupBox5.Location = new System.Drawing.Point(303, 238);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(286, 114);
+            this.groupBox5.Size = new System.Drawing.Size(285, 114);
             this.groupBox5.TabIndex = 22;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Зчитування";
@@ -146,11 +153,38 @@ namespace Labs
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(186, 210);
+            this.comboBox1.MaxDropDownItems = 99;
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.comboBox1.Size = new System.Drawing.Size(189, 21);
+            this.comboBox1.Sorted = true;
+            this.comboBox1.TabIndex = 24;
+            this.comboBox1.Text = "Вибрати зі списку";
+            this.comboBox1.Click += new System.EventHandler(this.comboBox1_Click);
+            // 
+            // button2
+            // 
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(382, 208);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(201, 23);
+            this.button2.TabIndex = 25;
+            this.button2.Text = "Завантажити файл з бази";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // FormLab14
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(596, 389);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
@@ -163,10 +197,11 @@ namespace Labs
             this.Controls.SetChildIndex(this.groupBox4, 0);
             this.Controls.SetChildIndex(this.groupBox5, 0);
             this.Controls.SetChildIndex(this.button1, 0);
+            this.Controls.SetChildIndex(this.comboBox1, 0);
+            this.Controls.SetChildIndex(this.button2, 0);
             this.groupBox4.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -180,5 +215,7 @@ namespace Labs
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button button2;
     }
 }

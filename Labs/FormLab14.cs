@@ -134,6 +134,11 @@ namespace Labs
             {
                 openFile("load.txt");
             }
+            DirectoryInfo dirInf = new DirectoryInfo(pathBase);
+            if (!dirInf.Exists)
+            {
+                dirInf.Create();
+            }
         }
         protected override void TextBox_TextChanged(object sender, EventArgs e)
         {
@@ -155,12 +160,34 @@ namespace Labs
         }
         private string Names()
         {
-            return CorrectS(LastName.Text) + CorrectS(FirstName.Text) + CorrectS(FatherName.Text) + YearCount.Text;
+            return CorrectS(LastName.Text) + CorrectS(FirstName.Text) + CorrectS(FatherName.Text);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("explorer", pathBase);
+        }
+
+        private void comboBox1_Click(object sender, EventArgs e)
+        {
+            if (Directory.Exists(pathBase))
+            {
+                string[] files = Directory.GetFiles(pathBase);
+                for (int i = 0; i < files.Length; i++)
+                {
+                    files[i] = files[i].Split('\\')[files[i].Split('\\').Length - 1].Replace(".txt", "");
+                }
+                comboBox1.Items.Clear();
+                comboBox1.Items.AddRange(files);
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (File.Exists(pathBase + comboBox1.Text + ".txt"))
+            {
+                openFile(pathBase + comboBox1.Text + ".txt");
+            }
         }
     }
 }
