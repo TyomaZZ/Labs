@@ -145,7 +145,7 @@
             this.lab2_panel0.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lab2_panel0.Location = new System.Drawing.Point(0, 0);
             this.lab2_panel0.Name = "lab2_panel0";
-            this.lab2_panel0.Size = new System.Drawing.Size(584, 261);
+            this.lab2_panel0.Size = new System.Drawing.Size(524, 138);
             this.lab2_panel0.TabIndex = 0;
             // 
             // lab2_TabControl
@@ -170,7 +170,7 @@
             this.lab2_TabControl.Location = new System.Drawing.Point(0, 0);
             this.lab2_TabControl.Name = "lab2_TabControl";
             this.lab2_TabControl.SelectedIndex = 0;
-            this.lab2_TabControl.Size = new System.Drawing.Size(584, 261);
+            this.lab2_TabControl.Size = new System.Drawing.Size(524, 138);
             this.lab2_TabControl.TabIndex = 0;
             // 
             // lab2_TabPage1
@@ -179,7 +179,7 @@
             this.lab2_TabPage1.Location = new System.Drawing.Point(4, 22);
             this.lab2_TabPage1.Name = "lab2_TabPage1";
             this.lab2_TabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.lab2_TabPage1.Size = new System.Drawing.Size(576, 235);
+            this.lab2_TabPage1.Size = new System.Drawing.Size(762, 314);
             this.lab2_TabPage1.TabIndex = 0;
             this.lab2_TabPage1.Text = "Варіант 1";
             this.lab2_TabPage1.UseVisualStyleBackColor = true;
@@ -192,14 +192,14 @@
             this.lab2_panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lab2_panel1.Location = new System.Drawing.Point(3, 3);
             this.lab2_panel1.Name = "lab2_panel1";
-            this.lab2_panel1.Size = new System.Drawing.Size(570, 229);
+            this.lab2_panel1.Size = new System.Drawing.Size(756, 308);
             this.lab2_panel1.TabIndex = 0;
             // 
             // lab2_exitButton1
             // 
-            this.lab2_exitButton1.Location = new System.Drawing.Point(204, 174);
+            this.lab2_exitButton1.Location = new System.Drawing.Point(0, 57);
             this.lab2_exitButton1.Name = "lab2_exitButton1";
-            this.lab2_exitButton1.Size = new System.Drawing.Size(159, 36);
+            this.lab2_exitButton1.Size = new System.Drawing.Size(498, 36);
             this.lab2_exitButton1.TabIndex = 5;
             this.lab2_exitButton1.Text = "Завершити роботу";
             this.lab2_exitButton1.UseVisualStyleBackColor = true;
@@ -207,7 +207,7 @@
             // 
             // lab2_var1_button2
             // 
-            this.lab2_var1_button2.Location = new System.Drawing.Point(288, 19);
+            this.lab2_var1_button2.Location = new System.Drawing.Point(252, 0);
             this.lab2_var1_button2.Name = "lab2_var1_button2";
             this.lab2_var1_button2.Size = new System.Drawing.Size(246, 51);
             this.lab2_var1_button2.TabIndex = 4;
@@ -217,7 +217,7 @@
             // 
             // lab2_var1_button1
             // 
-            this.lab2_var1_button1.Location = new System.Drawing.Point(36, 19);
+            this.lab2_var1_button1.Location = new System.Drawing.Point(0, 0);
             this.lab2_var1_button1.Name = "lab2_var1_button1";
             this.lab2_var1_button1.Size = new System.Drawing.Size(246, 51);
             this.lab2_var1_button1.TabIndex = 3;
@@ -231,7 +231,7 @@
             this.lab2_TabPage2.Location = new System.Drawing.Point(4, 22);
             this.lab2_TabPage2.Name = "lab2_TabPage2";
             this.lab2_TabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.lab2_TabPage2.Size = new System.Drawing.Size(576, 235);
+            this.lab2_TabPage2.Size = new System.Drawing.Size(762, 314);
             this.lab2_TabPage2.TabIndex = 1;
             this.lab2_TabPage2.Text = "Варіант 2";
             this.lab2_TabPage2.UseVisualStyleBackColor = true;
@@ -244,14 +244,14 @@
             this.lab2_panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lab2_panel2.Location = new System.Drawing.Point(3, 3);
             this.lab2_panel2.Name = "lab2_panel2";
-            this.lab2_panel2.Size = new System.Drawing.Size(570, 229);
+            this.lab2_panel2.Size = new System.Drawing.Size(756, 308);
             this.lab2_panel2.TabIndex = 1;
             // 
             // lab2_exitButton2
             // 
-            this.lab2_exitButton2.Location = new System.Drawing.Point(204, 174);
+            this.lab2_exitButton2.Location = new System.Drawing.Point(3, 57);
             this.lab2_exitButton2.Name = "lab2_exitButton2";
-            this.lab2_exitButton2.Size = new System.Drawing.Size(159, 36);
+            this.lab2_exitButton2.Size = new System.Drawing.Size(498, 36);
             this.lab2_exitButton2.TabIndex = 5;
             this.lab2_exitButton2.Text = "Завершити роботу";
             this.lab2_exitButton2.UseVisualStyleBackColor = true;
@@ -259,7 +259,7 @@
             // 
             // lab2_var2_button2
             // 
-            this.lab2_var2_button2.Location = new System.Drawing.Point(288, 19);
+            this.lab2_var2_button2.Location = new System.Drawing.Point(255, 0);
             this.lab2_var2_button2.Name = "lab2_var2_button2";
             this.lab2_var2_button2.Size = new System.Drawing.Size(246, 51);
             this.lab2_var2_button2.TabIndex = 4;
@@ -269,7 +269,7 @@
             // 
             // lab2_var2_button1
             // 
-            this.lab2_var2_button1.Location = new System.Drawing.Point(36, 19);
+            this.lab2_var2_button1.Location = new System.Drawing.Point(3, 0);
             this.lab2_var2_button1.Name = "lab2_var2_button1";
             this.lab2_var2_button1.Size = new System.Drawing.Size(246, 51);
             this.lab2_var2_button1.TabIndex = 3;
@@ -282,7 +282,7 @@
             this.lab2_TabPage3.Controls.Add(this.lab2_panel3);
             this.lab2_TabPage3.Location = new System.Drawing.Point(4, 22);
             this.lab2_TabPage3.Name = "lab2_TabPage3";
-            this.lab2_TabPage3.Size = new System.Drawing.Size(576, 235);
+            this.lab2_TabPage3.Size = new System.Drawing.Size(762, 314);
             this.lab2_TabPage3.TabIndex = 2;
             this.lab2_TabPage3.Text = "Варіант 3";
             this.lab2_TabPage3.UseVisualStyleBackColor = true;
@@ -295,14 +295,14 @@
             this.lab2_panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lab2_panel3.Location = new System.Drawing.Point(0, 0);
             this.lab2_panel3.Name = "lab2_panel3";
-            this.lab2_panel3.Size = new System.Drawing.Size(576, 235);
+            this.lab2_panel3.Size = new System.Drawing.Size(762, 314);
             this.lab2_panel3.TabIndex = 1;
             // 
             // lab2_exitButton3
             // 
-            this.lab2_exitButton3.Location = new System.Drawing.Point(207, 177);
+            this.lab2_exitButton3.Location = new System.Drawing.Point(3, 60);
             this.lab2_exitButton3.Name = "lab2_exitButton3";
-            this.lab2_exitButton3.Size = new System.Drawing.Size(159, 36);
+            this.lab2_exitButton3.Size = new System.Drawing.Size(498, 36);
             this.lab2_exitButton3.TabIndex = 5;
             this.lab2_exitButton3.Text = "Завершити роботу";
             this.lab2_exitButton3.UseVisualStyleBackColor = true;
@@ -310,7 +310,7 @@
             // 
             // lab2_var3_button2
             // 
-            this.lab2_var3_button2.Location = new System.Drawing.Point(291, 22);
+            this.lab2_var3_button2.Location = new System.Drawing.Point(255, 3);
             this.lab2_var3_button2.Name = "lab2_var3_button2";
             this.lab2_var3_button2.Size = new System.Drawing.Size(246, 51);
             this.lab2_var3_button2.TabIndex = 4;
@@ -320,7 +320,7 @@
             // 
             // lab2_var3_button1
             // 
-            this.lab2_var3_button1.Location = new System.Drawing.Point(39, 22);
+            this.lab2_var3_button1.Location = new System.Drawing.Point(3, 3);
             this.lab2_var3_button1.Name = "lab2_var3_button1";
             this.lab2_var3_button1.Size = new System.Drawing.Size(246, 51);
             this.lab2_var3_button1.TabIndex = 3;
@@ -333,7 +333,7 @@
             this.lab2_TabPage4.Controls.Add(this.lab2_panel4);
             this.lab2_TabPage4.Location = new System.Drawing.Point(4, 22);
             this.lab2_TabPage4.Name = "lab2_TabPage4";
-            this.lab2_TabPage4.Size = new System.Drawing.Size(576, 235);
+            this.lab2_TabPage4.Size = new System.Drawing.Size(762, 314);
             this.lab2_TabPage4.TabIndex = 3;
             this.lab2_TabPage4.Text = "Варіант 4";
             this.lab2_TabPage4.UseVisualStyleBackColor = true;
@@ -346,14 +346,14 @@
             this.lab2_panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lab2_panel4.Location = new System.Drawing.Point(0, 0);
             this.lab2_panel4.Name = "lab2_panel4";
-            this.lab2_panel4.Size = new System.Drawing.Size(576, 235);
+            this.lab2_panel4.Size = new System.Drawing.Size(762, 314);
             this.lab2_panel4.TabIndex = 1;
             // 
             // lab2_exitButton4
             // 
-            this.lab2_exitButton4.Location = new System.Drawing.Point(207, 177);
+            this.lab2_exitButton4.Location = new System.Drawing.Point(3, 60);
             this.lab2_exitButton4.Name = "lab2_exitButton4";
-            this.lab2_exitButton4.Size = new System.Drawing.Size(159, 36);
+            this.lab2_exitButton4.Size = new System.Drawing.Size(498, 36);
             this.lab2_exitButton4.TabIndex = 5;
             this.lab2_exitButton4.Text = "Завершити роботу";
             this.lab2_exitButton4.UseVisualStyleBackColor = true;
@@ -361,7 +361,7 @@
             // 
             // lab2_var4_button2
             // 
-            this.lab2_var4_button2.Location = new System.Drawing.Point(291, 22);
+            this.lab2_var4_button2.Location = new System.Drawing.Point(255, 3);
             this.lab2_var4_button2.Name = "lab2_var4_button2";
             this.lab2_var4_button2.Size = new System.Drawing.Size(246, 51);
             this.lab2_var4_button2.TabIndex = 4;
@@ -371,7 +371,7 @@
             // 
             // lab2_var4_button1
             // 
-            this.lab2_var4_button1.Location = new System.Drawing.Point(39, 22);
+            this.lab2_var4_button1.Location = new System.Drawing.Point(3, 3);
             this.lab2_var4_button1.Name = "lab2_var4_button1";
             this.lab2_var4_button1.Size = new System.Drawing.Size(246, 51);
             this.lab2_var4_button1.TabIndex = 3;
@@ -384,7 +384,7 @@
             this.lab2_TabPage5.Controls.Add(this.lab2_panel5);
             this.lab2_TabPage5.Location = new System.Drawing.Point(4, 22);
             this.lab2_TabPage5.Name = "lab2_TabPage5";
-            this.lab2_TabPage5.Size = new System.Drawing.Size(576, 235);
+            this.lab2_TabPage5.Size = new System.Drawing.Size(762, 314);
             this.lab2_TabPage5.TabIndex = 4;
             this.lab2_TabPage5.Text = "Варіант 5";
             this.lab2_TabPage5.UseVisualStyleBackColor = true;
@@ -397,14 +397,14 @@
             this.lab2_panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lab2_panel5.Location = new System.Drawing.Point(0, 0);
             this.lab2_panel5.Name = "lab2_panel5";
-            this.lab2_panel5.Size = new System.Drawing.Size(576, 235);
+            this.lab2_panel5.Size = new System.Drawing.Size(762, 314);
             this.lab2_panel5.TabIndex = 1;
             // 
             // lab2_exitButton5
             // 
-            this.lab2_exitButton5.Location = new System.Drawing.Point(207, 177);
+            this.lab2_exitButton5.Location = new System.Drawing.Point(3, 60);
             this.lab2_exitButton5.Name = "lab2_exitButton5";
-            this.lab2_exitButton5.Size = new System.Drawing.Size(159, 36);
+            this.lab2_exitButton5.Size = new System.Drawing.Size(498, 36);
             this.lab2_exitButton5.TabIndex = 5;
             this.lab2_exitButton5.Text = "Завершити роботу";
             this.lab2_exitButton5.UseVisualStyleBackColor = true;
@@ -412,7 +412,7 @@
             // 
             // lab2_var5_button2
             // 
-            this.lab2_var5_button2.Location = new System.Drawing.Point(291, 22);
+            this.lab2_var5_button2.Location = new System.Drawing.Point(255, 3);
             this.lab2_var5_button2.Name = "lab2_var5_button2";
             this.lab2_var5_button2.Size = new System.Drawing.Size(246, 51);
             this.lab2_var5_button2.TabIndex = 4;
@@ -422,7 +422,7 @@
             // 
             // lab2_var5_button1
             // 
-            this.lab2_var5_button1.Location = new System.Drawing.Point(39, 22);
+            this.lab2_var5_button1.Location = new System.Drawing.Point(3, 3);
             this.lab2_var5_button1.Name = "lab2_var5_button1";
             this.lab2_var5_button1.Size = new System.Drawing.Size(246, 51);
             this.lab2_var5_button1.TabIndex = 3;
@@ -435,7 +435,7 @@
             this.lab2_TabPage6.Controls.Add(this.lab2_panel6);
             this.lab2_TabPage6.Location = new System.Drawing.Point(4, 22);
             this.lab2_TabPage6.Name = "lab2_TabPage6";
-            this.lab2_TabPage6.Size = new System.Drawing.Size(576, 235);
+            this.lab2_TabPage6.Size = new System.Drawing.Size(762, 314);
             this.lab2_TabPage6.TabIndex = 5;
             this.lab2_TabPage6.Text = "Варіант 6";
             this.lab2_TabPage6.UseVisualStyleBackColor = true;
@@ -448,14 +448,14 @@
             this.lab2_panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lab2_panel6.Location = new System.Drawing.Point(0, 0);
             this.lab2_panel6.Name = "lab2_panel6";
-            this.lab2_panel6.Size = new System.Drawing.Size(576, 235);
+            this.lab2_panel6.Size = new System.Drawing.Size(762, 314);
             this.lab2_panel6.TabIndex = 1;
             // 
             // lab2_exitButton6
             // 
-            this.lab2_exitButton6.Location = new System.Drawing.Point(207, 177);
+            this.lab2_exitButton6.Location = new System.Drawing.Point(3, 60);
             this.lab2_exitButton6.Name = "lab2_exitButton6";
-            this.lab2_exitButton6.Size = new System.Drawing.Size(159, 36);
+            this.lab2_exitButton6.Size = new System.Drawing.Size(498, 36);
             this.lab2_exitButton6.TabIndex = 5;
             this.lab2_exitButton6.Text = "Завершити роботу";
             this.lab2_exitButton6.UseVisualStyleBackColor = true;
@@ -463,7 +463,7 @@
             // 
             // lab2_var6_button2
             // 
-            this.lab2_var6_button2.Location = new System.Drawing.Point(291, 22);
+            this.lab2_var6_button2.Location = new System.Drawing.Point(255, 3);
             this.lab2_var6_button2.Name = "lab2_var6_button2";
             this.lab2_var6_button2.Size = new System.Drawing.Size(246, 51);
             this.lab2_var6_button2.TabIndex = 4;
@@ -473,7 +473,7 @@
             // 
             // lab2_var6_button1
             // 
-            this.lab2_var6_button1.Location = new System.Drawing.Point(39, 22);
+            this.lab2_var6_button1.Location = new System.Drawing.Point(3, 3);
             this.lab2_var6_button1.Name = "lab2_var6_button1";
             this.lab2_var6_button1.Size = new System.Drawing.Size(246, 51);
             this.lab2_var6_button1.TabIndex = 3;
@@ -487,7 +487,7 @@
             this.lab2_TabPage7.Controls.Add(this.lab2_panel7);
             this.lab2_TabPage7.Location = new System.Drawing.Point(4, 22);
             this.lab2_TabPage7.Name = "lab2_TabPage7";
-            this.lab2_TabPage7.Size = new System.Drawing.Size(576, 235);
+            this.lab2_TabPage7.Size = new System.Drawing.Size(516, 112);
             this.lab2_TabPage7.TabIndex = 6;
             this.lab2_TabPage7.Text = "Варіант 7";
             // 
@@ -500,7 +500,7 @@
             this.lab2_panel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lab2_panel7.Location = new System.Drawing.Point(0, 0);
             this.lab2_panel7.Name = "lab2_panel7";
-            this.lab2_panel7.Size = new System.Drawing.Size(576, 235);
+            this.lab2_panel7.Size = new System.Drawing.Size(516, 112);
             this.lab2_panel7.TabIndex = 1;
             // 
             // lab2_exitButton7
@@ -508,9 +508,9 @@
             this.lab2_exitButton7.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.lab2_exitButton7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lab2_exitButton7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.lab2_exitButton7.Location = new System.Drawing.Point(207, 177);
+            this.lab2_exitButton7.Location = new System.Drawing.Point(3, 60);
             this.lab2_exitButton7.Name = "lab2_exitButton7";
-            this.lab2_exitButton7.Size = new System.Drawing.Size(159, 36);
+            this.lab2_exitButton7.Size = new System.Drawing.Size(498, 36);
             this.lab2_exitButton7.TabIndex = 2;
             this.lab2_exitButton7.Text = "Завершити роботу";
             this.lab2_exitButton7.UseVisualStyleBackColor = false;
@@ -521,7 +521,7 @@
             this.lab2_var7_button2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.lab2_var7_button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lab2_var7_button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.lab2_var7_button2.Location = new System.Drawing.Point(290, 22);
+            this.lab2_var7_button2.Location = new System.Drawing.Point(255, 3);
             this.lab2_var7_button2.Name = "lab2_var7_button2";
             this.lab2_var7_button2.Size = new System.Drawing.Size(246, 51);
             this.lab2_var7_button2.TabIndex = 1;
@@ -534,7 +534,7 @@
             this.lab2_var7_button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.lab2_var7_button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lab2_var7_button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.lab2_var7_button1.Location = new System.Drawing.Point(40, 22);
+            this.lab2_var7_button1.Location = new System.Drawing.Point(3, 3);
             this.lab2_var7_button1.Name = "lab2_var7_button1";
             this.lab2_var7_button1.Size = new System.Drawing.Size(246, 51);
             this.lab2_var7_button1.TabIndex = 0;
@@ -547,7 +547,7 @@
             this.lab2_TabPage8.Controls.Add(this.lab2_panel8);
             this.lab2_TabPage8.Location = new System.Drawing.Point(4, 22);
             this.lab2_TabPage8.Name = "lab2_TabPage8";
-            this.lab2_TabPage8.Size = new System.Drawing.Size(576, 235);
+            this.lab2_TabPage8.Size = new System.Drawing.Size(762, 314);
             this.lab2_TabPage8.TabIndex = 7;
             this.lab2_TabPage8.Text = "Варіант 8";
             this.lab2_TabPage8.UseVisualStyleBackColor = true;
@@ -560,14 +560,14 @@
             this.lab2_panel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lab2_panel8.Location = new System.Drawing.Point(0, 0);
             this.lab2_panel8.Name = "lab2_panel8";
-            this.lab2_panel8.Size = new System.Drawing.Size(576, 235);
+            this.lab2_panel8.Size = new System.Drawing.Size(762, 314);
             this.lab2_panel8.TabIndex = 1;
             // 
             // lab2_exitButton8
             // 
-            this.lab2_exitButton8.Location = new System.Drawing.Point(207, 177);
+            this.lab2_exitButton8.Location = new System.Drawing.Point(3, 60);
             this.lab2_exitButton8.Name = "lab2_exitButton8";
-            this.lab2_exitButton8.Size = new System.Drawing.Size(159, 36);
+            this.lab2_exitButton8.Size = new System.Drawing.Size(498, 36);
             this.lab2_exitButton8.TabIndex = 5;
             this.lab2_exitButton8.Text = "Завершити роботу";
             this.lab2_exitButton8.UseVisualStyleBackColor = true;
@@ -575,7 +575,7 @@
             // 
             // lab2_var8_button2
             // 
-            this.lab2_var8_button2.Location = new System.Drawing.Point(291, 22);
+            this.lab2_var8_button2.Location = new System.Drawing.Point(255, 3);
             this.lab2_var8_button2.Name = "lab2_var8_button2";
             this.lab2_var8_button2.Size = new System.Drawing.Size(246, 51);
             this.lab2_var8_button2.TabIndex = 4;
@@ -585,7 +585,7 @@
             // 
             // lab2_var8_button1
             // 
-            this.lab2_var8_button1.Location = new System.Drawing.Point(39, 22);
+            this.lab2_var8_button1.Location = new System.Drawing.Point(3, 3);
             this.lab2_var8_button1.Name = "lab2_var8_button1";
             this.lab2_var8_button1.Size = new System.Drawing.Size(246, 51);
             this.lab2_var8_button1.TabIndex = 3;
@@ -598,7 +598,7 @@
             this.lab2_TabPage9.Controls.Add(this.lab2_panel9);
             this.lab2_TabPage9.Location = new System.Drawing.Point(4, 22);
             this.lab2_TabPage9.Name = "lab2_TabPage9";
-            this.lab2_TabPage9.Size = new System.Drawing.Size(576, 235);
+            this.lab2_TabPage9.Size = new System.Drawing.Size(762, 314);
             this.lab2_TabPage9.TabIndex = 8;
             this.lab2_TabPage9.Text = "Варіант 9";
             this.lab2_TabPage9.UseVisualStyleBackColor = true;
@@ -611,14 +611,14 @@
             this.lab2_panel9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lab2_panel9.Location = new System.Drawing.Point(0, 0);
             this.lab2_panel9.Name = "lab2_panel9";
-            this.lab2_panel9.Size = new System.Drawing.Size(576, 235);
+            this.lab2_panel9.Size = new System.Drawing.Size(762, 314);
             this.lab2_panel9.TabIndex = 1;
             // 
             // lab2_exitButton9
             // 
-            this.lab2_exitButton9.Location = new System.Drawing.Point(207, 177);
+            this.lab2_exitButton9.Location = new System.Drawing.Point(3, 60);
             this.lab2_exitButton9.Name = "lab2_exitButton9";
-            this.lab2_exitButton9.Size = new System.Drawing.Size(159, 36);
+            this.lab2_exitButton9.Size = new System.Drawing.Size(498, 36);
             this.lab2_exitButton9.TabIndex = 5;
             this.lab2_exitButton9.Text = "Завершити роботу";
             this.lab2_exitButton9.UseVisualStyleBackColor = true;
@@ -626,7 +626,7 @@
             // 
             // lab2_var9_button2
             // 
-            this.lab2_var9_button2.Location = new System.Drawing.Point(291, 22);
+            this.lab2_var9_button2.Location = new System.Drawing.Point(255, 3);
             this.lab2_var9_button2.Name = "lab2_var9_button2";
             this.lab2_var9_button2.Size = new System.Drawing.Size(246, 51);
             this.lab2_var9_button2.TabIndex = 4;
@@ -636,7 +636,7 @@
             // 
             // lab2_var9_button1
             // 
-            this.lab2_var9_button1.Location = new System.Drawing.Point(39, 22);
+            this.lab2_var9_button1.Location = new System.Drawing.Point(3, 3);
             this.lab2_var9_button1.Name = "lab2_var9_button1";
             this.lab2_var9_button1.Size = new System.Drawing.Size(246, 51);
             this.lab2_var9_button1.TabIndex = 3;
@@ -649,7 +649,7 @@
             this.lab2_TabPage10.Controls.Add(this.lab2_panel10);
             this.lab2_TabPage10.Location = new System.Drawing.Point(4, 22);
             this.lab2_TabPage10.Name = "lab2_TabPage10";
-            this.lab2_TabPage10.Size = new System.Drawing.Size(576, 235);
+            this.lab2_TabPage10.Size = new System.Drawing.Size(762, 314);
             this.lab2_TabPage10.TabIndex = 9;
             this.lab2_TabPage10.Text = "Варіант 10";
             this.lab2_TabPage10.UseVisualStyleBackColor = true;
@@ -662,14 +662,14 @@
             this.lab2_panel10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lab2_panel10.Location = new System.Drawing.Point(0, 0);
             this.lab2_panel10.Name = "lab2_panel10";
-            this.lab2_panel10.Size = new System.Drawing.Size(576, 235);
+            this.lab2_panel10.Size = new System.Drawing.Size(762, 314);
             this.lab2_panel10.TabIndex = 1;
             // 
             // lab2_exitButton10
             // 
-            this.lab2_exitButton10.Location = new System.Drawing.Point(207, 177);
+            this.lab2_exitButton10.Location = new System.Drawing.Point(3, 60);
             this.lab2_exitButton10.Name = "lab2_exitButton10";
-            this.lab2_exitButton10.Size = new System.Drawing.Size(159, 36);
+            this.lab2_exitButton10.Size = new System.Drawing.Size(498, 36);
             this.lab2_exitButton10.TabIndex = 5;
             this.lab2_exitButton10.Text = "Завершити роботу";
             this.lab2_exitButton10.UseVisualStyleBackColor = true;
@@ -677,7 +677,7 @@
             // 
             // lab2_var10_button2
             // 
-            this.lab2_var10_button2.Location = new System.Drawing.Point(291, 22);
+            this.lab2_var10_button2.Location = new System.Drawing.Point(255, 3);
             this.lab2_var10_button2.Name = "lab2_var10_button2";
             this.lab2_var10_button2.Size = new System.Drawing.Size(246, 51);
             this.lab2_var10_button2.TabIndex = 4;
@@ -687,7 +687,7 @@
             // 
             // lab2_var10_button1
             // 
-            this.lab2_var10_button1.Location = new System.Drawing.Point(39, 22);
+            this.lab2_var10_button1.Location = new System.Drawing.Point(3, 3);
             this.lab2_var10_button1.Name = "lab2_var10_button1";
             this.lab2_var10_button1.Size = new System.Drawing.Size(246, 51);
             this.lab2_var10_button1.TabIndex = 3;
@@ -700,7 +700,7 @@
             this.lab2_TabPage11.Controls.Add(this.lab2_panel11);
             this.lab2_TabPage11.Location = new System.Drawing.Point(4, 22);
             this.lab2_TabPage11.Name = "lab2_TabPage11";
-            this.lab2_TabPage11.Size = new System.Drawing.Size(576, 235);
+            this.lab2_TabPage11.Size = new System.Drawing.Size(762, 314);
             this.lab2_TabPage11.TabIndex = 10;
             this.lab2_TabPage11.Text = "Варіант 11";
             this.lab2_TabPage11.UseVisualStyleBackColor = true;
@@ -713,14 +713,14 @@
             this.lab2_panel11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lab2_panel11.Location = new System.Drawing.Point(0, 0);
             this.lab2_panel11.Name = "lab2_panel11";
-            this.lab2_panel11.Size = new System.Drawing.Size(576, 235);
+            this.lab2_panel11.Size = new System.Drawing.Size(762, 314);
             this.lab2_panel11.TabIndex = 1;
             // 
             // lab2_exitButton11
             // 
-            this.lab2_exitButton11.Location = new System.Drawing.Point(207, 177);
+            this.lab2_exitButton11.Location = new System.Drawing.Point(3, 60);
             this.lab2_exitButton11.Name = "lab2_exitButton11";
-            this.lab2_exitButton11.Size = new System.Drawing.Size(159, 36);
+            this.lab2_exitButton11.Size = new System.Drawing.Size(498, 36);
             this.lab2_exitButton11.TabIndex = 5;
             this.lab2_exitButton11.Text = "Завершити роботу";
             this.lab2_exitButton11.UseVisualStyleBackColor = true;
@@ -728,7 +728,7 @@
             // 
             // lab2_var11_button2
             // 
-            this.lab2_var11_button2.Location = new System.Drawing.Point(291, 22);
+            this.lab2_var11_button2.Location = new System.Drawing.Point(255, 3);
             this.lab2_var11_button2.Name = "lab2_var11_button2";
             this.lab2_var11_button2.Size = new System.Drawing.Size(246, 51);
             this.lab2_var11_button2.TabIndex = 4;
@@ -738,7 +738,7 @@
             // 
             // lab2_var11_button1
             // 
-            this.lab2_var11_button1.Location = new System.Drawing.Point(39, 22);
+            this.lab2_var11_button1.Location = new System.Drawing.Point(3, 3);
             this.lab2_var11_button1.Name = "lab2_var11_button1";
             this.lab2_var11_button1.Size = new System.Drawing.Size(246, 51);
             this.lab2_var11_button1.TabIndex = 3;
@@ -751,7 +751,7 @@
             this.lab2_TabPage12.Controls.Add(this.lab2_panel12);
             this.lab2_TabPage12.Location = new System.Drawing.Point(4, 22);
             this.lab2_TabPage12.Name = "lab2_TabPage12";
-            this.lab2_TabPage12.Size = new System.Drawing.Size(576, 235);
+            this.lab2_TabPage12.Size = new System.Drawing.Size(762, 314);
             this.lab2_TabPage12.TabIndex = 11;
             this.lab2_TabPage12.Text = "Варіант 12";
             this.lab2_TabPage12.UseVisualStyleBackColor = true;
@@ -764,14 +764,14 @@
             this.lab2_panel12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lab2_panel12.Location = new System.Drawing.Point(0, 0);
             this.lab2_panel12.Name = "lab2_panel12";
-            this.lab2_panel12.Size = new System.Drawing.Size(576, 235);
+            this.lab2_panel12.Size = new System.Drawing.Size(762, 314);
             this.lab2_panel12.TabIndex = 1;
             // 
             // lab2_exitButton12
             // 
-            this.lab2_exitButton12.Location = new System.Drawing.Point(207, 177);
+            this.lab2_exitButton12.Location = new System.Drawing.Point(3, 60);
             this.lab2_exitButton12.Name = "lab2_exitButton12";
-            this.lab2_exitButton12.Size = new System.Drawing.Size(159, 36);
+            this.lab2_exitButton12.Size = new System.Drawing.Size(498, 36);
             this.lab2_exitButton12.TabIndex = 5;
             this.lab2_exitButton12.Text = "Завершити роботу";
             this.lab2_exitButton12.UseVisualStyleBackColor = true;
@@ -779,7 +779,7 @@
             // 
             // lab2_var12_button2
             // 
-            this.lab2_var12_button2.Location = new System.Drawing.Point(291, 22);
+            this.lab2_var12_button2.Location = new System.Drawing.Point(255, 3);
             this.lab2_var12_button2.Name = "lab2_var12_button2";
             this.lab2_var12_button2.Size = new System.Drawing.Size(246, 51);
             this.lab2_var12_button2.TabIndex = 4;
@@ -789,7 +789,7 @@
             // 
             // lab2_var12_button1
             // 
-            this.lab2_var12_button1.Location = new System.Drawing.Point(39, 22);
+            this.lab2_var12_button1.Location = new System.Drawing.Point(3, 3);
             this.lab2_var12_button1.Name = "lab2_var12_button1";
             this.lab2_var12_button1.Size = new System.Drawing.Size(246, 51);
             this.lab2_var12_button1.TabIndex = 3;
@@ -802,7 +802,7 @@
             this.lab2_TabPage13.Controls.Add(this.lab2_panel13);
             this.lab2_TabPage13.Location = new System.Drawing.Point(4, 22);
             this.lab2_TabPage13.Name = "lab2_TabPage13";
-            this.lab2_TabPage13.Size = new System.Drawing.Size(576, 235);
+            this.lab2_TabPage13.Size = new System.Drawing.Size(762, 314);
             this.lab2_TabPage13.TabIndex = 12;
             this.lab2_TabPage13.Text = "Варіант 13";
             this.lab2_TabPage13.UseVisualStyleBackColor = true;
@@ -815,14 +815,14 @@
             this.lab2_panel13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lab2_panel13.Location = new System.Drawing.Point(0, 0);
             this.lab2_panel13.Name = "lab2_panel13";
-            this.lab2_panel13.Size = new System.Drawing.Size(576, 235);
+            this.lab2_panel13.Size = new System.Drawing.Size(762, 314);
             this.lab2_panel13.TabIndex = 1;
             // 
             // lab2_exitButton13
             // 
-            this.lab2_exitButton13.Location = new System.Drawing.Point(207, 177);
+            this.lab2_exitButton13.Location = new System.Drawing.Point(3, 60);
             this.lab2_exitButton13.Name = "lab2_exitButton13";
-            this.lab2_exitButton13.Size = new System.Drawing.Size(159, 36);
+            this.lab2_exitButton13.Size = new System.Drawing.Size(498, 36);
             this.lab2_exitButton13.TabIndex = 5;
             this.lab2_exitButton13.Text = "Завершити роботу";
             this.lab2_exitButton13.UseVisualStyleBackColor = true;
@@ -830,7 +830,7 @@
             // 
             // lab2_var13_button2
             // 
-            this.lab2_var13_button2.Location = new System.Drawing.Point(291, 22);
+            this.lab2_var13_button2.Location = new System.Drawing.Point(255, 3);
             this.lab2_var13_button2.Name = "lab2_var13_button2";
             this.lab2_var13_button2.Size = new System.Drawing.Size(246, 51);
             this.lab2_var13_button2.TabIndex = 4;
@@ -840,7 +840,7 @@
             // 
             // lab2_var13_button1
             // 
-            this.lab2_var13_button1.Location = new System.Drawing.Point(39, 22);
+            this.lab2_var13_button1.Location = new System.Drawing.Point(3, 3);
             this.lab2_var13_button1.Name = "lab2_var13_button1";
             this.lab2_var13_button1.Size = new System.Drawing.Size(246, 51);
             this.lab2_var13_button1.TabIndex = 3;
@@ -853,7 +853,7 @@
             this.lab2_TabPage14.Controls.Add(this.lab2_panel14);
             this.lab2_TabPage14.Location = new System.Drawing.Point(4, 22);
             this.lab2_TabPage14.Name = "lab2_TabPage14";
-            this.lab2_TabPage14.Size = new System.Drawing.Size(576, 235);
+            this.lab2_TabPage14.Size = new System.Drawing.Size(762, 314);
             this.lab2_TabPage14.TabIndex = 13;
             this.lab2_TabPage14.Text = "Варіант 14";
             this.lab2_TabPage14.UseVisualStyleBackColor = true;
@@ -866,14 +866,14 @@
             this.lab2_panel14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lab2_panel14.Location = new System.Drawing.Point(0, 0);
             this.lab2_panel14.Name = "lab2_panel14";
-            this.lab2_panel14.Size = new System.Drawing.Size(576, 235);
+            this.lab2_panel14.Size = new System.Drawing.Size(762, 314);
             this.lab2_panel14.TabIndex = 1;
             // 
             // lab2_exitButton14
             // 
-            this.lab2_exitButton14.Location = new System.Drawing.Point(207, 177);
+            this.lab2_exitButton14.Location = new System.Drawing.Point(3, 60);
             this.lab2_exitButton14.Name = "lab2_exitButton14";
-            this.lab2_exitButton14.Size = new System.Drawing.Size(159, 36);
+            this.lab2_exitButton14.Size = new System.Drawing.Size(498, 36);
             this.lab2_exitButton14.TabIndex = 5;
             this.lab2_exitButton14.Text = "Завершити роботу";
             this.lab2_exitButton14.UseVisualStyleBackColor = true;
@@ -881,7 +881,7 @@
             // 
             // lab2_var14_button2
             // 
-            this.lab2_var14_button2.Location = new System.Drawing.Point(291, 22);
+            this.lab2_var14_button2.Location = new System.Drawing.Point(255, 3);
             this.lab2_var14_button2.Name = "lab2_var14_button2";
             this.lab2_var14_button2.Size = new System.Drawing.Size(246, 51);
             this.lab2_var14_button2.TabIndex = 4;
@@ -891,7 +891,7 @@
             // 
             // lab2_var14_button1
             // 
-            this.lab2_var14_button1.Location = new System.Drawing.Point(39, 22);
+            this.lab2_var14_button1.Location = new System.Drawing.Point(3, 3);
             this.lab2_var14_button1.Name = "lab2_var14_button1";
             this.lab2_var14_button1.Size = new System.Drawing.Size(246, 51);
             this.lab2_var14_button1.TabIndex = 3;
@@ -904,7 +904,7 @@
             this.lab2_TabPage15.Controls.Add(this.lab2_panel15);
             this.lab2_TabPage15.Location = new System.Drawing.Point(4, 22);
             this.lab2_TabPage15.Name = "lab2_TabPage15";
-            this.lab2_TabPage15.Size = new System.Drawing.Size(576, 235);
+            this.lab2_TabPage15.Size = new System.Drawing.Size(762, 314);
             this.lab2_TabPage15.TabIndex = 14;
             this.lab2_TabPage15.Text = "Варіант 15";
             this.lab2_TabPage15.UseVisualStyleBackColor = true;
@@ -917,14 +917,14 @@
             this.lab2_panel15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lab2_panel15.Location = new System.Drawing.Point(0, 0);
             this.lab2_panel15.Name = "lab2_panel15";
-            this.lab2_panel15.Size = new System.Drawing.Size(576, 235);
+            this.lab2_panel15.Size = new System.Drawing.Size(762, 314);
             this.lab2_panel15.TabIndex = 1;
             // 
             // lab2_exitButton15
             // 
-            this.lab2_exitButton15.Location = new System.Drawing.Point(207, 177);
+            this.lab2_exitButton15.Location = new System.Drawing.Point(3, 60);
             this.lab2_exitButton15.Name = "lab2_exitButton15";
-            this.lab2_exitButton15.Size = new System.Drawing.Size(159, 36);
+            this.lab2_exitButton15.Size = new System.Drawing.Size(498, 36);
             this.lab2_exitButton15.TabIndex = 5;
             this.lab2_exitButton15.Text = "Завершити роботу";
             this.lab2_exitButton15.UseVisualStyleBackColor = true;
@@ -932,7 +932,7 @@
             // 
             // lab2_var15_button2
             // 
-            this.lab2_var15_button2.Location = new System.Drawing.Point(291, 22);
+            this.lab2_var15_button2.Location = new System.Drawing.Point(255, 3);
             this.lab2_var15_button2.Name = "lab2_var15_button2";
             this.lab2_var15_button2.Size = new System.Drawing.Size(246, 51);
             this.lab2_var15_button2.TabIndex = 4;
@@ -942,7 +942,7 @@
             // 
             // lab2_var15_button1
             // 
-            this.lab2_var15_button1.Location = new System.Drawing.Point(39, 22);
+            this.lab2_var15_button1.Location = new System.Drawing.Point(3, 3);
             this.lab2_var15_button1.Name = "lab2_var15_button1";
             this.lab2_var15_button1.Size = new System.Drawing.Size(246, 51);
             this.lab2_var15_button1.TabIndex = 3;
@@ -954,7 +954,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 261);
+            this.ClientSize = new System.Drawing.Size(524, 138);
             this.Controls.Add(this.lab2_panel0);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
