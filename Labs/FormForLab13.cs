@@ -15,6 +15,7 @@ namespace Labs
         public FormForLab13() : base()
         {
             InitializeComponent();
+            BirthdayDay.MaxDate = DateTime.Now;
             BirthdayDay.Format = DateTimePickerFormat.Custom;
             BirthdayDay.CustomFormat = "         ddMMMMyyyy";
         }
