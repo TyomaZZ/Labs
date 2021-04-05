@@ -259,9 +259,9 @@
             // 
             // exitButton1
             // 
-            this.exitButton1.Location = new System.Drawing.Point(17, 195);
+            this.exitButton1.Location = new System.Drawing.Point(17, 185);
             this.exitButton1.Name = "exitButton1";
-            this.exitButton1.Size = new System.Drawing.Size(311, 62);
+            this.exitButton1.Size = new System.Drawing.Size(311, 35);
             this.exitButton1.TabIndex = 13;
             this.exitButton1.Text = "Завершити роботу";
             this.exitButton1.UseVisualStyleBackColor = true;
@@ -269,9 +269,9 @@
             // 
             // lab3_var1_button6
             // 
-            this.lab3_var1_button6.Location = new System.Drawing.Point(92, 143);
+            this.lab3_var1_button6.Location = new System.Drawing.Point(17, 143);
             this.lab3_var1_button6.Name = "lab3_var1_button6";
-            this.lab3_var1_button6.Size = new System.Drawing.Size(158, 50);
+            this.lab3_var1_button6.Size = new System.Drawing.Size(311, 36);
             this.lab3_var1_button6.TabIndex = 12;
             this.lab3_var1_button6.Text = "Поточна кількість об\'єктів";
             this.lab3_var1_button6.UseVisualStyleBackColor = true;
@@ -319,9 +319,9 @@
             // 
             // lab3_var1_button1
             // 
-            this.lab3_var1_button1.Location = new System.Drawing.Point(92, 5);
+            this.lab3_var1_button1.Location = new System.Drawing.Point(17, 5);
             this.lab3_var1_button1.Name = "lab3_var1_button1";
-            this.lab3_var1_button1.Size = new System.Drawing.Size(158, 47);
+            this.lab3_var1_button1.Size = new System.Drawing.Size(311, 47);
             this.lab3_var1_button1.TabIndex = 7;
             this.lab3_var1_button1.Text = "Створити\r\nлітак";
             this.lab3_var1_button1.UseVisualStyleBackColor = true;
@@ -354,9 +354,9 @@
             // 
             // exitButton2
             // 
-            this.exitButton2.Location = new System.Drawing.Point(17, 195);
+            this.exitButton2.Location = new System.Drawing.Point(17, 182);
             this.exitButton2.Name = "exitButton2";
-            this.exitButton2.Size = new System.Drawing.Size(311, 62);
+            this.exitButton2.Size = new System.Drawing.Size(311, 35);
             this.exitButton2.TabIndex = 13;
             this.exitButton2.Text = "Завершити роботу";
             this.exitButton2.UseVisualStyleBackColor = true;
@@ -364,9 +364,9 @@
             // 
             // lab3_var2_button6
             // 
-            this.lab3_var2_button6.Location = new System.Drawing.Point(92, 143);
+            this.lab3_var2_button6.Location = new System.Drawing.Point(17, 143);
             this.lab3_var2_button6.Name = "lab3_var2_button6";
-            this.lab3_var2_button6.Size = new System.Drawing.Size(158, 46);
+            this.lab3_var2_button6.Size = new System.Drawing.Size(311, 33);
             this.lab3_var2_button6.TabIndex = 12;
             this.lab3_var2_button6.Text = "Поточна кількість об\'єктів";
             this.lab3_var2_button6.UseVisualStyleBackColor = true;
@@ -414,9 +414,9 @@
             // 
             // lab3_var2_button1
             // 
-            this.lab3_var2_button1.Location = new System.Drawing.Point(92, 5);
+            this.lab3_var2_button1.Location = new System.Drawing.Point(17, 5);
             this.lab3_var2_button1.Name = "lab3_var2_button1";
-            this.lab3_var2_button1.Size = new System.Drawing.Size(158, 47);
+            this.lab3_var2_button1.Size = new System.Drawing.Size(311, 47);
             this.lab3_var2_button1.TabIndex = 7;
             this.lab3_var2_button1.Text = "Створити\r\nрибу";
             this.lab3_var2_button1.UseVisualStyleBackColor = true;
@@ -829,9 +829,9 @@
             // 
             // exitButton7
             // 
-            this.exitButton7.Location = new System.Drawing.Point(17, 195);
+            this.exitButton7.Location = new System.Drawing.Point(18, 179);
             this.exitButton7.Name = "exitButton7";
-            this.exitButton7.Size = new System.Drawing.Size(311, 62);
+            this.exitButton7.Size = new System.Drawing.Size(311, 34);
             this.exitButton7.TabIndex = 13;
             this.exitButton7.Text = "Завершити роботу";
             this.exitButton7.UseVisualStyleBackColor = true;
@@ -839,9 +839,9 @@
             // 
             // lab3_var7_button6
             // 
-            this.lab3_var7_button6.Location = new System.Drawing.Point(92, 143);
+            this.lab3_var7_button6.Location = new System.Drawing.Point(18, 137);
             this.lab3_var7_button6.Name = "lab3_var7_button6";
-            this.lab3_var7_button6.Size = new System.Drawing.Size(158, 46);
+            this.lab3_var7_button6.Size = new System.Drawing.Size(311, 36);
             this.lab3_var7_button6.TabIndex = 12;
             this.lab3_var7_button6.Text = "Поточна кількість об\'єктів";
             this.lab3_var7_button6.UseVisualStyleBackColor = true;
@@ -849,7 +849,7 @@
             // 
             // lab3_var7_button5
             // 
-            this.lab3_var7_button5.Location = new System.Drawing.Point(176, 101);
+            this.lab3_var7_button5.Location = new System.Drawing.Point(176, 92);
             this.lab3_var7_button5.Name = "lab3_var7_button5";
             this.lab3_var7_button5.Size = new System.Drawing.Size(152, 39);
             this.lab3_var7_button5.TabIndex = 11;
@@ -859,7 +859,7 @@
             // 
             // lab3_var7_button4
             // 
-            this.lab3_var7_button4.Location = new System.Drawing.Point(17, 101);
+            this.lab3_var7_button4.Location = new System.Drawing.Point(17, 92);
             this.lab3_var7_button4.Name = "lab3_var7_button4";
             this.lab3_var7_button4.Size = new System.Drawing.Size(152, 39);
             this.lab3_var7_button4.TabIndex = 10;
@@ -869,7 +869,7 @@
             // 
             // lab3_var7_button3
             // 
-            this.lab3_var7_button3.Location = new System.Drawing.Point(176, 56);
+            this.lab3_var7_button3.Location = new System.Drawing.Point(176, 47);
             this.lab3_var7_button3.Name = "lab3_var7_button3";
             this.lab3_var7_button3.Size = new System.Drawing.Size(152, 39);
             this.lab3_var7_button3.TabIndex = 9;
@@ -879,7 +879,7 @@
             // 
             // lab3_var7_button2
             // 
-            this.lab3_var7_button2.Location = new System.Drawing.Point(17, 56);
+            this.lab3_var7_button2.Location = new System.Drawing.Point(18, 47);
             this.lab3_var7_button2.Name = "lab3_var7_button2";
             this.lab3_var7_button2.Size = new System.Drawing.Size(152, 39);
             this.lab3_var7_button2.TabIndex = 8;
@@ -889,9 +889,9 @@
             // 
             // lab3_var7_button1
             // 
-            this.lab3_var7_button1.Location = new System.Drawing.Point(92, 5);
+            this.lab3_var7_button1.Location = new System.Drawing.Point(17, 5);
             this.lab3_var7_button1.Name = "lab3_var7_button1";
-            this.lab3_var7_button1.Size = new System.Drawing.Size(158, 47);
+            this.lab3_var7_button1.Size = new System.Drawing.Size(311, 36);
             this.lab3_var7_button1.TabIndex = 7;
             this.lab3_var7_button1.Text = "Створити\r\nверхній одяг";
             this.lab3_var7_button1.UseVisualStyleBackColor = true;
