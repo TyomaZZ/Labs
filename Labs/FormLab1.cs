@@ -14,59 +14,27 @@ namespace Labs
     public partial class lab1_Form : Form
     {
         public lab1_Form()
+        { InitializeComponent(); }
+        private void button1_Click(object sender, EventArgs e)
         {
-            InitializeComponent();
-        }
-        private void lab1_button1_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Програмування цікаве", 
-                "Історія 1", 
-                MessageBoxButtons.OK, 
-                MessageBoxIcon.Information, 
-                MessageBoxDefaultButton.Button1);
-            lab1_button2.Visible = true; lab1_button3.Visible = true; lab1_button4.Visible = true; lab1_button5.Visible = true;
+            MessageBox.Show("Програмування цікаве", "Історія 1", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
+            button2.Visible = true; button3.Visible = true; button4.Visible = true; button5.Visible = true;
         }
         private void lab1_button2_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Вивчаю ООП", 
-                "Історія 2", 
-                MessageBoxButtons.OK, 
-                MessageBoxIcon.Information, 
-                MessageBoxDefaultButton.Button1);
-        }
+        { MessageBox.Show("Вивчаю ООП", "Історія 2", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1); }
         private void lab1_button3_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show(
-                    "Генеруємо числа\nБажаєте змінити дизайн?\n", 
-                    "Історія 3", 
-                    MessageBoxButtons.YesNo, 
-                    MessageBoxIcon.Information, 
+            DialogResult result = MessageBox.Show("Генеруємо числа\nБажаєте змінити дизайн?\n", "Історія 3", MessageBoxButtons.YesNo, MessageBoxIcon.Information, 
                     MessageBoxDefaultButton.Button1);
             Random rnd = new Random();
-            if (result == DialogResult.Yes) lab1_panel.BackColor = Color.FromArgb(rnd.Next(0, 255), rnd.Next(0, 255), rnd.Next(0, 255));
+            if (result == DialogResult.Yes) 
+                lab1_panel.BackColor = Color.FromArgb(rnd.Next(0, 255), rnd.Next(0, 255), rnd.Next(0, 255));
         }
         private void lab1_button4_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show(
-                    "В прибраній кімнаті - меньше сміття\n",
-                    "Історія 4",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Information,
-                    MessageBoxDefaultButton.Button1);
-        }
+        { MessageBox.Show("В прибраній кімнаті - меньше сміття\n", "Історія 4", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1); }
         private void lab1_button5_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show(
-                    "Copy-Paste - корисна річ",
-                    "Історія 5",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Information,
-                    MessageBoxDefaultButton.Button1);
-        }
+        { MessageBox.Show("Copy-Paste - корисна річ", "Історія 5", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1); }
         private void lab1_exitButton_Click(object sender, EventArgs e)
-        {
-            Close();
-            //tyomashi
-        }
+        { Close(); }
     }
 }
