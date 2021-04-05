@@ -22,7 +22,7 @@ namespace Labs
         protected override void Result()
         {
             base.Result();
-            YearCount.Text = Yearss().ToString();
+            YearCount.Text = String.Format("Вік: {0}", Yearss().ToString());
         }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {

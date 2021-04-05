@@ -27,9 +27,9 @@ namespace Labs
         }
         protected virtual void Result()
         {
-            CardPIB.Text = PIBs().Trim();
-            Inits.Text = LastNameAndIs().Trim();
-            ENamer.Text = ENames().Trim();
+            CardPIB.Text = String.Format("ПІБ: {0}", PIBs().Trim());
+            Inits.Text = String.Format("Прізвище та ініціали: {0}", LastNameAndIs().Trim());
+            ENamer.Text = String.Format("Підпис: {0}", ENames().Trim());
         }
         private string PIBs()
         {
@@ -45,31 +45,24 @@ namespace Labs
         }
         public string CorrectS(string text)
         { 
-           if (text != "") {
-               return text.Trim().Substring(0, 1).ToUpper() + text.Trim().Substring(1, text.Trim().Length - 1).ToLower();
-}
-           else return " ";
-                   }
+           if (text != "") 
+                return text.Trim().Substring(0, 1).ToUpper() + text.Trim().Substring(1, text.Trim().Length - 1).ToLower();
+           else 
+                return " ";
+        }
         protected virtual void TextBox_TextChanged(object sender, EventArgs e)
         {
             ((TextBox)sender).Text = ((TextBox)sender).Text.Trim();
             if (((TextBox)sender).Text != "")
-            {
                 ((TextBox)sender).BackColor = Color.White;
-            }
-            else
-            {
+            else 
                 ((TextBox)sender).BackColor = Color.Red;
-            }
-            labelName.Text = CorrectS(FirstName.Text);
-            labelLastName.Text = CorrectS(LastName.Text);
-            labelFatherName.Text = CorrectS(FatherName.Text);
+            labelName.Text = String.Format("Ім'я: {0}", CorrectS(FirstName.Text));
+            labelLastName.Text = String.Format("Прізвище: {0}", CorrectS(LastName.Text));
+            labelFatherName.Text = String.Format("По батькові: {0}", CorrectS(FatherName.Text));
             Result();
         }
-
         protected virtual void buttonClose_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+        { Close(); }
     }
 }
