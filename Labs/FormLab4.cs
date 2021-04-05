@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Labs
-{
+{//tyomashi
     public partial class FormLab4 : Form
     { 
         Button a;
@@ -22,14 +22,9 @@ namespace Labs
             asd = toolStripStatusLabel1;
         }
         private void button_rnd(object sender, EventArgs e)
-        {
-            a.Hide();
-        }
+        { a.Hide(); }
         private void button1_Click(object sender, EventArgs e)
-        {
-            Close();
-            //tyomashi
-        }
+        { Close(); }
         private void button14_Click_1(object sender, EventArgs e)
         {
             if (a != null)
