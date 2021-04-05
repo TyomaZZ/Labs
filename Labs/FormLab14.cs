@@ -24,7 +24,6 @@ namespace Labs
         public FormLab14() : base()
         { 
             InitializeComponent();
-            BirthdayDay.MaxDate = DateTime.Now;
         }
         private void buttonSaveDefault_Click(object sender, EventArgs e)
         { saveFile("default.txt", pathDefault, true); }
