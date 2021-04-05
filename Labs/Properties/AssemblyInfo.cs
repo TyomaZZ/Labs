@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("1")]
 [assembly: AssemblyCompany("tyomashi")]
 [assembly: AssemblyProduct("Labs")]
-[assembly: AssemblyCopyright("Copyright ©  2020")]
+[assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("OurSource")]
 [assembly: AssemblyCulture("")]
 
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // Можно задать все значения или принять номера сборки и редакции по умолчанию 
 // используя "*", как показано ниже:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("2.11.1.152")]
-[assembly: AssemblyFileVersion("2.11.1.152")]
+[assembly: AssemblyVersion("2.14.1.202")]
+[assembly: AssemblyFileVersion("2.14.1.202")]
