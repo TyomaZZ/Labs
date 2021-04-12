@@ -63,9 +63,175 @@ namespace Labs.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap aboutUs_png {
+            get {
+                object obj = ResourceManager.GetObject("aboutUs.png", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Powered by tyomashi.
+        /// </summary>
+        internal static string aboutUsLabel {
+            get {
+                return ResourceManager.GetString("aboutUsLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на aboutUs.png.
+        /// </summary>
+        internal static string aboutUsPhoto {
+            get {
+                return ResourceManager.GetString("aboutUsPhoto", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Про програму.
+        /// </summary>
+        internal static string aboutUsText {
+            get {
+                return ResourceManager.GetString("aboutUsText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Закрити вікно.
+        /// </summary>
+        internal static string allButton {
+            get {
+                return ResourceManager.GetString("allButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap iconfinder_Pinterest_UI_18_2540590 {
             get {
                 object obj = ResourceManager.GetObject("iconfinder_Pinterest_UI-18_2540590", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Kiber_jpg {
+            get {
+                object obj = ResourceManager.GetObject("Kiber.jpg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Mess_gif {
+            get {
+                object obj = ResourceManager.GetObject("Mess.gif", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Безкоштовне розповюдження данного ПЗ!.
+        /// </summary>
+        internal static string messLabel {
+            get {
+                return ResourceManager.GetString("messLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Mess.gif.
+        /// </summary>
+        internal static string messPhoto {
+            get {
+                return ResourceManager.GetString("messPhoto", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Повідомлення!.
+        /// </summary>
+        internal static string messText {
+            get {
+                return ResourceManager.GetString("messText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Кухарук Артем 91-ПІ.
+        /// </summary>
+        internal static string PhotoGallery1Label {
+            get {
+                return ResourceManager.GetString("PhotoGallery1Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на iconfinder_Pinterest_UI-18_2540590.
+        /// </summary>
+        internal static string PhotoGallery1Photo {
+            get {
+                return ResourceManager.GetString("PhotoGallery1Photo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Розроблено.
+        /// </summary>
+        internal static string PhotoGallery2Label {
+            get {
+                return ResourceManager.GetString("PhotoGallery2Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на VisualStudio.jpg.
+        /// </summary>
+        internal static string PhotoGallery2Photo {
+            get {
+                return ResourceManager.GetString("PhotoGallery2Photo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на МЕГУ.
+        /// </summary>
+        internal static string PhotoGallery3Label {
+            get {
+                return ResourceManager.GetString("PhotoGallery3Label", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Kiber.jpg.
+        /// </summary>
+        internal static string PhotoGallery3Photo {
+            get {
+                return ResourceManager.GetString("PhotoGallery3Photo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Фотогалерея.
+        /// </summary>
+        internal static string PhotoGalleryText {
+            get {
+                return ResourceManager.GetString("PhotoGalleryText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap VisualStudio_jpg {
+            get {
+                object obj = ResourceManager.GetObject("VisualStudio.jpg", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

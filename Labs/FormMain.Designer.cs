@@ -254,9 +254,8 @@
             // button2
             // 
             this.button2.AutoSize = true;
-            this.button2.BackColor = System.Drawing.Color.Bisque;
-            this.button2.Cursor = System.Windows.Forms.Cursors.No;
-            this.button2.Enabled = false;
+            this.button2.BackColor = System.Drawing.Color.SandyBrown;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button2.Location = new System.Drawing.Point(7, 183);
@@ -264,8 +263,9 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(240, 25);
             this.button2.TabIndex = 19;
-            this.button2.Text = "Недоступно";
+            this.button2.Text = "Лабораторна 15";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // buttonLab14
             // 
