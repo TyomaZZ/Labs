@@ -238,9 +238,8 @@
             // button3
             // 
             this.button3.AutoSize = true;
-            this.button3.BackColor = System.Drawing.Color.Bisque;
-            this.button3.Cursor = System.Windows.Forms.Cursors.No;
-            this.button3.Enabled = false;
+            this.button3.BackColor = System.Drawing.Color.LightSalmon;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button3.Location = new System.Drawing.Point(7, 210);
@@ -248,13 +247,14 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(240, 25);
             this.button3.TabIndex = 20;
-            this.button3.Text = "Недоступно";
+            this.button3.Text = "Лабораторна 16";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
             this.button2.AutoSize = true;
-            this.button2.BackColor = System.Drawing.Color.SandyBrown;
+            this.button2.BackColor = System.Drawing.Color.Bisque;
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
