@@ -133,10 +133,10 @@ namespace Labs
 
         #endregion
 
-        private System.Windows.Forms.Button buttonStringer;
-        private System.Windows.Forms.Button buttonMatcher;
-        private System.Windows.Forms.Button buttonCalc;
-        private System.Windows.Forms.Button buttonEnder;
-        private System.Windows.Forms.Button buttonCloser;
+        public System.Windows.Forms.Button buttonStringer;
+        public System.Windows.Forms.Button buttonMatcher;
+        public System.Windows.Forms.Button buttonCalc;
+        public System.Windows.Forms.Button buttonEnder;
+        public System.Windows.Forms.Button buttonCloser;
     }
 }

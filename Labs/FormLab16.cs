@@ -18,7 +18,7 @@ namespace Labs
         public FormLab16()
         { InitializeComponent(); }
 
-        private void buttonStringer_Click(object sender, EventArgs e)
+        public virtual void buttonStringer_Click(object sender, EventArgs e)
         {
             builder(new FormLab9(), ref stringer);
         }
@@ -51,17 +51,17 @@ namespace Labs
             }
         }
 
-        private void buttonMatcher_Click(object sender, EventArgs e)
+        public virtual void buttonMatcher_Click(object sender, EventArgs e)
         {
             builder(new FormLab10(), ref matcher);
         }
 
-        private void buttonCalc_Click(object sender, EventArgs e)
+        public virtual void buttonCalc_Click(object sender, EventArgs e)
         {
             builder(new FormLab11(), ref calc); 
         }
 
-        private void buttonEnder_Click(object sender, EventArgs e)
+        public virtual void buttonEnder_Click(object sender, EventArgs e)
         {
             if (stringer != null)
                 stringer.Close();
@@ -71,7 +71,7 @@ namespace Labs
                 calc.Close();
         }
 
-        private void buttonCloser_Click(object sender, EventArgs e)
+        public virtual void buttonCloser_Click(object sender, EventArgs e)
         {
             if (stringer != null)
                 stringer.Close();
