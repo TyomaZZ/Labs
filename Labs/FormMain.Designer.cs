@@ -206,9 +206,8 @@
             // button5
             // 
             this.button5.AutoSize = true;
-            this.button5.BackColor = System.Drawing.Color.Bisque;
-            this.button5.Cursor = System.Windows.Forms.Cursors.No;
-            this.button5.Enabled = false;
+            this.button5.BackColor = System.Drawing.Color.DarkOrange;
+            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button5.Location = new System.Drawing.Point(7, 264);
@@ -216,13 +215,14 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(240, 25);
             this.button5.TabIndex = 22;
-            this.button5.Text = "Недоступно";
+            this.button5.Text = "Лабораторні 18";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
             this.button4.AutoSize = true;
-            this.button4.BackColor = System.Drawing.Color.DarkOrange;
+            this.button4.BackColor = System.Drawing.Color.Bisque;
             this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));

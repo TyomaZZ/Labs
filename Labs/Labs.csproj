@@ -72,6 +72,12 @@
     <Compile Include="About.Designer.cs">
       <DependentUpon>About.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormControllerFor18Lab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormControllerFor18Lab.Designer.cs">
+      <DependentUpon>FormControllerFor18Lab.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLab14.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +131,12 @@
     </Compile>
     <Compile Include="FormLab17.Designer.cs">
       <DependentUpon>FormLab17.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLab18.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLab18.Designer.cs">
+      <DependentUpon>FormLab18.cs</DependentUpon>
     </Compile>
     <Compile Include="FormLab9.cs">
       <SubType>Form</SubType>
@@ -213,6 +225,9 @@
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormControllerFor18Lab.resx">
+      <DependentUpon>FormControllerFor18Lab.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormForLab13.resx">
       <DependentUpon>FormForLab13.cs</DependentUpon>
     </EmbeddedResource>
@@ -239,6 +254,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormLab17.resx">
       <DependentUpon>FormLab17.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLab18.resx">
+      <DependentUpon>FormLab18.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLab2.resx">
       <DependentUpon>FormLab2.cs</DependentUpon>

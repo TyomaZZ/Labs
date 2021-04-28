@@ -261,6 +261,7 @@ namespace Labs
             this.MinimizeBox = false;
             this.Name = "FormLab10";
             this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Лабораторна Робота №10";
             this.Load += new System.EventHandler(this.FormLab10_Load);

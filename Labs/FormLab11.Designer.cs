@@ -593,6 +593,7 @@ namespace Labs
             this.MinimizeBox = false;
             this.Name = "FormLab11";
             this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Калькулятор";
             this.groupBoxNumbers.ResumeLayout(false);

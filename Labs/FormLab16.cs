@@ -12,11 +12,13 @@ namespace Labs
 {
     public partial class FormLab16 : Form
     {
+        
+        public FormLab16()
+        { InitializeComponent(); }
+
         Form stringer = null;
         Form matcher = null;
         Form calc = null;
-        public FormLab16()
-        { InitializeComponent(); }
 
         public virtual void buttonStringer_Click(object sender, EventArgs e)
         {
