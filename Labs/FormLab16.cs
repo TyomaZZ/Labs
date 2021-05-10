@@ -22,7 +22,10 @@ namespace Labs
 
         public virtual void buttonStringer_Click(object sender, EventArgs e)
         {
-            builder(new FormLab9(), ref stringer);
+            builder(new FormLab16t1(this), ref stringer);
+            button1.Enabled = true;
+            button2.Enabled = true;
+            button3.Enabled = true;
         }
 
         private void builder(Form form, ref Form child)
@@ -55,12 +58,18 @@ namespace Labs
 
         public virtual void buttonMatcher_Click(object sender, EventArgs e)
         {
-            builder(new FormLab10(), ref matcher);
+            builder(new FormLab16t2(this), ref matcher);
+            button4.Enabled = true;
+            button5.Enabled = true;
+            button6.Enabled = true;
         }
 
         public virtual void buttonCalc_Click(object sender, EventArgs e)
         {
-            builder(new FormLab11(), ref calc); 
+            builder(new FormLab16t3(this), ref calc);
+            button7.Enabled = true;
+            button8.Enabled = true;
+            button9.Enabled = true;
         }
 
         public virtual void buttonEnder_Click(object sender, EventArgs e)
