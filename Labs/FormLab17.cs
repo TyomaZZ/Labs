@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 namespace Labs
 {
-    public partial class FormLab17 : FormLab16
+    public partial class FormLab17 : Form
     {
         const int maxForm = 5;
         Form[] masForm = new Form[maxForm];
@@ -45,42 +45,6 @@ namespace Labs
             masForm[i].FormClosing += new FormClosingEventHandler(FormLab17_FormClosing);
             masForm[i].Show();
             countForm++;
-        }
-        public override void buttonStringer_Click(object sender, EventArgs e)
-        {
-            createForm(1);
-            Counter();
-        }
-
-        public override void buttonMatcher_Click(object sender, EventArgs e)
-        {
-            createForm(2);
-            Counter();
-        }
-
-        public override void buttonCalc_Click(object sender, EventArgs e)
-        {
-            createForm(3);
-            Counter();
-        }
-        public override void buttonEnder_Click(object sender, EventArgs e)
-        {
-            for (int i = 0; i < maxForm; i++)
-            {
-                if (masForm[i] != null)
-                    if (!masForm[i].IsDisposed)
-                    {
-                        masForm[i].Close();
-                        masForm[i] = null;
-                    }
-            }
-            countForm = 0;
-            Counter();
-        }
-
-        public override void buttonCloser_Click(object sender, EventArgs e)
-        {
-            Close();
         }
         private void Counter()
         {
