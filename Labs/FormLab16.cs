@@ -92,6 +92,54 @@ namespace Labs
                 calc.Close();
             Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            stringer.Size = new Size(stringer.Width + 20, stringer.Height + 20);
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            matcher.Size = new Size(matcher.Width - 20, matcher.Height - 20);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Random rnd = new Random();
+            matcher.Location = new Point(rnd.Next(Screen.PrimaryScreen.WorkingArea.Width - matcher.Width), rnd.Next(Screen.PrimaryScreen.WorkingArea.Height - matcher.Height));
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            stringer.Size = new Size(stringer.Width - 20, stringer.Height - 20);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Random rnd = new Random();
+            matcher.Location = new Point(rnd.Next(Screen.PrimaryScreen.WorkingArea.Width - stringer.Width), rnd.Next(Screen.PrimaryScreen.WorkingArea.Height - stringer.Height));
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            matcher.Size = new Size(matcher.Width + 20, matcher.Height + 20);
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            calc.Size = new Size(calc.Width + 20, calc.Height + 20);
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            calc.Size = new Size(calc.Width - 20, calc.Height - 20);
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Random rnd = new Random();
+            calc.Location = new Point(rnd.Next(Screen.PrimaryScreen.WorkingArea.Width - calc.Width), rnd.Next(Screen.PrimaryScreen.WorkingArea.Height - calc.Height));
+        }
     }
    /* if (calc == null)
             {

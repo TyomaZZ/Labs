@@ -141,6 +141,7 @@ namespace Labs
             this.button3.TabIndex = 13;
             this.button3.Text = "Перемістити форму \"Обробка рядка\" у випадкове місце";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -153,6 +154,7 @@ namespace Labs
             this.button2.TabIndex = 12;
             this.button2.Text = "Зменьшити форму \"Обробка рядка\"";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -165,6 +167,7 @@ namespace Labs
             this.button1.TabIndex = 11;
             this.button1.Text = "Збільшити форму \"Обробка рядка\"";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button4
             // 
@@ -177,6 +180,7 @@ namespace Labs
             this.button4.TabIndex = 16;
             this.button4.Text = "Перемістити форму \"Обчислення виразу\" у випадкове місце";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -189,6 +193,7 @@ namespace Labs
             this.button5.TabIndex = 15;
             this.button5.Text = "Зменьшити форму \"Обчислення виразу\"";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -201,6 +206,7 @@ namespace Labs
             this.button6.TabIndex = 14;
             this.button6.Text = "Збільшити форму \"Обчислення виразу\"";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
@@ -213,6 +219,7 @@ namespace Labs
             this.button7.TabIndex = 19;
             this.button7.Text = "Перемістити форму \"Калькулятор\" у випадкове місце";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 
@@ -225,6 +232,7 @@ namespace Labs
             this.button8.TabIndex = 18;
             this.button8.Text = "Зменьшити форму \"Калькулятор\"";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button9
             // 
@@ -237,12 +245,13 @@ namespace Labs
             this.button9.TabIndex = 17;
             this.button9.Text = "Збільшити форму \"Калькулятор\"";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // FormLab16
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(410, 660);
+            this.ClientSize = new System.Drawing.Size(410, 683);
             this.ControlBox = false;
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button8);
