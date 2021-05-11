@@ -155,6 +155,7 @@ namespace Labs
             this.button9.TabIndex = 13;
             this.button9.Text = "Каскад усіх форм";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button10
             // 
@@ -166,6 +167,7 @@ namespace Labs
             this.button10.TabIndex = 14;
             this.button10.Text = "Каскад усіх форм по типу";
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button11
             // 

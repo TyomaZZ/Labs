@@ -88,6 +88,7 @@ namespace Labs
 
         private void button5_Click(object sender, EventArgs e)
         {
+            CloseAll();
             Close();
         }
 
@@ -160,6 +161,63 @@ namespace Labs
                     }
                 }
             }
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            Point point = new Point(10, 10);
+            for (int i = 0; i < masForm.Length; i++)
+            {
+                if (masForm[i] != null)
+                {
+                    masForm[i].Location = point;
+                    point.Offset(20, 20);
+                    masForm[i].Focus();
+                }
+            }
+            this.Focus();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            Point point = new Point(10, 10);
+            for ( int j = 0; j < 3; j++)
+            {
+                for (int i = 0; i < masForm.Length; i++)
+                {
+                    if (masForm[i] != null)
+                    {
+                        switch (j)
+                        {
+                            case 0:
+                                if (masForm[i].GetType() == new FormLab16t1().GetType())
+                                {
+                                    masForm[i].Location = point;
+                                    point.Offset(20, 20);
+                                    masForm[i].Focus();
+                                }
+                                break;
+                            case 1:
+                                if (masForm[i].GetType() == new FormLab16t2().GetType())
+                                {
+                                    masForm[i].Location = point;
+                                    point.Offset(20, 20);
+                                    masForm[i].Focus();
+                                }
+                                break;
+                            case 2:
+                                if (masForm[i].GetType() == new FormLab16t3().GetType())
+                                {
+                                    masForm[i].Location = point;
+                                    point.Offset(20, 20);
+                                    masForm[i].Focus();
+                                }
+                                break;
+                        }
+                    }
+                }
+            }
+            this.Focus();
         }
     }
 }
