@@ -18,6 +18,10 @@ namespace Labs
             InitializeComponent();
             father = parent;
         }
+        public FormLab16t1()
+        {
+            InitializeComponent();
+        }
 
         private void buttonCloseAction_Click(object sender, EventArgs e)
         {
@@ -26,9 +30,12 @@ namespace Labs
 
         private void FormLab16t1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            father.button1.Enabled = false;
-            father.button2.Enabled = false;
-            father.button3.Enabled = false;
+            if (father != null)
+            {
+                father.button1.Enabled = false;
+                father.button2.Enabled = false;
+                father.button3.Enabled = false;
+            }
         }
     }
 }

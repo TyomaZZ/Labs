@@ -275,6 +275,7 @@ namespace Labs
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Лабораторна 16";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormLab16_FormClosing);
             this.ResumeLayout(false);
 
         }

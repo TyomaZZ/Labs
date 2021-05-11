@@ -1,20 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Labs
 {
     public partial class FormLab16 : Form
     {
-        
-        public FormLab16()
-        { InitializeComponent(); }
+        Form mother;
+        public FormLab16(Form patric)
+        {
+            InitializeComponent();
+            mother = patric;
+        }
 
         Form stringer = null;
         Form matcher = null;
@@ -140,30 +137,35 @@ namespace Labs
             Random rnd = new Random();
             calc.Location = new Point(rnd.Next(Screen.PrimaryScreen.WorkingArea.Width - calc.Width), rnd.Next(Screen.PrimaryScreen.WorkingArea.Height - calc.Height));
         }
+
+        private void FormLab16_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            mother.WindowState = FormWindowState.Normal;
+        }
     }
-   /* if (calc == null)
-            {
-                calc = new FormLab11();
-    calc.MinimizeBox = true;
-                calc.ShowInTaskbar = true;
-                calc.Show();
-            }
-            else
-{
-    if (calc.IsDisposed)
-    {
-        calc = new FormLab11();
-        calc.MinimizeBox = true;
-        calc.ShowInTaskbar = true;
-        calc.Show();
-    }
-    else
-    {
-        if (calc.WindowState == FormWindowState.Minimized)
-            calc.WindowState = FormWindowState.Normal;
-        else if (!calc.Focused)
-            calc.Focus();
-    }
-}
-   */
+    /* if (calc == null)
+             {
+                 calc = new FormLab11();
+     calc.MinimizeBox = true;
+                 calc.ShowInTaskbar = true;
+                 calc.Show();
+             }
+             else
+ {
+     if (calc.IsDisposed)
+     {
+         calc = new FormLab11();
+         calc.MinimizeBox = true;
+         calc.ShowInTaskbar = true;
+         calc.Show();
+     }
+     else
+     {
+         if (calc.WindowState == FormWindowState.Minimized)
+             calc.WindowState = FormWindowState.Normal;
+         else if (!calc.Focused)
+             calc.Focus();
+     }
+ }
+    */
 }
