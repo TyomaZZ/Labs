@@ -126,8 +126,8 @@ namespace Labs
 
         private void button5_Click(object sender, EventArgs e)
         {
+            new FormLab18(this).Show();
             this.WindowState = FormWindowState.Minimized;
-            new FormLab18().ShowDialog();
         }
     }
 }

@@ -11,32 +11,35 @@ namespace Labs
         public static List<Form> listForm = new List<Form>();
         int countForm = 0;
         public static int maxForm = -1;
-        FormControllerFor18Lab controller = null;
+        public FormControllerFor18Lab controller = null;
+        Form mother;
 
         private void createForm(int index)
         {
             Form f = null;
-           /* if (controller != null)
+            if (maxForm != -1)
             {
-                if (controller.radioButton1.Checked)
-                    return;
+                if (controller.radioButton1.Checked) { }
+                    
                 if (controller.radioButton2.Checked)
-                    if (maxForm >= listForm.LastIndexOf(listForm.Last()))
+                    if (listForm.Count == maxForm)
+                    {
                         MessageBox.Show("Досягнуто максимуму кількості форм");
-                return;
-            }*/
+                        return;
+                    }
+            }
             switch (index)
             {
                 case 1:
-                    f = new FormLab9();
+                    f = new FormLab16t1();
                     f.FormClosing += new FormClosingEventHandler(FormLab18_FormClosing);
                     break;
                 case 2:
-                    f = new FormLab10();
+                    f = new FormLab16t2();
                     f.FormClosing += new FormClosingEventHandler(FormLab18_FormClosing);
                     break;
                 case 3:
-                    f = new FormLab11();
+                    f = new FormLab16t3();
                     f.FormClosing += new FormClosingEventHandler(FormLab18_FormClosing);
                     break;
             }
@@ -46,9 +49,10 @@ namespace Labs
             f.Show();
         }
 
-        public FormLab18()
+        public FormLab18(Form patric)
         {
             InitializeComponent();
+            mother = patric;
         }
 
         private void buttonExit_Click(object sender, System.EventArgs e)
@@ -95,11 +99,18 @@ namespace Labs
             Counter();
         }
 
-        private void Counter()
+        public void Counter()
         {
-            char ch = '∞';
+            string ch = "∞";
             if (maxForm != -1)
-                ch = (char)maxForm;
+            {
+                ch = maxForm.ToString();
+                while (Convert.ToInt32(ch) < maxForm)
+                {
+                    listForm[listForm.Count - 1].Close();
+                    listForm.RemoveAt(listForm.Count - 1);
+                }
+            }
             toolStripStatusLabel1.Text = string.Format("Форм створено: {0}/{1}", countForm, ch);
         }
 
@@ -107,7 +118,7 @@ namespace Labs
         {
             if (controller == null)
             {
-                controller = new FormControllerFor18Lab();
+                controller = new FormControllerFor18Lab(this);
                 Point point;
                 point = this.Location;
                 point.Offset(this.Width, 0);
@@ -118,10 +129,23 @@ namespace Labs
 
         private void FormLab18_FormClosed(object sender, FormClosedEventArgs e)
         {
+            mother.WindowState = FormWindowState.Normal;
             foreach (Form f in listForm)
                 if (!f.IsDisposed)
                     f.Close();
             listForm.Clear();
+            if (controller != null)
+            {
+                controller.Close();
+            }
+        }
+
+        private void FormLab18_Move(object sender, EventArgs e)
+        {
+            if (controller != null)
+            {
+                controller.Location = new Point(this.Location.X + this.Width, this.Location.Y);
+            }
         }
     }
 }

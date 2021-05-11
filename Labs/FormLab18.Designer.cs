@@ -189,6 +189,7 @@ namespace Labs
             this.Text = "Лабораторна 18";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormLab18_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormLab18_FormClosed);
+            this.Move += new System.EventHandler(this.FormLab18_Move);
             this.statusStripMain.ResumeLayout(false);
             this.statusStripMain.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
