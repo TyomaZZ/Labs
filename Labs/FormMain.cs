@@ -114,16 +114,19 @@ namespace Labs
 
         private void button3_Click(object sender, EventArgs e)
         {
-            new FormLab16().ShowDialog();
+            new FormLab16(this).Show();
+            this.WindowState = FormWindowState.Minimized;
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            new FormLab17().ShowDialog();
+            new FormLab17(this).Show();
+            this.WindowState = FormWindowState.Minimized;
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
+            this.WindowState = FormWindowState.Minimized;
             new FormLab18().ShowDialog();
         }
     }
