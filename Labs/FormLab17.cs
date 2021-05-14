@@ -116,7 +116,10 @@ namespace Labs
         {
             foreach (Form f in masForm)
             {
-                f.Close();
+                if (f != null)
+                {
+                    f.Close();
+                }
             }
             countForm = 0;
             Counter();
