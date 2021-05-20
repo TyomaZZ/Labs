@@ -10,11 +10,14 @@ using System.Windows.Forms;
 
 namespace Labs
 {//tyomashi
-    public partial class FormLab9 : Form
+    public partial class FormLab9 : Form, InterfaceLab19
     {
-        public FormLab9()
+        readonly Form father;
+
+        public FormLab9(Form patric)
         {
             InitializeComponent();
+            father = patric;
         }
         private void textBoxInput_TextChanged(object sender, EventArgs e)
         {
@@ -38,6 +41,7 @@ namespace Labs
                 textBoxResult.Text = textBoxInput.Text;
             }
         }
+
         private void buttonCloseAction_Click(object sender, EventArgs e) 
         {
             Close();
@@ -47,20 +51,21 @@ namespace Labs
         {
             textBoxResult.Text = ReplaceK(textBoxInput.Text, textBoxCell1.Text);
         }
+
         private void radioButtonAction2_CheckedChanged(object sender, EventArgs e) 
         {
             textBoxResult.Text = Doubler(textBoxInput.Text, textBoxCell2.Text);
         }
+
         String result = "";
+
         private String ReplaceK(String s, String cell)
         {
             result = "";
             for (int i = 0; i < s.Length; i++)
             {
                 if (!String.Equals(s[i].ToString(), cell, StringComparison.OrdinalIgnoreCase))
-                {
                     result += s[i];
-                }
             }
             return result;
         }
@@ -69,11 +74,8 @@ namespace Labs
             result = "";
             for (int i = 0; i < s.Length; i++)
             {
-                result += s[i];
                 if (!String.Equals(s[i].ToString(), cell))
-                {
                     result += s[i];
-                }
             }
             return result;
         }
@@ -81,28 +83,17 @@ namespace Labs
         private void textBoxCell1_TextChanged(object sender, EventArgs e)
         {
             if (textBoxCell1.Text.Length > 1)
-            {
                 textBoxCell1.Text =  textBoxCell1.Text.Remove(1);
-                //textBoxCell1.SelectionStart = 1;
-            }
             if (radioButtonAction1.Checked)
-            {
                 textBoxResult.Text = ReplaceK(textBoxInput.Text, textBoxCell1.Text);
-            }
-            
         }
 
         private void textBoxCell2_TextChanged(object sender, EventArgs e)
         {
             if (textBoxCell2.Text.Length > 1)
-            {
                 textBoxCell2.Text = textBoxCell2.Text.Remove(1);
-                //textBoxCell1.SelectionStart = 1;
-            }
             if (radioButtonAction2.Checked)
-            {
                 textBoxResult.Text = Doubler(textBoxInput.Text, textBoxCell2.Text);
-            }
         }
 
         private void textBoxCell2_Click(object sender, EventArgs e)
@@ -125,22 +116,17 @@ namespace Labs
                 for (int i=0; i<wor.Length;i++)
                 {
                     if (wor[i].Equals('а') || wor[i].Equals('о') || wor[i].Equals('е') || wor[i].Equals('и') || wor[i].Equals('і') || wor[i].Equals('у'))
-                    {
                         counter++;
-                    }
                 }
                 if (counter >= count)
                 {
                     if (counter == count)
-                    {
                         result += wor + " ";
-                    }
                     else
                     {
                         count = counter;
                         result = wor + " ";
                     }
-                    
                 }
             }
             return result;
@@ -149,6 +135,16 @@ namespace Labs
         private void radioButtonAction3_CheckedChanged(object sender, EventArgs e)
         {
             textBoxResult.Text = Word(textBoxInput.Text);
+        }
+
+        private void FormLab9_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            MyLib.Lib.FatherController(father);
+        }
+
+        public string GetFormType()
+        {
+            return "Обробка текстових рядків у формах";
         }
     }
 }

@@ -13,28 +13,26 @@ namespace Labs
 {
     public partial class FormModul1 : Form
     {
-        public FormModul1()
+        readonly Form father;
+        public FormModul1(Form patric)
         {
             InitializeComponent();
+            father = patric;
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             Close();
-            //tyomashi
         }
 
         static bool InputDouble(ref double x, string mess)
         {
-            string s;
-
         Povtor:
-            s = Interaction.InputBox(mess, "Введення", x.ToString());
             try
             {
-                x = Convert.ToDouble(s);
+                x = Convert.ToDouble(Interaction.InputBox(mess, "Введення", x.ToString()));
             }
-            catch (System.FormatException)
+            catch (FormatException)
             {
                 if (MessageBox.Show("Ви ввели не число.\nБажаєте повторити?", "Увага", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                     goto Povtor;
@@ -48,10 +46,10 @@ namespace Labs
             string result = "";
             string cell = ",";
             string s = Interaction.InputBox("Введіть слово, словосполучення або речення для взаємодії", "Введення", "Приклад,");
-            //result = s.Replace(",", "??");
+            //result = s.Replace(",", "??"); //alternative
             for (int i = 0; i < s.Length; i++)
             {
-                if (!String.Equals(s[i].ToString(), cell))
+                if (!Equals(s[i].ToString(), cell))
                 {
                     result += s[i];
                 }
@@ -63,7 +61,7 @@ namespace Labs
         private void button1_Click(object sender, EventArgs e)
         {
             string results;
-            Double x = 0, y = 0, v = 350, g = 9.8, a = Math.PI / 4;
+            Double x, y, v = 350, g = 9.8, a = Math.PI / 4;
             if (!InputDouble(ref v, "Введіть початкову швидкість"))
                 return;
             results = "Результат обчислення задачі: \n";
@@ -75,6 +73,11 @@ namespace Labs
                   results += i + " секунда: X= " + x + ", Y= " + y + "\n" ;
             }
             MessageBox.Show("Вхідні дані:\nШвидкість - " + v + "км/год\n" + "Альфа - " + a + " градусів\n" + "Вільне падіння - " + g + "км/год\n" + results, "Результати табулювання", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void FormModul1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            MyLib.Lib.FatherController(father);
         }
     }
 }

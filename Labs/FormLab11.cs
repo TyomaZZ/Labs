@@ -10,13 +10,19 @@ using System.Windows.Forms;
 using MyLib;
 
 namespace Labs
-{//tyomashi
-    public partial class FormLab11 : Form
+{//tyomashi//ЧертНогуСломить
+    public partial class FormLab11 : Form, InterfaceLab19
     {
         bool clean = false;
         double x, y, memory1;
-        public FormLab11()
-        { InitializeComponent(); }
+        readonly Form father;
+
+        public FormLab11(Form patric)
+        { 
+            InitializeComponent();
+            father = patric;
+        }
+
         private void buttonNumber_Click(object sender, EventArgs e)
         {
             if (textBoxNumber.Text.EndsWith("="))
@@ -25,10 +31,11 @@ namespace Labs
                 textBoxNumber.Text = "";
             }
             if (clean)
-            {textBoxNowAndResult.Text = "";}
+                textBoxNowAndResult.Text = "";
             textBoxNowAndResult.Text += Lib.ReleaseButton(sender).Text;
             clean = false;
         }
+
         private void buttonChar_Click(object sender, EventArgs e)
         {
             if (textBoxNowAndResult.Text.IndexOf('-') == -1)
@@ -38,6 +45,7 @@ namespace Labs
             if (clean)
                 textBoxNowAndResult.Text = "";
         }
+
         private void buttonClean_Click(object sender, EventArgs e)
         {
             if (textBoxNowAndResult.Text.Length > 0)
@@ -46,16 +54,20 @@ namespace Labs
                 labelError.Visible = false;
             }
         }
+
         private void buttonClearE_Click(object sender, EventArgs e)
         { textBoxNowAndResult.Text = ""; }
+
         private void buttonCleanAll_Click(object sender, EventArgs e)
         {
             textBoxNowAndResult.Text = "";
             textBoxNumber.Text = "";
             labelError.Visible = false;
         }
+
         private void buttonClose_Click(object sender, EventArgs e)
         { Close(); }
+
         private void buttonDot_Click(object sender, EventArgs e)
         {
             if (textBoxNowAndResult.Text.IndexOf(',') == -1)
@@ -63,6 +75,7 @@ namespace Labs
             if (clean)
                 textBoxNowAndResult.Text = "";
         }
+
         private void textBoxNumbers_TextChanged(object sender, EventArgs e)
         {
             if (Lib.ReleaseTextBox(sender).Text == "00")
@@ -83,7 +96,6 @@ namespace Labs
             }
             else
              labelError.Visible = false;
-
             if (Lib.ReleaseTextBox(sender).Text == "-,")
             {
                 labelError.Text = "Символи не можуть бути числом";
@@ -93,16 +105,19 @@ namespace Labs
             else
                 labelError.Visible = false;
         }
+
         private void buttonMC_Click(object sender, EventArgs e)
         {
             memory1 = 0;
             textBoxMemory.Text = "";
         }
+
         private void buttonMR_Click(object sender, EventArgs e)
         {
             if (textBoxMemory.Text != "")
                 textBoxNowAndResult.Text = textBoxMemory.Text;
         }
+
         private void buttonMA_Click(object sender, EventArgs e)
         {
             if (textBoxNowAndResult.Text != "")
@@ -111,6 +126,7 @@ namespace Labs
                 textBoxMemory.Text = Convert.ToString(memory1);
             }
         }
+
         private void buttonMRe_Click(object sender, EventArgs e)
         {
             if (textBoxNowAndResult.Text != "")
@@ -119,6 +135,7 @@ namespace Labs
                 textBoxMemory.Text = Convert.ToString(memory1);
             }  
         }
+
         private void buttonMT_Click(object sender, EventArgs e)
         {
             if (textBoxMemory.Text != "")
@@ -127,6 +144,7 @@ namespace Labs
                 textBoxNowAndResult.Text += "" + Convert.ToString(memory1);
             }  
         }
+
         private void Operation(object element)
         {
             string[] chrs = new string[4] { " + ", " - ", " * ", " / " };
@@ -174,6 +192,7 @@ namespace Labs
                 }
             }
         }
+
         private double SubMath()
         {
             y = 0;
@@ -185,8 +204,6 @@ namespace Labs
             {
                 for (int i = 0; i < masiv.Length; i++)
                 {
-
-
                     if (masiv[i] == "*" || masiv[i] == "/")
                     {
                         if (masiv[i] == "*")
@@ -217,10 +234,13 @@ namespace Labs
                     if (masiv[i] != "")
                         promezhUtok += masiv[i] + " ";
                 }
+                while (promezhUtok.Contains("  "))
+                    promezhUtok = promezhUtok.Replace("  ", " ");
+                promezhUtok = promezhUtok.Trim();
                 masiv = promezhUtok.Split(' ');
+                if (masiv.Length == 1)
+                    y = Convert.ToDouble(masiv[0]);
             }
-            
-
             for (int i = 0; i < masiv.Length; i++)
             { 
                 if (masiv[i] != "+" && masiv[i] != "-" && masiv[i] != "*" && masiv[i] != "/")
@@ -315,6 +335,7 @@ namespace Labs
             }
             return y;
         }
+
         private void Matches()
         {
             if (textBoxNumber.Text.EndsWith("+") || textBoxNumber.Text.EndsWith("-") || textBoxNumber.Text.EndsWith("*") || textBoxNumber.Text.EndsWith("/"))
@@ -323,12 +344,9 @@ namespace Labs
                 textBoxNowAndResult.Text = Convert.ToString(SubMath());
             }
             else
-            {
-               
                     textBoxNowAndResult.Text = Convert.ToString(SubMath());
-              
-            }
         }
+
         private void buttonEq_Click(object sender, EventArgs e)
         {
             if (!clean)
@@ -339,14 +357,19 @@ namespace Labs
                 clean = true;
             }
         }
+
         private void buttonPlus_Click(object sender, EventArgs e)
         { Operation(sender);}
+
         private void buttonMinus_Click(object sender, EventArgs e)
         {Operation(sender);}
+
         private void buttonMnozh_Click(object sender, EventArgs e)
         {Operation(sender);}
+
         private void buttonDil_Click(object sender, EventArgs e)
         {Operation(sender);}
+
         private void buttonPow2_Click(object sender, EventArgs e)
         {
             if (textBoxNowAndResult.Text != "")
@@ -354,6 +377,12 @@ namespace Labs
             if (textBoxNumber.Text.EndsWith("="))
                 textBoxNumber.Text = "";
         }
+
+        private void FormLab11_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Lib.FatherController(father);
+        }
+
         private void buttonKorin_Click(object sender, EventArgs e)
         {
             if (textBoxNowAndResult.Text != "")
@@ -361,12 +390,18 @@ namespace Labs
             if (textBoxNumber.Text.EndsWith("="))
                 textBoxNumber.Text = "";
         }
+
         private void button1dil_Click(object sender, EventArgs e)
         {
             if (textBoxNowAndResult.Text != "")
                 textBoxNowAndResult.Text = Convert.ToString(1 / Convert.ToDouble(textBoxNowAndResult.Text));
             if (textBoxNumber.Text.EndsWith("="))
                 textBoxNumber.Text = "";
+        }
+
+        public string GetFormType()
+        {
+            return "Організація взаємодії елементів керування у формах";
         }
     }
 }

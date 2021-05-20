@@ -589,13 +589,14 @@ namespace Labs
             this.Controls.Add(this.button16);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxNowAndResult);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormLab11";
             this.ShowIcon = false;
-            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Калькулятор";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormLab11_FormClosed);
             this.groupBoxNumbers.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);

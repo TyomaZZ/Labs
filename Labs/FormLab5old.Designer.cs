@@ -178,9 +178,9 @@
             this.button6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.button6.Location = new System.Drawing.Point(35, 139);
+            this.button6.Location = new System.Drawing.Point(17, 139);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(424, 50);
+            this.button6.Size = new System.Drawing.Size(460, 50);
             this.button6.TabIndex = 5;
             this.button6.Text = "Знайти карликове пальто потрібного розміру";
             this.button6.UseVisualStyleBackColor = false;
@@ -191,15 +191,15 @@
             this.button5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.button5.Location = new System.Drawing.Point(35, 83);
+            this.button5.Location = new System.Drawing.Point(17, 83);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(424, 50);
+            this.button5.Size = new System.Drawing.Size(461, 50);
             this.button5.TabIndex = 4;
             this.button5.Text = "Тепла куртка\r\nпо замовчуванню";
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // FormLab5
+            // FormLab5old
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -208,11 +208,12 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "FormLab5";
-            this.Opacity = 0.95D;
+            this.Name = "FormLab5old";
+            this.Opacity = 0.98D;
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Лабараторна №5";
+            this.Text = "Лабораторна №5";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormLab5old_FormClosed);
             this.panel1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();

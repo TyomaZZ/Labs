@@ -19,5 +19,10 @@ namespace Labs
             InitializeComponent();
             father = patric;
         }
+
+        private void FormLab19_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            MyLib.Lib.FatherController(father);
+        }
     }
 }

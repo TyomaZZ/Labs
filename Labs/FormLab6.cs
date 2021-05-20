@@ -13,16 +13,21 @@ namespace Labs
 { //tyomashi
     public partial class FormLab6 : Form
     {
+        Form father;
+
         KurtkaLab6 k1 = null, k2 = null;
-        public FormLab6()
+        public FormLab6(Form patric)
         {
             InitializeComponent();
             toolStripStatusLabel3.Visible = false;
+            father = patric;
         }
+
         private void button10_Click(object sender, EventArgs e)
         {
             k2.Info();
         }
+
         private void button1_Click(object sender, EventArgs e)
         {
             k1 = new KurtkaLab6("Типова", "Чорний", 36, "Нова");
@@ -38,6 +43,7 @@ namespace Labs
                 check();
             }
         }
+
         private void button2_Click(object sender, EventArgs e)
         {
             k2 = new KurtkaLab6("Типова", "Чорний", 36, "Нова");
@@ -53,14 +59,17 @@ namespace Labs
                 check();
             }
         }
+
         private void closeButton_Click(object sender, EventArgs e)
         {
             Close();
         }
+
         private void button9_Click(object sender, EventArgs e)
         {
             k1.Info();
         }
+
         private void button7_Click(object sender, EventArgs e)
         {
             if (k1 == k2)
@@ -69,16 +78,21 @@ namespace Labs
             }
             else MessageBox.Show("Куртки різні!", "Інформація з порівняння");
         }
+
         private void button5_Click(object sender, EventArgs e)
         {
             k1++;
+            MessageBox.Show("Розмір збільшено на 1");
             check();
         }
+
         private void button6_Click(object sender, EventArgs e)
         {
             k2++;
+            MessageBox.Show("Розмір збільшено на 1");
             check();
         }
+
         private void button3_Click(object sender, EventArgs e)
         {
             if (radioButton1.Checked == true)
@@ -109,6 +123,7 @@ namespace Labs
             }
             check();
         }
+
         private void button4_Click(object sender, EventArgs e)
         {
             if (radioButton8.Checked == true)
@@ -139,6 +154,12 @@ namespace Labs
             }
             check();
         }
+
+        private void FormLab6_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            MyLib.Lib.FatherController(father);
+        }
+
         private void check()
         {
             if ((Object)k1 != null && (Object)k2 != null)
@@ -161,42 +182,40 @@ namespace Labs
             count++;
             nomer = count;
         }
+
         ~OdyagLab6()
         {
-            /* 
-              MessageBox.Show("Знищується Верхній Одяг №" + nomer,
-                  "Увага",
-                  MessageBoxButtons.OK,
-                  MessageBoxIcon.Exclamation); 
-            */
             count--;
         }
+
         virtual public void Info()
         {
-            /* MessageBox.Show("Верхній одяг №" + nomer + " створено",
-                 "Інформація",
-                 MessageBoxButtons.OK,
-                 MessageBoxIcon.Information); */
+            //
         }
     }
     public class KurtkaLab6 : OdyagLab6
     {
         private String name;
         private int size;
+
         public int Size { get { return size; } set { if (value >= 0) { size = value; return; } else { MessageBox.Show("Значення не може бути від'ємним"); return; } } }
+
         public String Name { get { return name; } set { if (value.Equals("")) { MessageBox.Show("Ім'я не може бути пусте!"); return; } else { name = value; } } }
+
         public KurtkaLab6(String name, String color, int size) : base()
         {
             base.Info();
             Name = name; this.color = color; Size = size; this.status = "Новa";
-            Random rnd = new Random(); int asd = rnd.Next(0, 2); if (asd == 0) isFreak = false; else isFreak = true;
+            Random rnd = new Random(); if (rnd.Next(0, 2) == 0) isFreak = false; else isFreak = true;
         }
+
         public KurtkaLab6(String name, String color, int size, String status) : base()
         {
             base.Info();
             Name = name; this.color = color; Size = size; this.status = status;
-            Random rnd = new Random(); int asd = rnd.Next(0, 2); if (asd == 0) isFreak = false; else isFreak = true;
+            Random rnd = new Random(); if (rnd.Next(0, 2) == 0) isFreak = false; else isFreak = true;
         }
+
         public static bool operator ==(KurtkaLab6 kurtka1, KurtkaLab6 kurtka2)
         {
             return (kurtka1.Name == kurtka2.Name &&
@@ -204,14 +223,17 @@ namespace Labs
                       kurtka1.Size == kurtka2.Size &&
                       kurtka1.status == kurtka2.status);
         }
+
          public static bool operator !=(KurtkaLab6 kurtka1, KurtkaLab6 kurtka2)
-        {
+         {
              return !(kurtka1 == kurtka2);
-        } 
+         } 
+
         public static KurtkaLab6 operator ++(KurtkaLab6 kurtka)
         {
             return new KurtkaLab6(kurtka.Name, kurtka.color, kurtka.Size + 1);
         }
+
         public string isFreaks()
         {
             if (isFreak == true)
@@ -220,6 +242,7 @@ namespace Labs
                 else return "Досить мила куртка...";
             else return "Класна куртка :р";
         }
+
         public string SizeString()
         {
             if (size > 25)
@@ -228,6 +251,7 @@ namespace Labs
                 else return "Ця куртка завелика для тебе!";
             else return "Ця куртка замала для тебе!";
         }
+
         public override void Info()
         {
             MessageBox.Show("Куртка бренду: " + Name + "\n" + color + " колiр\nРозмір: " + Size + "\n" + isFreaks() + "\n\n" + SizeString() + "\n\n\n",
@@ -235,6 +259,7 @@ namespace Labs
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Information);
         }
+
         public override bool Equals(object obj)
         {
             return obj is KurtkaLab6 lab;

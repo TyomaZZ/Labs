@@ -11,11 +11,14 @@ using MyLib;
 
 namespace Labs
 {
-    public partial class FormLab10 : Form
+    public partial class FormLab10 : Form, InterfaceLab19
     {
-        public FormLab10()
+        readonly Form father;
+
+        public FormLab10(Form patric)
         {
             InitializeComponent();
+            father = patric;
         }
 
         private void CloseButton_Click(object sender, EventArgs e)
@@ -33,22 +36,17 @@ namespace Labs
             if (Lib.ReleaseTextBox(sender).Text.IndexOf('-') != -1)
             {
                 if (Lib.ReleaseTextBox(sender).Text.IndexOf('-') > 0)
-                {
                     Lib.ReleaseTextBox(sender).Text = "-" + Lib.ReleaseTextBox(sender).Text.Replace("-", "");
-                }
             }
             if (IsAllDouble())
             {
                 if (radioMathWithoutF.Checked)
-                {
                    textBoxResult.Text = Result();
-                }
                 if (radioMath.Checked)
-                {
                    textBoxResult.Text = ResultF();
-                }
             }
         }
+
         private bool IsDouble(TextBox element)
         {
             try
@@ -63,6 +61,7 @@ namespace Labs
                 return Swithcer(true, element);
             }
         }
+
         private bool Swithcer(bool result, TextBox element)
         {
             switch (element.Name)
@@ -81,6 +80,7 @@ namespace Labs
             }
             return !result;
         }
+
         private void Checker_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (radioFormatStrong.Checked)
@@ -122,36 +122,30 @@ namespace Labs
             }
             
         }
+
         private void radioMathWithoutF_CheckedChanged(object sender, EventArgs e)
         {
             if (IsAllDouble())
             {
                 textBoxResult.Text = Result();
             }
-            else
-            {
-                //
-            }
-            
         }
+
         private string Result()
         {
-            double res = 0;
-            res = (Math.Log10(Math.Abs(Math.Sin(Doubler(textBoxX.Text)) + Doubler(textBoxY.Text))) / 87)
+            double res = (Math.Log10(Math.Abs(Math.Sin(Doubler(textBoxX.Text)) + Doubler(textBoxY.Text))) / 87)
                         + (234 / Math.Log10(Math.Abs(Math.Sin(Doubler(textBoxX.Text) * Doubler(textBoxY.Text)) + 3))
                         + Math.Log10(Math.Abs(Math.Sin(3.1) + Math.Pow(Doubler(textBoxX.Text), 2) * Doubler(textBoxY.Text))) / Doubler(textBoxZ.Text));
             return Convert.ToString(res);
         }
         private double Func(double first, double second) //lg + abs
         {
-            double res = 0;
-            res = Math.Log10(Math.Abs(Math.Sin(first) + second));
+            double res = Math.Log10(Math.Abs(Math.Sin(first) + second));
             return res;
         }
         private string ResultF()
         {
-            double res = 0;
-            res = (Func(Doubler(textBoxX.Text), Doubler(textBoxY.Text)) / 87) 
+            double res = (Func(Doubler(textBoxX.Text), Doubler(textBoxY.Text)) / 87) 
                 + (234 / Func(Doubler(textBoxX.Text) * Doubler(textBoxY.Text), 3)) 
                 + (Func(3.1, Math.Pow(Doubler(textBoxX.Text),2) * Doubler(textBoxY.Text)) / Doubler(textBoxZ.Text));
             return Convert.ToString(res);
@@ -163,26 +157,29 @@ namespace Labs
         private bool IsAllDouble()
         {
             if (IsDouble(textBoxX) & IsDouble(textBoxY) & IsDouble(textBoxZ))
-            {
                 return true;
-            }
             return false;
         }
 
         private void radioMath_CheckedChanged(object sender, EventArgs e)
         {
             if (IsAllDouble())
-            {
                 textBoxResult.Text = ResultF();
-            }
-            else
-            {
-                //
-            }
         }
+
         private void FormLab10_Load(object sender, EventArgs e)
         {
             textBoxResult.Text = Result();
+        }
+
+        private void FormLab10_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Lib.FatherController(father);
+        }
+
+        public string GetFormType()
+        {
+            return "Підпрограми користувача";
         }
     }
 }

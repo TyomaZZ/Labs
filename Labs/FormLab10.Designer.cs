@@ -55,8 +55,8 @@ namespace Labs
             // 
             this.textBoxX.Location = new System.Drawing.Point(27, 59);
             this.textBoxX.Name = "textBoxX";
-            this.textBoxX.Size = new System.Drawing.Size(151, 20);
-            this.textBoxX.TabIndex = 0;
+            this.textBoxX.Size = new System.Drawing.Size(167, 20);
+            this.textBoxX.TabIndex = 1;
             this.textBoxX.Text = "1,5";
             this.textBoxX.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.textBoxX.TextChanged += new System.EventHandler(this.textBox_TextChanged);
@@ -66,7 +66,7 @@ namespace Labs
             // 
             this.textBoxY.Location = new System.Drawing.Point(27, 98);
             this.textBoxY.Name = "textBoxY";
-            this.textBoxY.Size = new System.Drawing.Size(151, 20);
+            this.textBoxY.Size = new System.Drawing.Size(167, 20);
             this.textBoxY.TabIndex = 1;
             this.textBoxY.Text = "0,1";
             this.textBoxY.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -76,7 +76,7 @@ namespace Labs
             // 
             this.textBoxZ.Location = new System.Drawing.Point(27, 137);
             this.textBoxZ.Name = "textBoxZ";
-            this.textBoxZ.Size = new System.Drawing.Size(151, 20);
+            this.textBoxZ.Size = new System.Drawing.Size(167, 20);
             this.textBoxZ.TabIndex = 2;
             this.textBoxZ.Text = "0,5";
             this.textBoxZ.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -114,7 +114,7 @@ namespace Labs
             this.textBoxResult.Location = new System.Drawing.Point(72, 255);
             this.textBoxResult.Name = "textBoxResult";
             this.textBoxResult.ReadOnly = true;
-            this.textBoxResult.Size = new System.Drawing.Size(106, 20);
+            this.textBoxResult.Size = new System.Drawing.Size(122, 20);
             this.textBoxResult.TabIndex = 8;
             this.textBoxResult.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -131,7 +131,7 @@ namespace Labs
             // 
             this.CloseButton.Location = new System.Drawing.Point(7, 337);
             this.CloseButton.Name = "CloseButton";
-            this.CloseButton.Size = new System.Drawing.Size(171, 23);
+            this.CloseButton.Size = new System.Drawing.Size(187, 23);
             this.CloseButton.TabIndex = 10;
             this.CloseButton.Text = "Завершити роботу";
             this.CloseButton.UseVisualStyleBackColor = true;
@@ -141,10 +141,10 @@ namespace Labs
             // 
             this.labelErrorX.AutoSize = true;
             this.labelErrorX.ForeColor = System.Drawing.Color.Red;
-            this.labelErrorX.Location = new System.Drawing.Point(83, 82);
+            this.labelErrorX.Location = new System.Drawing.Point(99, 82);
             this.labelErrorX.Name = "labelErrorX";
             this.labelErrorX.Size = new System.Drawing.Size(95, 13);
-            this.labelErrorX.TabIndex = 11;
+            this.labelErrorX.TabIndex = 0;
             this.labelErrorX.Text = "Невірний формат";
             this.labelErrorX.Visible = false;
             // 
@@ -152,7 +152,7 @@ namespace Labs
             // 
             this.labelErrorY.AutoSize = true;
             this.labelErrorY.ForeColor = System.Drawing.Color.Red;
-            this.labelErrorY.Location = new System.Drawing.Point(83, 121);
+            this.labelErrorY.Location = new System.Drawing.Point(99, 121);
             this.labelErrorY.Name = "labelErrorY";
             this.labelErrorY.Size = new System.Drawing.Size(95, 13);
             this.labelErrorY.TabIndex = 12;
@@ -163,7 +163,7 @@ namespace Labs
             // 
             this.labelErrorZ.AutoSize = true;
             this.labelErrorZ.ForeColor = System.Drawing.Color.Red;
-            this.labelErrorZ.Location = new System.Drawing.Point(83, 160);
+            this.labelErrorZ.Location = new System.Drawing.Point(99, 160);
             this.labelErrorZ.Name = "labelErrorZ";
             this.labelErrorZ.Size = new System.Drawing.Size(95, 13);
             this.labelErrorZ.TabIndex = 13;
@@ -176,7 +176,7 @@ namespace Labs
             this.groupBoxMath.Controls.Add(this.radioMathWithoutF);
             this.groupBoxMath.Location = new System.Drawing.Point(7, 176);
             this.groupBoxMath.Name = "groupBoxMath";
-            this.groupBoxMath.Size = new System.Drawing.Size(171, 73);
+            this.groupBoxMath.Size = new System.Drawing.Size(187, 73);
             this.groupBoxMath.TabIndex = 14;
             this.groupBoxMath.TabStop = false;
             this.groupBoxMath.Text = "Спосіб обчислення:";
@@ -184,7 +184,7 @@ namespace Labs
             // radioMath
             // 
             this.radioMath.AutoSize = true;
-            this.radioMath.Location = new System.Drawing.Point(44, 43);
+            this.radioMath.Location = new System.Drawing.Point(55, 42);
             this.radioMath.Name = "radioMath";
             this.radioMath.Size = new System.Drawing.Size(82, 17);
             this.radioMath.TabIndex = 1;
@@ -196,7 +196,7 @@ namespace Labs
             // 
             this.radioMathWithoutF.AutoSize = true;
             this.radioMathWithoutF.Checked = true;
-            this.radioMathWithoutF.Location = new System.Drawing.Point(44, 19);
+            this.radioMathWithoutF.Location = new System.Drawing.Point(55, 19);
             this.radioMathWithoutF.Name = "radioMathWithoutF";
             this.radioMathWithoutF.Size = new System.Drawing.Size(86, 17);
             this.radioMathWithoutF.TabIndex = 0;
@@ -211,7 +211,7 @@ namespace Labs
             this.groupBoxFormat.Controls.Add(this.radioFormatStrong);
             this.groupBoxFormat.Location = new System.Drawing.Point(7, 4);
             this.groupBoxFormat.Name = "groupBoxFormat";
-            this.groupBoxFormat.Size = new System.Drawing.Size(171, 49);
+            this.groupBoxFormat.Size = new System.Drawing.Size(187, 49);
             this.groupBoxFormat.TabIndex = 15;
             this.groupBoxFormat.TabStop = false;
             this.groupBoxFormat.Text = "Спосіб перевірки полів";
@@ -219,7 +219,7 @@ namespace Labs
             // radioFormatFree
             // 
             this.radioFormatFree.AutoSize = true;
-            this.radioFormatFree.Location = new System.Drawing.Point(101, 20);
+            this.radioFormatFree.Location = new System.Drawing.Point(117, 20);
             this.radioFormatFree.Name = "radioFormatFree";
             this.radioFormatFree.Size = new System.Drawing.Size(64, 17);
             this.radioFormatFree.TabIndex = 1;
@@ -242,7 +242,7 @@ namespace Labs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(185, 363);
+            this.ClientSize = new System.Drawing.Size(206, 363);
             this.Controls.Add(this.groupBoxFormat);
             this.Controls.Add(this.groupBoxMath);
             this.Controls.Add(this.labelErrorZ);
@@ -257,13 +257,14 @@ namespace Labs
             this.Controls.Add(this.textBoxZ);
             this.Controls.Add(this.textBoxY);
             this.Controls.Add(this.textBoxX);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormLab10";
             this.ShowIcon = false;
-            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Лабораторна Робота №10";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormLab10_FormClosed);
             this.Load += new System.EventHandler(this.FormLab10_Load);
             this.groupBoxMath.ResumeLayout(false);
             this.groupBoxMath.PerformLayout();

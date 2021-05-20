@@ -13,41 +13,46 @@ namespace Labs
 {
     public partial class FormLab5old : Form
     {
-        public FormLab5old()
+        Form father;
+        public FormLab5old(Form patric)
         {
             InitializeComponent();
+            father = patric;
         }
+
         private void blouse_Click(object sender, EventArgs e)
         {
             if (radioButton2.Checked)
             {
-                String name_cons, color_cons; int size_cons;
-                name_cons = Convert.ToString(Interaction.InputBox("Введіть назву для куртки\n", "Створюємо Куртку", "LeeCo"));
-                color_cons = Convert.ToString(Interaction.InputBox("Введіть колір", name_cons, "Сірий"));
-                size_cons = Convert.ToInt32(Interaction.InputBox("Введіть розмір\n", name_cons, "38"));
-                new Blouse_lab5(name_cons, color_cons, size_cons).Info();
+                String name_cons = Convert.ToString(Interaction.InputBox("Введіть назву для куртки\n", "Створюємо Куртку", "LeeCo"));
+                new Blouse_lab5(
+                    name_cons,
+                    Convert.ToString(Interaction.InputBox("Введіть колір", name_cons, "Сірий")),
+                    Convert.ToInt32(Interaction.InputBox("Введіть розмір\n", name_cons, "38")))
+                    .Info();
             }
             else
             {
                 Blouse_lab5 b1 = new Blouse_lab5("Adidas", "Зелена", 36);
                 b1.Info();
                 b1.Size = -5;
-                MessageBox.Show("Дані куртки після зміни розміру на -5");
+                MessageBox.Show("Дані куртки після зміни розміру на \"-5\"");
                 b1.Info();
                 b1.Size = 46;
                 MessageBox.Show("Дані куртки після зміни розміру на 46");
                 b1.Info();
             }
         }
+
         private void jacket_Click(object sender, EventArgs e)
         {
             if (radioButton3.Checked)
             {
-                String name_cons, color_cons; int size_cons;
-                name_cons = Convert.ToString(Interaction.InputBox("Введіть назву для пальта\n", "Створюємо Пальто", "Crocco"));
-                color_cons = Convert.ToString(Interaction.InputBox("Введіть колір", name_cons, "Оранжевий"));
-                size_cons = Convert.ToInt32(Interaction.InputBox("Введіть розмір\n", name_cons, "32"));
-                new Jacket_lab5(name_cons, color_cons, size_cons).Info();
+                String name_cons = Convert.ToString(Interaction.InputBox("Введіть назву для пальта\n", "Створюємо Пальто", "Crocco"));
+                new Jacket_lab5(name_cons,
+                    Convert.ToString(Interaction.InputBox("Введіть колір", name_cons, "Оранжевий")),
+                    Convert.ToInt32(Interaction.InputBox("Введіть розмір\n", name_cons, "32")))
+                    .Info();
             }
             else
             {
@@ -78,7 +83,7 @@ namespace Labs
         {
             var sjsh = new StyleJacket_lab5("Carlic", "Жовтий", 50);
             int i = 1;
-            int maxSize = 10;
+            int maxSize;
             maxSize = Convert.ToInt32(Interaction.InputBox("Введіть обмеження розміру для куртки\n(Меньше стандартного розміру \"36\")", 
                 "Карликове стильне пальто", "15"));
             while (sjsh[i].Size > maxSize) i++;
@@ -89,7 +94,11 @@ namespace Labs
         private void button7_Click(object sender, EventArgs e)
         {
             Close();
-            //tyomashi
+        }
+
+        private void FormLab5old_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            MyLib.Lib.FatherController(father);
         }
     }
     public abstract class Outerwear_lab5
@@ -105,19 +114,11 @@ namespace Labs
         }
         ~Outerwear_lab5()
         {
-          /*  MessageBox.Show("Знищується Верхній Одяг №" + nomer,
-                "Увага",
-                MessageBoxButtons.OK,
-                MessageBoxIcon.Exclamation); */
             count--;
-            //FormLab5.asd.Text = "Кількість об'єктів: " + count;
         }
         virtual public void Info()
         {
-           /* MessageBox.Show("Верхній одяг №" + nomer + " створено",
-                "Інформація",
-                MessageBoxButtons.OK,
-                MessageBoxIcon.Information); */
+            //
         }
     }      
     public class HotBlouse_lab5 : Blouse_lab5

@@ -20,6 +20,11 @@ namespace Labs
             mother = patric;
         }
 
+        private FormLab18()
+        {
+            InitializeComponent();
+        }
+
         public string GetFormType()
         {
             return "Головне меню";
@@ -42,15 +47,15 @@ namespace Labs
             switch (index)
             {
                 case 1:
-                    f = new FormLab16t1();
+                    f = new FormLab9(this);
                     f.FormClosing += new FormClosingEventHandler(FormLab18_FormClosing);
                     break;
                 case 2:
-                    f = new FormLab16t2();
+                    f = new FormLab10(this);
                     f.FormClosing += new FormClosingEventHandler(FormLab18_FormClosing);
                     break;
                 case 3:
-                    f = new FormLab16t3();
+                    f = new FormLab11(this);
                     f.FormClosing += new FormClosingEventHandler(FormLab18_FormClosing);
                     break;
             }
@@ -128,6 +133,11 @@ namespace Labs
                 point = this.Location;
                 point.Offset(this.Width, 0);
                 controller.Show();
+                if (Equals(this.GetType(), new FormLab18().GetType()))
+                {
+                    controller.feature_for_lab19.Enabled = false;
+                    controller.feature_for_lab19.Text = "Недоступно";
+                }
                 controller.Location = point;
             }
         }

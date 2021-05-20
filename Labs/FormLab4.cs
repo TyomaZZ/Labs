@@ -15,14 +15,23 @@ namespace Labs
     public partial class FormLab4 : Form
     { 
         Button a;
+        Form father;
+        int b, g;
+        bool back = false;
+        string buttonText;
+
         public static ToolStripStatusLabel asd;
-        public FormLab4()
+        public FormLab4(Form patric)
         {
             InitializeComponent();
             asd = toolStripStatusLabel1;
+            father = patric;
+            b = button14.Top;
+            g = button14.Height;
+            buttonText = button2.Text;
         }
         private void button_rnd(object sender, EventArgs e)
-        { a.Hide(); }
+        { a.Hide(); a = null; }
         private void button1_Click(object sender, EventArgs e)
         { Close(); }
         private void button14_Click_1(object sender, EventArgs e)
@@ -40,6 +49,7 @@ namespace Labs
             a.FlatStyle = button1.FlatStyle;
             a.Parent = lab3_panel7;
             a.BringToFront();
+            a.BackColor = Color.Red;
             a.Click += new System.EventHandler(this.button_rnd);
         }
         private void lab3_var7_button1_Click_1(object sender, EventArgs e)
@@ -135,13 +145,32 @@ namespace Labs
             l.Text = "Створено Пальто: " + jacket.name;
             toolStripStatusLabel1.Text = "Кількість об'єктів: " + Outerwear.count;
         }
+
+        private void FormLab4_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            MyLib.Lib.FatherController(father);
+        }
+
         private void button2_Click(object sender, EventArgs e)
         {
+            if (back)
+            {
+                button2.Text = buttonText;
+                button14.Top = b;
+                button14.Height = g;
+                back = false;
+                return;
+            }
             if (button14.Top > 199)
             {
                 button14.Height += 5;
                 button14.Top -= 5;
             }
+            else
+            {
+                button2.Text = "Повернути початковий розмір?";
+                back = true;
+            } 
         }
     }
     public abstract class Outerwear

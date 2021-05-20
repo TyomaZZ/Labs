@@ -201,7 +201,6 @@ namespace Labs
         #endregion
 
         private System.Windows.Forms.StatusStrip statusStripMain;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button buttonExit;
         private System.Windows.Forms.Button buttonCalc;
         private System.Windows.Forms.Button buttonStringer;
@@ -209,5 +208,6 @@ namespace Labs
         private System.Windows.Forms.Button buttonController;
         private System.Windows.Forms.Button buttonFormCloser;
         public System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        public System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }
 }

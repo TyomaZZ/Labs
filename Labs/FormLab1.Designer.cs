@@ -28,152 +28,143 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lab1_label = new System.Windows.Forms.Label();
-            this.lab1_button1 = new System.Windows.Forms.Button();
+            this.hello_label = new System.Windows.Forms.Label();
+            this.history1_button = new System.Windows.Forms.Button();
             this.lab1_panel = new System.Windows.Forms.Panel();
-            this.lab1_exitButton = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.exit_button = new System.Windows.Forms.Button();
+            this.history5_button = new System.Windows.Forms.Button();
+            this.history4_button = new System.Windows.Forms.Button();
+            this.history3_button = new System.Windows.Forms.Button();
+            this.history2_button = new System.Windows.Forms.Button();
             this.lab1_panel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // lab1_label
+            // hello_label
             // 
-            this.lab1_label.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.hello_label.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lab1_label.AutoSize = true;
-            this.lab1_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lab1_label.Location = new System.Drawing.Point(67, 9);
-            this.lab1_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lab1_label.Name = "lab1_label";
-            this.lab1_label.Size = new System.Drawing.Size(165, 29);
-            this.lab1_label.TabIndex = 0;
-            this.lab1_label.Text = "Доброго дня!";
-            this.lab1_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.hello_label.AutoSize = true;
+            this.hello_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.hello_label.Location = new System.Drawing.Point(50, 7);
+            this.hello_label.Name = "hello_label";
+            this.hello_label.Size = new System.Drawing.Size(131, 24);
+            this.hello_label.TabIndex = 0;
+            this.hello_label.Text = "Доброго дня!";
+            this.hello_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lab1_button1
+            // history1_button
             // 
-            this.lab1_button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lab1_button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.lab1_button1.Location = new System.Drawing.Point(13, 59);
-            this.lab1_button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.lab1_button1.Name = "lab1_button1";
-            this.lab1_button1.Size = new System.Drawing.Size(263, 28);
-            this.lab1_button1.TabIndex = 1;
-            this.lab1_button1.Text = "Історія №1";
-            this.lab1_button1.UseVisualStyleBackColor = true;
-            this.lab1_button1.Click += new System.EventHandler(this.button1_Click);
+            this.history1_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.history1_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.history1_button.Location = new System.Drawing.Point(10, 48);
+            this.history1_button.Name = "history1_button";
+            this.history1_button.Size = new System.Drawing.Size(197, 23);
+            this.history1_button.TabIndex = 1;
+            this.history1_button.Text = "Історія №1";
+            this.history1_button.UseVisualStyleBackColor = true;
+            this.history1_button.Click += new System.EventHandler(this.History1_button_Click);
             // 
             // lab1_panel
             // 
-            this.lab1_panel.Controls.Add(this.lab1_exitButton);
-            this.lab1_panel.Controls.Add(this.button5);
-            this.lab1_panel.Controls.Add(this.button4);
-            this.lab1_panel.Controls.Add(this.button3);
-            this.lab1_panel.Controls.Add(this.button2);
-            this.lab1_panel.Controls.Add(this.lab1_button1);
-            this.lab1_panel.Controls.Add(this.lab1_label);
+            this.lab1_panel.Controls.Add(this.exit_button);
+            this.lab1_panel.Controls.Add(this.history5_button);
+            this.lab1_panel.Controls.Add(this.history4_button);
+            this.lab1_panel.Controls.Add(this.history3_button);
+            this.lab1_panel.Controls.Add(this.history2_button);
+            this.lab1_panel.Controls.Add(this.history1_button);
+            this.lab1_panel.Controls.Add(this.hello_label);
             this.lab1_panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lab1_panel.Location = new System.Drawing.Point(0, 0);
-            this.lab1_panel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lab1_panel.Name = "lab1_panel";
-            this.lab1_panel.Size = new System.Drawing.Size(289, 222);
+            this.lab1_panel.Size = new System.Drawing.Size(217, 180);
             this.lab1_panel.TabIndex = 2;
             // 
-            // lab1_exitButton
+            // exit_button
             // 
-            this.lab1_exitButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.exit_button.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lab1_exitButton.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lab1_exitButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.lab1_exitButton.Location = new System.Drawing.Point(13, 166);
-            this.lab1_exitButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.lab1_exitButton.Name = "lab1_exitButton";
-            this.lab1_exitButton.Size = new System.Drawing.Size(263, 43);
-            this.lab1_exitButton.TabIndex = 6;
-            this.lab1_exitButton.Text = "Закрити форму";
-            this.lab1_exitButton.UseVisualStyleBackColor = true;
-            this.lab1_exitButton.Click += new System.EventHandler(this.lab1_exitButton_Click);
+            this.exit_button.Cursor = System.Windows.Forms.Cursors.Default;
+            this.exit_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.exit_button.Location = new System.Drawing.Point(10, 135);
+            this.exit_button.Name = "exit_button";
+            this.exit_button.Size = new System.Drawing.Size(197, 35);
+            this.exit_button.TabIndex = 6;
+            this.exit_button.Text = "Закрити форму";
+            this.exit_button.UseVisualStyleBackColor = true;
+            this.exit_button.Click += new System.EventHandler(this.Exit_button_Click);
             // 
-            // button5
+            // history5_button
             // 
-            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.history5_button.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button5.Location = new System.Drawing.Point(148, 130);
-            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(128, 28);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "Історія №5";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Visible = false;
-            this.button5.Click += new System.EventHandler(this.lab1_button5_Click);
+            this.history5_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.history5_button.Location = new System.Drawing.Point(111, 106);
+            this.history5_button.Name = "history5_button";
+            this.history5_button.Size = new System.Drawing.Size(96, 23);
+            this.history5_button.TabIndex = 5;
+            this.history5_button.Text = "Історія №5";
+            this.history5_button.UseVisualStyleBackColor = true;
+            this.history5_button.Visible = false;
+            this.history5_button.Click += new System.EventHandler(this.History5_button_Click);
             // 
-            // button4
+            // history4_button
             // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.history4_button.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.Location = new System.Drawing.Point(13, 130);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(127, 28);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Історія №4";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Visible = false;
-            this.button4.Click += new System.EventHandler(this.lab1_button4_Click);
+            this.history4_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.history4_button.Location = new System.Drawing.Point(10, 106);
+            this.history4_button.Name = "history4_button";
+            this.history4_button.Size = new System.Drawing.Size(95, 23);
+            this.history4_button.TabIndex = 4;
+            this.history4_button.Text = "Історія №4";
+            this.history4_button.UseVisualStyleBackColor = true;
+            this.history4_button.Visible = false;
+            this.history4_button.Click += new System.EventHandler(this.History4_button_Click);
             // 
-            // button3
+            // history3_button
             // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.history3_button.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Location = new System.Drawing.Point(148, 94);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(128, 28);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Історія №3";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Visible = false;
-            this.button3.Click += new System.EventHandler(this.lab1_button3_Click);
+            this.history3_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.history3_button.Location = new System.Drawing.Point(111, 76);
+            this.history3_button.Name = "history3_button";
+            this.history3_button.Size = new System.Drawing.Size(96, 23);
+            this.history3_button.TabIndex = 3;
+            this.history3_button.Text = "Історія №3";
+            this.history3_button.UseVisualStyleBackColor = true;
+            this.history3_button.Visible = false;
+            this.history3_button.Click += new System.EventHandler(this.History3_button_Click);
             // 
-            // button2
+            // history2_button
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.history2_button.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Location = new System.Drawing.Point(13, 94);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(127, 28);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Історія №2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Visible = false;
-            this.button2.Click += new System.EventHandler(this.lab1_button2_Click);
+            this.history2_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.history2_button.Location = new System.Drawing.Point(10, 76);
+            this.history2_button.Name = "history2_button";
+            this.history2_button.Size = new System.Drawing.Size(95, 23);
+            this.history2_button.TabIndex = 2;
+            this.history2_button.Text = "Історія №2";
+            this.history2_button.UseVisualStyleBackColor = true;
+            this.history2_button.Visible = false;
+            this.history2_button.Click += new System.EventHandler(this.History2_button_Click);
             // 
             // lab1_Form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(289, 222);
+            this.ClientSize = new System.Drawing.Size(217, 180);
             this.Controls.Add(this.lab1_panel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "lab1_Form";
             this.Opacity = 0.99D;
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Лабараторна робота 1";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.lab1_Form_FormClosing);
+            this.Text = "Лабораторна робота 1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Action_on_FormClosing);
             this.lab1_panel.ResumeLayout(false);
             this.lab1_panel.PerformLayout();
             this.ResumeLayout(false);
@@ -182,13 +173,13 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lab1_label;
-        private System.Windows.Forms.Button lab1_button1;
+        private System.Windows.Forms.Label hello_label;
+        private System.Windows.Forms.Button history1_button;
         private System.Windows.Forms.Panel lab1_panel;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button lab1_exitButton;
+        private System.Windows.Forms.Button history5_button;
+        private System.Windows.Forms.Button history4_button;
+        private System.Windows.Forms.Button history3_button;
+        private System.Windows.Forms.Button history2_button;
+        private System.Windows.Forms.Button exit_button;
     }
 }

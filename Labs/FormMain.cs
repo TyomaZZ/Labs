@@ -16,85 +16,85 @@ namespace Labs
         {
             InitializeComponent();
         }
+
         private void lab1_Click(object sender, EventArgs e)
         {
             anim(new lab1_Form(this));
         }
+
         private void main_button2_Click(object sender, EventArgs e)
         {
-            new lab2_Form().Show();
+            anim(new lab2_Form(this));
         }
+
         private void main_button3_Click(object sender, EventArgs e)
         {
-            new lab3_Form().Show();
+            anim(new lab3_Form(this));
         }
-        private void main_button4_Click(object sender, EventArgs e)
-        {
-            panel1.BackColor =  Color.FromArgb(new Random().Next(0, 255), 
-                new Random().Next(0, 255), 
-                new Random().Next(0, 255));
-        }
+
         private void main_exitButton_Click(object sender, EventArgs e)
         {
             Close();
-            //tyomashi
         }
+
         private void about_pictureBox_Click(object sender, EventArgs e)
         {
-            new About().Show();
+            new About().ShowDialog();
         }
+
         private void button6_Click(object sender, EventArgs e)
         {
-            new FormLab4().Show();
+            anim(new FormLab4(this));
         }
+
         private void button7_Click(object sender, EventArgs e)
         {
-            new FormLab5old().ShowDialog();
+            anim(new FormLab5old(this));
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            new FormLab5new().ShowDialog();
+            anim(new FormLab5new(this));
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-            new FormLab6().ShowDialog();
+            anim(new FormLab6(this));
         }
 
         private void button10_Click(object sender, EventArgs e)
         {
-            new FormLab7().ShowDialog();
+            anim(new FormLab7(this));
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
-            new FormLab8().ShowDialog();
+            anim(new FormLab8(this));
         }
 
         private void button12_Click(object sender, EventArgs e)
         {
-            new FormModul1().ShowDialog();
+            anim(new FormModul1(this));
         }
 
         private void button13_Click(object sender, EventArgs e)
         {
-            new FormLab9().ShowDialog();
+            anim(new FormLab9(this));
         }
 
         private void button14_Click(object sender, EventArgs e)
         {
-            new FormLab10().ShowDialog();
+            anim(new FormLab10(this));
         }
 
         private void button15_Click(object sender, EventArgs e)
         {
-            new FormLab11().ShowDialog();
+            anim(new FormLab11(this));
         }
 
         private void buttonLab12_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Лабораторна 10 та Лабораторна 11 використовують методи з бібліотеки.", "Info");
+            MessageBox.Show("Усі форми та деякі лабораторні використовують бібліотеку \"MyLib\"", "Info");
         }
 
         private void buttonLab13_Click(object sender, EventArgs e)
@@ -130,11 +130,11 @@ namespace Labs
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void anim(Form form)
+        private void anim(Form sun)
         {
-            form.Show();
+            sun.Show();
             this.WindowState = FormWindowState.Minimized;
-            this.ShowInTaskbar = false;
+            //this.ShowInTaskbar = false;
             this.Enabled = false;
         }
 

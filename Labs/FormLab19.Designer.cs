@@ -29,10 +29,19 @@ namespace Labs
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // FormLab19
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "FormLab19";
+            this.ClientSize = new System.Drawing.Size(512, 498);
+            this.Name = "FormLab19";
+            this.Text = "Лабораторна 19";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormLab19_FormClosed);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

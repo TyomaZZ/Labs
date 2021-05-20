@@ -38,6 +38,7 @@ namespace Labs
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.feature_for_lab19 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -51,7 +52,7 @@ namespace Labs
             this.buttonCascadAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCascadAll.Location = new System.Drawing.Point(3, 3);
             this.buttonCascadAll.Name = "buttonCascadAll";
-            this.buttonCascadAll.Size = new System.Drawing.Size(225, 38);
+            this.buttonCascadAll.Size = new System.Drawing.Size(225, 30);
             this.buttonCascadAll.TabIndex = 0;
             this.buttonCascadAll.Text = "Каскад усіх форм";
             this.buttonCascadAll.UseVisualStyleBackColor = true;
@@ -60,25 +61,27 @@ namespace Labs
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41.07452F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.groupBox1, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.groupBox2, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.feature_for_lab19, 0, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 42.05128F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 57.94872F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(243, 195);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(243, 204);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.tableLayoutPanel2);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox1.Location = new System.Drawing.Point(3, 84);
+            this.groupBox1.Location = new System.Drawing.Point(3, 74);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(237, 108);
+            this.groupBox1.Size = new System.Drawing.Size(237, 91);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Каскад:";
@@ -95,16 +98,16 @@ namespace Labs
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(231, 89);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(231, 72);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // button1
             // 
             this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(3, 47);
+            this.button1.Location = new System.Drawing.Point(3, 39);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(225, 39);
+            this.button1.Size = new System.Drawing.Size(225, 30);
             this.button1.TabIndex = 1;
             this.button1.Text = "Каскад форм по типу";
             this.button1.UseVisualStyleBackColor = true;
@@ -118,7 +121,7 @@ namespace Labs
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox2.Location = new System.Drawing.Point(3, 3);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(237, 75);
+            this.groupBox2.Size = new System.Drawing.Size(237, 65);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Обмеження кількості створення форм:";
@@ -163,12 +166,24 @@ namespace Labs
             this.radioButton1.UseVisualStyleBackColor = true;
             this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
+            // feature_for_lab19
+            // 
+            this.feature_for_lab19.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.feature_for_lab19.Location = new System.Drawing.Point(3, 171);
+            this.feature_for_lab19.Name = "feature_for_lab19";
+            this.feature_for_lab19.Size = new System.Drawing.Size(237, 30);
+            this.feature_for_lab19.TabIndex = 4;
+            this.feature_for_lab19.Text = "Підрахувати форми по темах";
+            this.feature_for_lab19.UseVisualStyleBackColor = true;
+            this.feature_for_lab19.Click += new System.EventHandler(this.feature_for_lab19_Click);
+            // 
             // FormControllerFor18Lab
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(243, 195);
+            this.ClientSize = new System.Drawing.Size(243, 204);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(250, 230);
@@ -198,5 +213,6 @@ namespace Labs
         public System.Windows.Forms.RadioButton radioButton2;
         public System.Windows.Forms.RadioButton radioButton1;
         public System.Windows.Forms.NumericUpDown numericUpDown1;
+        public System.Windows.Forms.Button feature_for_lab19;
     }
 }

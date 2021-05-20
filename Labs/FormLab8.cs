@@ -13,15 +13,17 @@ namespace Labs
 {
     public partial class FormLab8 : Form
     {
-        public FormLab8()
+        Form father;
+
+        public FormLab8(Form patric)
         {
             InitializeComponent();
+            father = patric;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             Close();
-            //tyomashi
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -29,8 +31,8 @@ namespace Labs
             string result = "";
             string cell = "к";
             string s = Interaction.InputBox("Введіть слово, словосполучення або речення для взаємодії", "Введення", "Приклад");
-            //result = s.Replace("к", ""); result = result.Replace("К", "");
-            for (int i = 0; i < s.Length; i++)
+            //result = s.Replace("к", ""); result = result.Replace("К", ""); //alternative
+            for (int i = 0; i < s.Length; i++)                               // по умовам завдання
             {
                 if (!String.Equals(s[i].ToString(), cell, StringComparison.OrdinalIgnoreCase)) {
                     result += s[i];
@@ -53,6 +55,11 @@ namespace Labs
                 }
             }
             MessageBox.Show("Стартова строка: " + s + "\nРезультат дії: " + result, "Результат");
+        }
+
+        private void FormLab8_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            MyLib.Lib.FatherController(father);
         }
     }
 }

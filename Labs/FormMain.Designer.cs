@@ -38,6 +38,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -55,7 +56,6 @@
             this.buttonLab5new = new System.Windows.Forms.Button();
             this.buttonLab7 = new System.Windows.Forms.Button();
             this.buttonLab6 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -142,14 +142,12 @@
             this.buttonChangeDesign.Enabled = false;
             this.buttonChangeDesign.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonChangeDesign.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonChangeDesign.Location = new System.Drawing.Point(5, 333);
+            this.buttonChangeDesign.Location = new System.Drawing.Point(3, 361);
             this.buttonChangeDesign.Margin = new System.Windows.Forms.Padding(5);
             this.buttonChangeDesign.Name = "buttonChangeDesign";
-            this.buttonChangeDesign.Size = new System.Drawing.Size(564, 23);
+            this.buttonChangeDesign.Size = new System.Drawing.Size(568, 29);
             this.buttonChangeDesign.TabIndex = 4;
-            this.buttonChangeDesign.Text = "Змінити дизайн";
             this.buttonChangeDesign.UseVisualStyleBackColor = false;
-            this.buttonChangeDesign.Click += new System.EventHandler(this.main_button4_Click);
             // 
             // buttonFormMainClose
             // 
@@ -177,7 +175,7 @@
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(624, 443);
+            this.pictureBox1.Location = new System.Drawing.Point(621, 440);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(36, 38);
             this.pictureBox1.TabIndex = 1;
@@ -216,6 +214,24 @@
             this.groupBox2.TabIndex = 17;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "4й семестр";
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.AutoSize = true;
+            this.button1.BackColor = System.Drawing.Color.Bisque;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Location = new System.Drawing.Point(7, 291);
+            this.button1.Margin = new System.Windows.Forms.Padding(5, 2, 5, 5);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(267, 25);
+            this.button1.TabIndex = 23;
+            this.button1.Text = "Лабораторні 19";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button5
             // 
@@ -526,24 +542,6 @@
             this.buttonLab6.Text = "Лабараторна 6";
             this.buttonLab6.UseVisualStyleBackColor = false;
             this.buttonLab6.Click += new System.EventHandler(this.button9_Click);
-            // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.AutoSize = true;
-            this.button1.BackColor = System.Drawing.Color.Bisque;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(7, 291);
-            this.button1.Margin = new System.Windows.Forms.Padding(5, 2, 5, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(267, 25);
-            this.button1.TabIndex = 23;
-            this.button1.Text = "Лабораторні 19";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // MainForm
             // 

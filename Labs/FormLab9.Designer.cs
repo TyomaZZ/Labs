@@ -35,11 +35,11 @@ namespace Labs
             this.textBoxInput = new System.Windows.Forms.TextBox();
             this.textBoxResult = new System.Windows.Forms.TextBox();
             this.groupBoxRadioSwitch = new System.Windows.Forms.GroupBox();
+            this.radioButtonAction3 = new System.Windows.Forms.RadioButton();
             this.textBoxCell2 = new System.Windows.Forms.TextBox();
             this.textBoxCell1 = new System.Windows.Forms.TextBox();
             this.radioButtonAction2 = new System.Windows.Forms.RadioButton();
             this.radioButtonAction1 = new System.Windows.Forms.RadioButton();
-            this.radioButtonAction3 = new System.Windows.Forms.RadioButton();
             this.groupBoxRadioSwitch.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -101,6 +101,18 @@ namespace Labs
             this.groupBoxRadioSwitch.TabStop = false;
             this.groupBoxRadioSwitch.Text = "Виберіть дію:";
             // 
+            // radioButtonAction3
+            // 
+            this.radioButtonAction3.AutoSize = true;
+            this.radioButtonAction3.Location = new System.Drawing.Point(6, 66);
+            this.radioButtonAction3.Name = "radioButtonAction3";
+            this.radioButtonAction3.Size = new System.Drawing.Size(240, 17);
+            this.radioButtonAction3.TabIndex = 12;
+            this.radioButtonAction3.TabStop = true;
+            this.radioButtonAction3.Text = "Слово з максимальною часткою голосних";
+            this.radioButtonAction3.UseVisualStyleBackColor = true;
+            this.radioButtonAction3.CheckedChanged += new System.EventHandler(this.radioButtonAction3_CheckedChanged);
+            // 
             // textBoxCell2
             // 
             this.textBoxCell2.Location = new System.Drawing.Point(238, 41);
@@ -145,18 +157,6 @@ namespace Labs
             this.radioButtonAction1.UseVisualStyleBackColor = true;
             this.radioButtonAction1.CheckedChanged += new System.EventHandler(this.radioButtonAction1_CheckedChanged);
             // 
-            // radioButtonAction3
-            // 
-            this.radioButtonAction3.AutoSize = true;
-            this.radioButtonAction3.Location = new System.Drawing.Point(6, 66);
-            this.radioButtonAction3.Name = "radioButtonAction3";
-            this.radioButtonAction3.Size = new System.Drawing.Size(240, 17);
-            this.radioButtonAction3.TabIndex = 12;
-            this.radioButtonAction3.TabStop = true;
-            this.radioButtonAction3.Text = "Слово з максимальною часткою голосних";
-            this.radioButtonAction3.UseVisualStyleBackColor = true;
-            this.radioButtonAction3.CheckedChanged += new System.EventHandler(this.radioButtonAction3_CheckedChanged);
-            // 
             // FormLab9
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -168,13 +168,14 @@ namespace Labs
             this.Controls.Add(this.labelResult);
             this.Controls.Add(this.labelInput);
             this.Controls.Add(this.buttonCloseAction);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormLab9";
             this.ShowIcon = false;
-            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Лабораторна робота 9";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormLab9_FormClosed);
             this.groupBoxRadioSwitch.ResumeLayout(false);
             this.groupBoxRadioSwitch.PerformLayout();
             this.ResumeLayout(false);

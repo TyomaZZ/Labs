@@ -14,81 +14,109 @@ namespace Labs
     public partial class FormLab5new : Form
     {
         Kurtka k1 = null, k2 = null;
-        public FormLab5new()
-        { InitializeComponent();}
+        Form father;
+        public FormLab5new(Form patric)
+        { 
+            InitializeComponent();
+            father = patric;
+        }
+
         private void button7_Click(object sender, EventArgs e)
         {
             Close();
-            //tyomashi
         }
+
         private void button2_Click(object sender, EventArgs e)
         {
             if (k2 == null)
             {
-                k2 = new Kurtka("невідома", "Синій", 42);
-                button8.Enabled = true; button9.Enabled = true; 
-                button10.Enabled = true; button11.Enabled = true;
+                k2 = new Kurtka("Невідома", "Синій", 42);
+                Buttons_k2(true);
             }
             else
-            {
                 MessageBox.Show("На данний момент друга куртка уже створена!");
-            }
         }
+
         private void button3_Click(object sender, EventArgs e)
         {
-            String name = k1.Name;
-            name = Convert.ToString(Interaction.InputBox("Введіть нову назву для першої куртки\n", 
-                "Змінюємо назву з " + name, ""));
-            k1.Name = name;
+            if (k1 != null)
+            {
+                k1.Name = Convert.ToString(Interaction.InputBox("Введіть нову назву для першої куртки\n", "Змінюємо назву з " + k1.Name, ""));
+            }
+            else MessageBox.Show("Сталася помилка", "Як взагалі до цього дійшло?");
         }
+
         private void button6_Click(object sender, EventArgs e)
         {
             k1 = null;
-            button3.Enabled = false; button4.Enabled = false; 
-            button5.Enabled = false; button6.Enabled = false;
+            Buttons_k1(false);
         }
+
         private void button11_Click(object sender, EventArgs e)
         {
             k2 = null;
-            button8.Enabled = false; button9.Enabled = false; 
-            button10.Enabled = false; button11.Enabled = false;
+            Buttons_k2(false);
         }
+
         private void button5_Click(object sender, EventArgs e)
         { k1.Info(); }
+
         private void button4_Click(object sender, EventArgs e)
         {
-            int size = k1.Size;
-            size = Convert.ToInt32(Interaction.InputBox("Введіть новий розмір для першої куртки\n", 
-                "Змінюємо розмір з " + k1.Size, ""));
-            k1.Size = size;
+            if (k1 != null)
+            {
+                k1.Size = Convert.ToInt32(Interaction.InputBox("Введіть новий розмір для першої куртки\n", "Змінюємо розмір з " + k1.Size, ""));
+            }
+            else MessageBox.Show("Сталася помилка", "Як взагалі до цього дійшло?");
         }
+
         private void button8_Click(object sender, EventArgs e)
         {
-            String name = k2.Name;
-            name = Convert.ToString(Interaction.InputBox("Введіть нову назву для другої куртки\n", 
-                "Змінюємо назву з " + name, ""));
-            k2.Name = name;
+            if (k2 != null)
+            {
+                k2.Name = Convert.ToString(Interaction.InputBox("Введіть нову назву для другої куртки\n", "Змінюємо назву з " + k2.Name, ""));
+            }
+            else MessageBox.Show("Сталася помилка", "Як взагалі до цього дійшло?");
         }
+
         private void button9_Click(object sender, EventArgs e)
         {
-            int size = k2.Size;
-            size = Convert.ToInt32(Interaction.InputBox("Введіть новий розмір для другої куртки\n", "Змінюємо розмір з " + k2.Size, ""));
-            k2.Size = size;
+            if (k2 != null)
+            {
+                k2.Size = Convert.ToInt32(Interaction.InputBox("Введіть новий розмір для другої куртки\n", "Змінюємо розмір з " + k2.Size, ""));
+            }
+            else MessageBox.Show("Сталася помилка", "Як взагалі до цього дійшло?");
         }
+
         private void button10_Click(object sender, EventArgs e)
         { k2.Info(); }
-        private void button1_Click(object sender, EventArgs e)
+
+        private void button_first_object_creater_Click(object sender, EventArgs e)
         {
             if (k1 == null)
             {
                 k1 = new Kurtka("Улюблена", "Зелений", 36);
-                button3.Enabled = true; button4.Enabled = true; 
-                button5.Enabled = true; button6.Enabled = true; 
+                Buttons_k1(true);
             }
             else
-            {
                 MessageBox.Show("На данний момент перша куртка уже створена!");
-            }
+        }
+
+        public void Buttons_k1(bool status)
+        {
+            button3.Enabled = status; button4.Enabled = status;
+            button5.Enabled = status; button6.Enabled = status;
+        }
+
+        private void FormLab5new_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            MyLib.Lib.FatherController(father);
+        }
+
+        public void Buttons_k2(bool status)
+        {
+            button8.Enabled = status; button9.Enabled = status;
+            button10.Enabled = status; button11.Enabled = status;
         }
     }
     public abstract class Odyag 
@@ -104,19 +132,11 @@ namespace Labs
         }
         ~Odyag()
         {
-            /*  MessageBox.Show("Знищується Верхній Одяг №" + nomer,
-                  "Увага",
-                  MessageBoxButtons.OK,
-                  MessageBoxIcon.Exclamation); */
-            count--;
-            //FormLab5.asd.Text = "Кількість об'єктів: " + count;
+            //
         }
         virtual public void Info()
         {
-            /* MessageBox.Show("Верхній одяг №" + nomer + " створено",
-                 "Інформація",
-                 MessageBoxButtons.OK,
-                 MessageBoxIcon.Information); */
+            //
         }
     }
 
@@ -130,7 +150,7 @@ namespace Labs
         {
             base.Info();
             Name = name; this.color = color; Size = size; this.status = "Новa";
-            Random rnd = new Random(); int asd = rnd.Next(0, 2); if (asd == 0) isFreak = false; else isFreak = true;
+            Random rnd = new Random(); if (rnd.Next(0, 2) == 0) isFreak = false; else isFreak = true;
         }
         public string isFreaks()
         {
@@ -156,5 +176,4 @@ namespace Labs
                 MessageBoxIcon.Information);
         }
     }
-
 }

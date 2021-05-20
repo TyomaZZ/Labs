@@ -13,24 +13,24 @@ namespace Labs
 {//tyomashi
     public partial class lab1_Form : Form
     {
-        Form father;
+        readonly Form father;
         public lab1_Form(Form patric)
         { 
             InitializeComponent();
             father = patric;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void History1_button_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Програмування цікаве", "Історія 1", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
             foreach (Control con in lab1_panel.Controls)
                 con.Visible = true;
         }
 
-        private void lab1_button2_Click(object sender, EventArgs e)
+        private void History2_button_Click(object sender, EventArgs e)
         { MessageBox.Show("Вивчаємо ООП", "Історія 2", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1); }
 
-        private void lab1_button3_Click(object sender, EventArgs e)
+        private void History3_button_Click(object sender, EventArgs e)
         {
             DialogResult result = MessageBox.Show("Генеруємо числа\nБажаєте змінити дизайн?\n", "Історія 3", MessageBoxButtons.YesNo, MessageBoxIcon.Information, 
                     MessageBoxDefaultButton.Button1);
@@ -39,16 +39,16 @@ namespace Labs
                 lab1_panel.BackColor = Color.FromArgb(rnd.Next(0, 255), rnd.Next(0, 255), rnd.Next(0, 255));
         }
 
-        private void lab1_button4_Click(object sender, EventArgs e)
+        private void History4_button_Click(object sender, EventArgs e)
         { MessageBox.Show("В прибраній кімнаті - меньше сміття\n", "Факт", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1); }
 
-        private void lab1_button5_Click(object sender, EventArgs e)
+        private void History5_button_Click(object sender, EventArgs e)
         { MessageBox.Show("Copy-Paste - корисна річ", "Історія 5", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1); }
 
-        private void lab1_exitButton_Click(object sender, EventArgs e)
+        private void Exit_button_Click(object sender, EventArgs e)
         { Close(); }
 
-        private void lab1_Form_FormClosing(object sender, FormClosingEventArgs e)
+        private void Action_on_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (father != null)
             {

@@ -344,9 +344,9 @@
             this.MinimizeBox = false;
             this.Name = "FormLab4";
             this.ShowIcon = false;
-            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Лабараторна 4";
+            this.Text = "Лабораторна 4";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormLab4_FormClosed);
             this.lab3_panel7.ResumeLayout(false);
             this.lab3_panel7.PerformLayout();
             this.panel2.ResumeLayout(false);
