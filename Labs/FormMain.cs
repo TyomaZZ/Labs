@@ -16,9 +16,9 @@ namespace Labs
         {
             InitializeComponent();
         }
-        private void main_button1_Click(object sender, EventArgs e)
+        private void lab1_Click(object sender, EventArgs e)
         {
-            new lab1_Form().Show();
+            anim(new lab1_Form(this));
         }
         private void main_button2_Click(object sender, EventArgs e)
         {
@@ -128,6 +128,19 @@ namespace Labs
         {
             new FormLab18(this).Show();
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void anim(Form form)
+        {
+            form.Show();
+            this.WindowState = FormWindowState.Minimized;
+            this.ShowInTaskbar = false;
+            this.Enabled = false;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            anim(new FormLab19(this));
         }
     }
 }

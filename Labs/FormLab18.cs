@@ -6,13 +6,24 @@ using System.Windows.Forms;
 
 namespace Labs
 {
-    public partial class FormLab18 : Form
+    public partial class FormLab18 : Form, InterfaceLab19
     {
         public static List<Form> listForm = new List<Form>();
         int countForm = 0;
         public static int maxForm = -1;
         public FormControllerFor18Lab controller = null;
         Form mother;
+
+        public FormLab18(Form patric)
+        {
+            InitializeComponent();
+            mother = patric;
+        }
+
+        public string GetFormType()
+        {
+            return "Головне меню";
+        }
 
         private void createForm(int index)
         {
@@ -47,12 +58,6 @@ namespace Labs
             countForm++;
             Counter();
             f.Show();
-        }
-
-        public FormLab18(Form patric)
-        {
-            InitializeComponent();
-            mother = patric;
         }
 
         private void buttonExit_Click(object sender, System.EventArgs e)

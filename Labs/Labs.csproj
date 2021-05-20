@@ -156,6 +156,12 @@
     <Compile Include="FormLab18.Designer.cs">
       <DependentUpon>FormLab18.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormLab19.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLab19.Designer.cs">
+      <DependentUpon>FormLab19.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLab9.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -228,6 +234,7 @@
     <Compile Include="FormModul1.Designer.cs">
       <DependentUpon>FormModul1.cs</DependentUpon>
     </Compile>
+    <Compile Include="InterfaceLab19.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">

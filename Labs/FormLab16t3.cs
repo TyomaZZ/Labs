@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Labs
 {
-    public partial class FormLab16t3 : Form
+    public partial class FormLab16t3 : Form, InterfaceLab19
     {
         FormLab16 father;
         public FormLab16t3(FormLab16 parent)
@@ -18,6 +18,12 @@ namespace Labs
             InitializeComponent();
             father = parent;
         }
+
+        public string GetFormType()
+        {
+            return "Калькулятор";
+        }
+
         public FormLab16t3()
         {
             InitializeComponent();
