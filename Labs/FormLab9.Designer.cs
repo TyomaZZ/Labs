@@ -175,6 +175,7 @@ namespace Labs
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Лабораторна робота 9";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormLab9_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormLab9_FormClosed);
             this.groupBoxRadioSwitch.ResumeLayout(false);
             this.groupBoxRadioSwitch.PerformLayout();

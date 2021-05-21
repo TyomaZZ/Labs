@@ -596,6 +596,7 @@ namespace Labs
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Калькулятор";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormLab11_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormLab11_FormClosed);
             this.groupBoxNumbers.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);

@@ -264,6 +264,7 @@ namespace Labs
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Лабораторна Робота №10";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormLab10_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormLab10_FormClosed);
             this.Load += new System.EventHandler(this.FormLab10_Load);
             this.groupBoxMath.ResumeLayout(false);

@@ -146,5 +146,15 @@ namespace Labs
         {
             return "Обробка текстових рядків у формах";
         }
+
+        private void FormLab9_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (father != null && Equals(father.GetType(), new FormLab16(this).GetType()))
+            {
+                (father as FormLab16).button1.Enabled = false;
+                (father as FormLab16).button2.Enabled = false;
+                (father as FormLab16).button3.Enabled = false;
+            }
+        }
     }
 }

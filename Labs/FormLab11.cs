@@ -391,6 +391,16 @@ namespace Labs
                 textBoxNumber.Text = "";
         }
 
+        private void FormLab11_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (father != null && Equals(father.GetType(), new FormLab16(this).GetType()))
+            {
+                (father as FormLab16).button7.Enabled = false;
+                (father as FormLab16).button8.Enabled = false;
+                (father as FormLab16).button9.Enabled = false;
+            }
+        }
+
         private void button1dil_Click(object sender, EventArgs e)
         {
             if (textBoxNowAndResult.Text != "")

@@ -38,13 +38,13 @@ namespace Labs
             switch (index)
             {
                 case 1:
-                    masForm[i] = new FormLab16t1();
+                    masForm[i] = new FormLab9(this);
                     break;
                 case 2:
-                    masForm[i] = new FormLab16t2();
+                    masForm[i] = new FormLab10(this);
                     break;
                 case 3:
-                    masForm[i] = new FormLab16t3();
+                    masForm[i] = new FormLab11(this);
                     break;
             }
             masForm[i].FormClosing += new FormClosingEventHandler(FormLab17_FormClosing);
@@ -131,7 +131,7 @@ namespace Labs
             {
                 if (masForm[i] != null)
                 {
-                    if (masForm[i].GetType() == new FormLab16t1().GetType()) {
+                    if (masForm[i].GetType() == new FormLab9(this).GetType()) {
                         masForm[i].Close();
                     }
                 }
@@ -144,7 +144,7 @@ namespace Labs
             {
                 if (masForm[i] != null)
                 {
-                    if (masForm[i].GetType() == new FormLab16t2().GetType())
+                    if (masForm[i].GetType() == new FormLab10(this).GetType())
                     {
                         masForm[i].Close();
                     }
@@ -158,7 +158,7 @@ namespace Labs
             {
                 if (masForm[i] != null)
                 {
-                    if (masForm[i].GetType() == new FormLab16t3().GetType())
+                    if (masForm[i].GetType() == new FormLab11(this).GetType())
                     {
                         masForm[i].Close();
                     }
@@ -193,7 +193,7 @@ namespace Labs
                         switch (j)
                         {
                             case 0:
-                                if (masForm[i].GetType() == new FormLab16t1().GetType())
+                                if (masForm[i].GetType() == new FormLab9(this).GetType())
                                 {
                                     masForm[i].Location = point;
                                     point.Offset(20, 20);
@@ -201,7 +201,7 @@ namespace Labs
                                 }
                                 break;
                             case 1:
-                                if (masForm[i].GetType() == new FormLab16t2().GetType())
+                                if (masForm[i].GetType() == new FormLab10(this).GetType())
                                 {
                                     masForm[i].Location = point;
                                     point.Offset(20, 20);
@@ -209,7 +209,7 @@ namespace Labs
                                 }
                                 break;
                             case 2:
-                                if (masForm[i].GetType() == new FormLab16t3().GetType())
+                                if (masForm[i].GetType() == new FormLab11(this).GetType())
                                 {
                                     masForm[i].Location = point;
                                     point.Offset(20, 20);

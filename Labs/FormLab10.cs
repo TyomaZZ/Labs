@@ -181,5 +181,15 @@ namespace Labs
         {
             return "Підпрограми користувача";
         }
+
+        private void FormLab10_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (father != null && Equals(father.GetType(), new FormLab16(this).GetType()))
+            {
+                (father as FormLab16).button4.Enabled = false;
+                (father as FormLab16).button5.Enabled = false;
+                (father as FormLab16).button6.Enabled = false;
+            }
+        }
     }
 }
