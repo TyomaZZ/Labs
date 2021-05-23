@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.buttonLab1 = new System.Windows.Forms.Button();
             this.buttonLab2 = new System.Windows.Forms.Button();
@@ -56,6 +57,7 @@
             this.buttonLab5new = new System.Windows.Forms.Button();
             this.buttonLab7 = new System.Windows.Forms.Button();
             this.buttonLab6 = new System.Windows.Forms.Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -151,6 +153,7 @@
             // 
             // buttonFormMainClose
             // 
+            this.buttonFormMainClose.AccessibleDescription = "";
             this.buttonFormMainClose.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonFormMainClose.AutoSize = true;
@@ -229,7 +232,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(267, 25);
             this.button1.TabIndex = 23;
-            this.button1.Text = "Лабораторні 19";
+            this.button1.Text = "Лабораторна 19";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -247,7 +250,7 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(267, 25);
             this.button5.TabIndex = 22;
-            this.button5.Text = "Лабораторні 18";
+            this.button5.Text = "Лабораторна 18";
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
@@ -543,6 +546,13 @@
             this.buttonLab6.UseVisualStyleBackColor = false;
             this.buttonLab6.Click += new System.EventHandler(this.button9_Click);
             // 
+            // toolTip1
+            // 
+            this.toolTip1.IsBalloon = true;
+            this.toolTip1.OwnerDraw = true;
+            this.toolTip1.ShowAlways = true;
+            this.toolTip1.ToolTipTitle = "Видід з програми";
+            // 
             // MainForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -601,6 +611,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button buttonLab14;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
 

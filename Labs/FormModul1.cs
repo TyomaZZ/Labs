@@ -36,7 +36,8 @@ namespace Labs
             {
                 if (MessageBox.Show("Ви ввели не число.\nБажаєте повторити?", "Увага", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                     goto Povtor;
-                else { return false; }
+                else  
+                    return false; 
             }
             return true;
         }
@@ -72,7 +73,7 @@ namespace Labs
                 if (i == 1 || i == 2 || i == 4)
                   results += i + " секунда: X= " + x + ", Y= " + y + "\n" ;
             }
-            MessageBox.Show("Вхідні дані:\nШвидкість - " + v + "км/год\n" + "Альфа - " + a + " градусів\n" + "Вільне падіння - " + g + "км/год\n" + results, "Результати табулювання", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Вхідні дані: \nШвидкість - " + v + "км/год\n" + "Альфа - " + a + " градусів\n" + "Вільне падіння - " + g + "км/год\n" + results, "Результати табулювання", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void FormModul1_FormClosed(object sender, FormClosedEventArgs e)

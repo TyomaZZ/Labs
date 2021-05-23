@@ -99,7 +99,7 @@ namespace Labs
 
         private void buttonLab13_Click(object sender, EventArgs e)
         {
-            new FormForLab13().ShowDialog();
+            anim(new FormForLab13(this));
         }
 
         private void buttonLab14_Click(object sender, EventArgs e)

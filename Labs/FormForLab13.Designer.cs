@@ -71,6 +71,7 @@ namespace Labs
             this.Name = "FormForLab13";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "Лабораторна 13 (Породжена форма)";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormForLab13_FormClosed);
             this.Load += new System.EventHandler(this.FormForLab13_Load);
             this.Controls.SetChildIndex(this.groupBox1, 0);
             this.groupBox1.ResumeLayout(false);
