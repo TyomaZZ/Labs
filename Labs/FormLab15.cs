@@ -12,9 +12,12 @@ namespace Labs
 {
     public partial class FormLab15 : Form
     {
-        public FormLab15()
+        Form father;
+
+        public FormLab15(Form patric)
         {
             InitializeComponent();
+            father = patric;
         }
 
         private void повідомленняToolStripMenuItem_Click(object sender, EventArgs e)
@@ -70,6 +73,11 @@ namespace Labs
                 Properties.Resources.allButton, Properties.Resources.PhotoGallery3Photo);
             ch.MdiParent = this;
             ch.Show();
+        }
+
+        private void FormLab15_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            MyLib.Lib.FatherController(father);
         }
     }
 }

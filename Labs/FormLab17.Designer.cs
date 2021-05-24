@@ -204,6 +204,7 @@ namespace Labs
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Лабораторна 17";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormLab17_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormLab17_FormClosed);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);

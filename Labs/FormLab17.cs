@@ -9,14 +9,16 @@ namespace Labs
         const int maxForm = 5;
         Form[] masForm = new Form[maxForm];
         static int countForm = 0;
-        Form mother;
+        Form father;
+
         public FormLab17(Form patric)
         {
             InitializeComponent();
             for (int i = 0; i < maxForm; i++)
                 masForm[i] = null;
-            mother = patric;
+            father = patric;
         }
+
         private void createForm(int index)
         {
             int i = 0;
@@ -61,10 +63,6 @@ namespace Labs
         {
             countForm--;
             Counter();
-            if (sender == this)
-            {
-                mother.WindowState = FormWindowState.Normal;
-            }
         }
 
         public void button1_Click(object sender, EventArgs e)
@@ -221,6 +219,11 @@ namespace Labs
                 }
             }
             this.Focus();
+        }
+
+        private void FormLab17_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            MyLib.Lib.FatherController(father);
         }
     }
 }

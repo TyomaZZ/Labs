@@ -104,30 +104,27 @@ namespace Labs
 
         private void buttonLab14_Click(object sender, EventArgs e)
         {
-            new FormLab14().ShowDialog();
+            anim(new FormLab14(this));
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            new FormLab15().ShowDialog();
+            anim(new FormLab15(this));
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            new FormLab16(this).Show();
-            this.WindowState = FormWindowState.Minimized;
+            anim(new FormLab16(this));
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            new FormLab17(this).Show();
-            this.WindowState = FormWindowState.Minimized;
+            anim(new FormLab17(this));
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            new FormLab18(this).Show();
-            this.WindowState = FormWindowState.Minimized;
+            anim(new FormLab18(this));
         }
 
         private void anim(Form sun)

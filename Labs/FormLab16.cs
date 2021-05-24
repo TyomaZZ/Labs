@@ -6,11 +6,11 @@ namespace Labs
 {
     public partial class FormLab16 : Form
     {
-        Form mother;
+        Form father;
         public FormLab16(Form patric)
         {
             InitializeComponent();
-            mother = patric;
+            father = patric;
         }
 
         Form stringer = null;
@@ -140,32 +140,7 @@ namespace Labs
 
         private void FormLab16_FormClosing(object sender, FormClosingEventArgs e)
         {
-            mother.WindowState = FormWindowState.Normal;
+            MyLib.Lib.FatherController(father);
         }
     }
-    /* if (calc == null)
-             {
-                 calc = new FormLab11();
-     calc.MinimizeBox = true;
-                 calc.ShowInTaskbar = true;
-                 calc.Show();
-             }
-             else
- {
-     if (calc.IsDisposed)
-     {
-         calc = new FormLab11();
-         calc.MinimizeBox = true;
-         calc.ShowInTaskbar = true;
-         calc.Show();
-     }
-     else
-     {
-         if (calc.WindowState == FormWindowState.Minimized)
-             calc.WindowState = FormWindowState.Normal;
-         else if (!calc.Focused)
-             calc.Focus();
-     }
- }
-    */
 }

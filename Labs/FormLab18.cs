@@ -12,12 +12,12 @@ namespace Labs
         int countForm = 0;
         public static int maxForm = -1;
         public FormControllerFor18Lab controller = null;
-        Form mother;
+        Form father;
 
         public FormLab18(Form patric)
         {
             InitializeComponent();
-            mother = patric;
+            father = patric;
         }
 
         private FormLab18()
@@ -144,7 +144,7 @@ namespace Labs
 
         private void FormLab18_FormClosed(object sender, FormClosedEventArgs e)
         {
-            mother.WindowState = FormWindowState.Normal;
+            MyLib.Lib.FatherController(father);
             foreach (Form f in listForm)
                 if (!f.IsDisposed)
                     f.Close();

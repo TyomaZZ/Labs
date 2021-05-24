@@ -21,14 +21,20 @@ namespace Labs
         string titleEOpen = "Оберіть файл для зчитування";
         int keySave = 245;
         string[] dataArr = new string[5];
-        public FormLab14() : base()
+        Form father;
+
+        public FormLab14(Form patric) : base(patric)
         { 
             InitializeComponent();
+            father = patric;
         }
+
         private void buttonSaveDefault_Click(object sender, EventArgs e)
         { saveFile("default.txt", pathDefault, true); }
+
         private void buttonSaveInBase_Click(object sender, EventArgs e)
         { saveFile(Names(), pathBase, false); }
+
         private void buttonSave_Click(object sender, EventArgs e)
         {
             SaveFileDialog sfd = new SaveFileDialog();
@@ -40,8 +46,10 @@ namespace Labs
             if (sfd.ShowDialog() != DialogResult.Cancel)
                 saveFile(sfd.FileName, pathDefault, true);
         }
+
         private void buttonReadDefault_Click(object sender, EventArgs e)
         { openFile("default.txt"); }
+
         private void buttonRead_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog();
@@ -52,6 +60,7 @@ namespace Labs
             if (ofd.ShowDialog() != DialogResult.Cancel)
                 openFile(ofd.FileName);
         }
+
         private void saveFile(string name, string patch, bool rewrite)
         {
             StreamWriter sw;
@@ -73,6 +82,7 @@ namespace Labs
             Saver(sw);
             sw.Close();
         }
+
         private void Saver(StreamWriter sws)
         {
             sws.WriteLine(keySave);
@@ -81,6 +91,7 @@ namespace Labs
             sws.WriteLine(FatherName.Text);
             sws.WriteLine(BirthdayDay.Value.ToString());
         }
+
         private void openFile(string name)
         {
             StreamWriter sw = new StreamWriter(name, true);
@@ -107,23 +118,29 @@ namespace Labs
                 MessageBox.Show("Недійсний файл", "Помилка");
             sr.Close();
         }
+
         private void Writer(StreamReader srs)
         {
             for (int i = 0; i < dataArr.Length; i++)
                 dataArr[i] = srs.ReadLine();
         }
+
         protected override void buttonClose_Click(object sender, EventArgs e)
         {
             Close();
         }
+
         private void FormLab14_FormClosed(object sender, FormClosedEventArgs e)
         {
+            MyLib.Lib.FatherController(father);
             ClosedAction();
         }
+
         private void ClosedAction()
         {
             saveFile("load.txt", pathDefault, true);
         }
+
         private void FormLab14_Load(object sender, EventArgs e)
         {
             if (!File.Exists("default.txt"))
